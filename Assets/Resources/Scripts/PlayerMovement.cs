@@ -11,6 +11,7 @@ public class PlayerMovement : MonoBehaviour
     public Sprite down;
     public Sprite left;
     public Sprite right;
+    public int direction; // up = 1, right = 2, down = 3, right = 4
 
     public float moveSpeed;
 
@@ -59,18 +60,23 @@ public class PlayerMovement : MonoBehaviour
         if (vertical > 0)
         {
             sprite.sprite = up;
+            direction = 1;
+
         }
         else if(vertical < 0)
         {
             sprite.sprite = down;
+            direction = 3;
         }
         else if(horizontal > 0)
         {
             sprite.sprite = right;
+            direction = 2;
         }
         else if(horizontal < 0)
         {
             sprite.sprite = left;
+            direction = 4;
         }
     }
 }
