@@ -163,6 +163,7 @@ GameObject:
   - component: {fileID: 216009324}
   - component: {fileID: 216009325}
   - component: {fileID: 216009326}
+  - component: {fileID: 216009327}
   m_Layer: 3
   m_Name: Player
   m_TagString: Untagged
@@ -256,6 +257,7 @@ MonoBehaviour:
   down: {fileID: -6204479477933590408, guid: 4099f676255555240b5240f897805dce, type: 3}
   left: {fileID: 7040038629683462113, guid: 4099f676255555240b5240f897805dce, type: 3}
   right: {fileID: -6056987297122131021, guid: cd947491a13509945aa1b644f9db3ef2, type: 3}
+  direction: 0
   moveSpeed: 5
 --- !u!50 &216009325
 Rigidbody2D:
@@ -320,6 +322,20 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: -0.032674596}
   m_Radius: 0.12623627
+--- !u!114 &216009327
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 216009321}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 98ac930250013c44f9b20244f2b7958d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerMovement: {fileID: 216009324}
+  dashStrength: 0
 --- !u!1 &440376961
 GameObject:
   m_ObjectHideFlags: 0
