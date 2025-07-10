@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.AI;
 
 public class AI_Chase : MonoBehaviour
 
@@ -6,6 +7,7 @@ public class AI_Chase : MonoBehaviour
     public GameObject player;
     public float speed;
     public float distanceBetween;
+    public NavMeshAgent NavMeshAgent;
 
     private float distance;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -17,6 +19,7 @@ public class AI_Chase : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        NavMeshAgent.SetDestination(player.transform.position);
         distance = Vector2.Distance(transform.position, player.transform.position);
         Vector2 direction = player.transform.position - transform.position;
         direction.Normalize();
