@@ -1,12 +1,11 @@
 using System.Collections;
 using UnityEngine;
 
-public class Swing : MonoBehaviour
+public class SwingExperiment : MonoBehaviour
 {
     public int time = 0;
     public PlayerMovement playerMovement;
     private int direction;
-    
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
