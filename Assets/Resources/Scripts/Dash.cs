@@ -30,6 +30,7 @@ public class Dash : MonoBehaviour
     IEnumerator DashRoutine()
     {
         dashing = true;
+        print("dashed");
 
         if(direction == 1)
         {
