@@ -18,7 +18,7 @@ public class Dash : MonoBehaviour
     }
 
     // Update is called once per frame
-    void FixedUpdate()
+    void Update()
     {
         direction = playerMovement.direction;
         if(Input.GetButtonDown("Jump") && dashing == false)

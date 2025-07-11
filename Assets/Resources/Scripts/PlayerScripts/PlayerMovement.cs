@@ -3,6 +3,7 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     Rigidbody2D body;
+    public Dash dash;
 
     float horizontal;
     float vertical;
@@ -33,8 +34,12 @@ public class PlayerMovement : MonoBehaviour
     void GetDirection()
     {
         // Gives a value between -1 and 1 depending on direction
-        horizontal = Input.GetAxis("Horizontal"); // -1 is left
-        vertical = Input.GetAxis("Vertical"); // -1 is down
+        if(!dash.dashing)
+        {
+            horizontal = Input.GetAxisRaw("Horizontal"); // -1 is left
+            vertical = Input.GetAxisRaw("Vertical"); // -1 is down
+        }
+     
     }
 
     void LimitDiag()
@@ -49,7 +54,10 @@ public class PlayerMovement : MonoBehaviour
 
     void ApplyMovement()
     {
-        body.linearVelocity = new Vector2(horizontal * moveSpeed, vertical * moveSpeed); // sets linear velocity as a Vector2, multiplying direction by the moveSpeed
+        if (dash.dashing == false)
+        {
+            body.linearVelocity = new Vector2(horizontal * moveSpeed, vertical * moveSpeed); // sets linear velocity as a Vector2, multiplying direction by the moveSpeed
+        }
     }
 
     void SetSpriteDirection()
