@@ -955,6 +955,7 @@ MonoBehaviour:
   left: {fileID: 475118196806719446, guid: 0420ba40867428d439a7da72a0dfeeb6, type: 3}
   right: {fileID: -8951112509073671164, guid: 0420ba40867428d439a7da72a0dfeeb6, type: 3}
   direction: 0
+  walking: 0
   moveSpeed: 2
 --- !u!58 &4831328443216774298
 CircleCollider2D:

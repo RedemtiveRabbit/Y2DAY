@@ -13,6 +13,7 @@ public class PlayerMovement : MonoBehaviour
     public Sprite left;
     public Sprite right;
     public int direction; // up = 1, right = 2, down = 3, right = 4
+    public bool walking;
 
     public float moveSpeed;
 
@@ -57,6 +58,14 @@ public class PlayerMovement : MonoBehaviour
         if (dash.dashing == false)
         {
             body.linearVelocity = new Vector2(horizontal * moveSpeed, vertical * moveSpeed); // sets linear velocity as a Vector2, multiplying direction by the moveSpeed
+            if(body.linearVelocityX != 0 ||  body.linearVelocityY != 0)
+            {
+                walking = true;
+            }
+            else
+            {
+                walking = false;
+            }
         }
     }
 
@@ -69,7 +78,7 @@ public class PlayerMovement : MonoBehaviour
         {
             sprite.sprite = up;
             direction = 1;
-
+            
         }
         else if(vertical < 0)
         {
