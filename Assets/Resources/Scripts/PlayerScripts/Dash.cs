@@ -16,8 +16,6 @@ public class Dash : MonoBehaviour
     {
         body = GetComponent<Rigidbody2D>();
     }
-
-    // Update is called once per frame
     void FixedUpdate()
     {
         direction = playerMovement.direction;
