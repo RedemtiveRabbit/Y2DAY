@@ -14,6 +14,7 @@ public class PlayerMovement : MonoBehaviour
     public Sprite right;
     public int direction; // up = 1, right = 2, down = 3, right = 4
     public bool walking;
+    public Animator animator;
 
     public float moveSpeed;
 
@@ -39,6 +40,7 @@ public class PlayerMovement : MonoBehaviour
         {
             horizontal = Input.GetAxisRaw("Horizontal"); // -1 is left
             vertical = Input.GetAxisRaw("Vertical"); // -1 is down
+            animator.SetFloat(" ")
         }
      
     }
