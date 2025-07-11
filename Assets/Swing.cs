@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class Swing : MonoBehaviour
 {
-    public int time = 0;
+    public float time = 0;
     public PlayerMovement playerMovement;
     private int direction;
     
@@ -35,27 +35,27 @@ public class Swing : MonoBehaviour
 
         if (direction == 1)
         {
-            transform.position += new Vector3(0, .1f, 0);
+            transform.localPosition = new Vector3(0, .1f, 0);
             yield return new WaitForSeconds(time);
-            transform.position -= new Vector3(0, .1f, 0);
+            transform.localPosition = new Vector3(0, 0, 0);
         }
         else if (direction == 2)
         {
-            transform.position += new Vector3(.1f, 0, 0);
+            transform.localPosition = new Vector3(.1f, 0, 0);
             yield return new WaitForSeconds(time);
-            transform.position -= new Vector3(.1f, 0, 0);
+            transform.localPosition = new Vector3(0, 0, 0);
         }
         else if (direction == 3)
         {
-            transform.position += new Vector3(0, -.12f, 0);
+            transform.localPosition = new Vector3(0, -.12f, 0);
             yield return new WaitForSeconds(time);
-            transform.position -= new Vector3(0, -.12f, 0);
+            transform.localPosition = new Vector3(0, 0, 0);
         }
         else if (direction == 4)
         {
-            transform.position += new Vector3(-.1f, 0, 0);
+            transform.localPosition = new Vector3(-.1f, 0, 0);
             yield return new WaitForSeconds(time);
-            transform.position -= new Vector3(-.1f, 0, 0);
+            transform.localPosition = new Vector3(0, 0, 0);
         }
 
         GetComponent<BoxCollider2D>().enabled = false;
