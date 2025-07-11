@@ -50,6 +50,17 @@ public class PlayerMovement : MonoBehaviour
             // limit movement speed diagonally
             horizontal *= moveLimiter;
             vertical *= moveLimiter;
+
+            /*if(horizontal != 0)
+            {
+                vertical = 0;
+            }
+
+            if (vertical != 0)
+            {
+                horizontal = 0;
+            }
+            */
         }
     }
 
