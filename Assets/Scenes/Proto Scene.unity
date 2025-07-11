@@ -579,6 +579,7 @@ MonoBehaviour:
   direction: 0
   walking: 0
   moveSpeed: 2
+  ani: {fileID: 0}
 --- !u!61 &3672395968391916961
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1039,7 +1040,7 @@ Animator:
   m_GameObject: {fileID: 7778108906633282813}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 45c52f7522d351e46bbe80aff44f479e, type: 2}
+  m_Controller: {fileID: 9100000, guid: 949d208dab981b74196c05f47e0b3a5a, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0

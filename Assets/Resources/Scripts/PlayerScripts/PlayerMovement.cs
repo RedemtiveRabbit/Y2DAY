@@ -16,6 +16,7 @@ public class PlayerMovement : MonoBehaviour
     public bool walking;
 
     public float moveSpeed;
+    public Animation ani;
 
     void Start()
     {
@@ -87,9 +88,8 @@ public class PlayerMovement : MonoBehaviour
         //checks the velocities and sets sprites accordingly
         if (vertical > 0)
         {
-            sprite.sprite = up;
             direction = 1;
-            
+            ani.Play("WalkUp");
         }
         else if(vertical < 0)
         {
