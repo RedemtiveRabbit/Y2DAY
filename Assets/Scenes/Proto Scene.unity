@@ -850,7 +850,7 @@ Camera:
   far clip plane: 1000
   field of view: 34
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 2.5
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -876,7 +876,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -10}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 130081998}
@@ -950,12 +950,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dash: {fileID: 7903315556669858398}
-  up: {fileID: -3939753913355333839, guid: 4099f676255555240b5240f897805dce, type: 3}
-  down: {fileID: -6204479477933590408, guid: 4099f676255555240b5240f897805dce, type: 3}
-  left: {fileID: 7040038629683462113, guid: 4099f676255555240b5240f897805dce, type: 3}
-  right: {fileID: -6056987297122131021, guid: cd947491a13509945aa1b644f9db3ef2, type: 3}
+  up: {fileID: -7976874240230244693, guid: 0420ba40867428d439a7da72a0dfeeb6, type: 3}
+  down: {fileID: -3664162494846504755, guid: 0420ba40867428d439a7da72a0dfeeb6, type: 3}
+  left: {fileID: 475118196806719446, guid: 0420ba40867428d439a7da72a0dfeeb6, type: 3}
+  right: {fileID: -8951112509073671164, guid: 0420ba40867428d439a7da72a0dfeeb6, type: 3}
   direction: 0
-  moveSpeed: 4
+  moveSpeed: 2
 --- !u!58 &4831328443216774298
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -1001,8 +1001,8 @@ Transform:
   m_GameObject: {fileID: 7778108906633282813}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.36, y: 2.17, z: 0}
-  m_LocalScale: {x: 5, y: 5, z: 5}
+  m_LocalPosition: {x: 2.45, y: -0.07, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
@@ -1051,7 +1051,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 8644832591467991550, guid: cd947491a13509945aa1b644f9db3ef2, type: 3}
+  m_Sprite: {fileID: -3664162494846504755, guid: 0420ba40867428d439a7da72a0dfeeb6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1110,7 +1110,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerMovement: {fileID: 3394570170257874664}
-  dashStrength: 15
+  dashStrength: 7.5
   dashTime: 0.25
   dashing: 0
 --- !u!1660057539 &9223372036854775807
