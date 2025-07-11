@@ -6,7 +6,7 @@ public class Dash : MonoBehaviour
     public PlayerMovement playerMovement;
     public float dashStrength;
     public float dashTime;
-    private bool dashing = false;
+    public bool dashing = false;
     Rigidbody2D body;
     private int direction;
     private float xVelocity;
@@ -21,7 +21,7 @@ public class Dash : MonoBehaviour
     void FixedUpdate()
     {
         direction = playerMovement.direction;
-        if(Input.GetButtonDown("Dash") && dashing == false)
+        if(Input.GetButtonDown("Jump") && dashing == false)
         {
             StartCoroutine(DashRoutine());
         }
