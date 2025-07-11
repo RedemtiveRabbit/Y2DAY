@@ -13,6 +13,7 @@ public class AI_Chase : MonoBehaviour
     void Start()
     {
         agent = GetComponent<NavMeshAgent>();
+        agent.enabled = false;
     }
 
     // Update is called once per frame
@@ -23,9 +24,14 @@ public class AI_Chase : MonoBehaviour
         direction.Normalize();
         float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
 
+        if (distance >= distanceBetween)
+        {
+            agent.enabled = false;
+        }
         if (distance < distanceBetween)
         {
             //transform.position = Vector2.MoveTowards(this.transform.position, player.transform.position, speed * Time.deltaTime);
+            agent.enabled = true;
             agent.SetDestination(player.transform.position);
             transform.rotation = Quaternion.Euler(Vector3.forward * angle);
         }
