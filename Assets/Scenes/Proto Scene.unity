@@ -577,9 +577,10 @@ MonoBehaviour:
   left: {fileID: 6278807196381560543, guid: 33db99e9995c74a44848d32652872815, type: 3}
   right: {fileID: -235124563313779904, guid: 54bb697fa0e0e5a43a5de4a84b490a55, type: 3}
   direction: 0
+  spriteDirection: 0
   walking: 0
-  moveSpeed: 2
-  ani: {fileID: 0}
+  animator: {fileID: 7903315556669858399}
+  moveSpeed: 1
 --- !u!61 &3672395968391916961
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -796,7 +797,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -10}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
+  m_LocalScale: {x: 0.25, y: 0.25, z: 0.25}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 2749651990769063777}
@@ -829,7 +830,7 @@ Transform:
   m_GameObject: {fileID: 7778108906633282813}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.45, y: -0.07, z: 0}
+  m_LocalPosition: {x: 1.07, y: -0.02, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -945,8 +946,8 @@ Camera:
   far clip plane: 1000
   field of view: 34
   orthographic: 1
-  orthographic size: 2.5
-  m_Depth: -1
+  orthographic size: 1.25
+  m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295

@@ -13,6 +13,7 @@ public class PlayerMovement : MonoBehaviour
     public Sprite left;
     public Sprite right;
     public int direction; // up = 1, right = 2, down = 3, right = 4
+    public float spriteDirection; // up = 0.25, right = 0.5, down = 0.75, right = 1
     public bool walking;
     public Animator animator;
 
@@ -40,7 +41,10 @@ public class PlayerMovement : MonoBehaviour
         {
             horizontal = Input.GetAxisRaw("Horizontal"); // -1 is left
             vertical = Input.GetAxisRaw("Vertical"); // -1 is down
-            animator.SetFloat(" ")
+            animator.SetFloat("Horizontal", horizontal);
+            animator.SetFloat("Vertical", vertical);
+            animator.SetBool("Walking", walking);
+            animator.SetFloat("Direction", spriteDirection);
         }
      
     }
@@ -89,23 +93,29 @@ public class PlayerMovement : MonoBehaviour
         //checks the velocities and sets sprites accordingly
         if (vertical > 0)
         {
+            sprite.sprite = up;
             direction = 1;
+            spriteDirection = 0.25f;
             
         }
         else if(vertical < 0)
         {
             sprite.sprite = down;
             direction = 3;
+            spriteDirection = 0.75f;
         }
         else if(horizontal > 0)
         {
             sprite.sprite = right;
             direction = 2;
+            spriteDirection = 0.5f;
         }
         else if(horizontal < 0)
         {
             sprite.sprite = left;
             direction = 4;
+            spriteDirection = 1;
+
         }
     }
 }
