@@ -30,4 +30,10 @@ public class Health : MonoBehaviour
         }
 
     }
+    public void Defend(int damage)
+    {
+        HP -= damage;
+    }
+
+
 }
