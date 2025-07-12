@@ -22,7 +22,7 @@ public class AI_Chase : MonoBehaviour
         distance = Vector2.Distance(transform.position, player.transform.position);
         Vector2 direction = player.transform.position - transform.position;
         direction.Normalize();
-        float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
+        float angle = Mathf.Atan2(0, 0) * Mathf.Rad2Deg;
 
         if (distance >= distanceBetween)
         {
