@@ -512,7 +512,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7cf2fb17177479e4a8d8168107987c26, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  time: 0.8
+  time: 0.5
   playerMovement: {fileID: 3394570170257874664}
   animator: {fileID: 7903315556669858399}
   rightOffset: 0.15
@@ -520,6 +520,7 @@ MonoBehaviour:
   upOffset: 0.18
   downOffset: 0.18
   attacking: 0
+  hitBoxDelay: 0.1
 --- !u!58 &1436045984
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -555,7 +556,7 @@ CircleCollider2D:
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
-  m_Radius: 0.1279009
+  m_Radius: 0.15
 --- !u!1 &1680554592
 GameObject:
   m_ObjectHideFlags: 0
@@ -585,10 +586,10 @@ NavMeshAgent:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1680554592}
-  m_Enabled: 0
+  m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.2
-  m_Speed: 3.5
+  m_Speed: 1
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
@@ -613,12 +614,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 7778108906633282813}
-  speed: 2
+  speed: 1
   distanceBetween: 10
-  playerMovement: {fileID: 0}
-  HP: 0
-  knockBackStrength: 0
-  knockBackTime: 0
+  playerMovement: {fileID: 3394570170257874664}
+  HP: 3
+  knockBackStrength: 12
+  knockBackTime: 0.2
+  knockbackinating: 0
 --- !u!61 &1680554595
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -748,9 +750,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerMovement: {fileID: 3394570170257874664}
-  HP: 3
-  knockBackStrength: 5
-  knockBackTime: 0.25
+  HP: 193
+  AIChase: {fileID: 1680554594}
 --- !u!50 &1680554599
 Rigidbody2D:
   serializedVersion: 5
@@ -764,7 +765,7 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
-  m_LinearDamping: 0
+  m_LinearDamping: 10
   m_AngularDamping: 0.05
   m_GravityScale: 0
   m_Material: {fileID: 0}

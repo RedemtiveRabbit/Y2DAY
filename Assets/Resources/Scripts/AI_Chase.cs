@@ -16,18 +16,25 @@ public class AI_Chase : MonoBehaviour
     public int HP;
     public float knockBackStrength;
     public float knockBackTime;
+    public bool knockbackinating = false;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         agent = GetComponent<NavMeshAgent>();
         body = GetComponent<Rigidbody2D>();
         agent.enabled = false;
+        agent.updateUpAxis = false;
     }
 
     // Update is called once per frame
     void FixedUpdate()
     {
-        FollowPlayer();
+        if (!(knockbackinating))
+        {
+            FollowPlayer();
+
+        }
+        playerMovement.spriteDirection = direction;
     }
 
     void FollowPlayer()
@@ -52,26 +59,41 @@ public class AI_Chase : MonoBehaviour
 
     IEnumerator KnockBackRoutine()
     {
-        if (direction == 0.25)
+        print("knockbacking");
+        if (playerMovement.lastMoveDir.y == 1)
         {
+            knockbackinating = true;
+            print("doopity dooobity doo");
             body.linearVelocityY = knockBackStrength;
             yield return new WaitForSeconds(knockBackTime);
+            knockbackinating = false;
         }
-        if (direction == 0.5)
+        if (playerMovement.lastMoveDir.x == 1)
         {
+            knockbackinating = true;
+            print("doopity dooobity daa");
+
             body.linearVelocityX = knockBackStrength;
             yield return new WaitForSeconds(knockBackTime);
+            knockbackinating = false;
         }
-        if (direction == 0.75)
+        if (playerMovement.lastMoveDir.y == -1)
         {
+            knockbackinating = true;
+            print("doopity dooobity dee");
+
             body.linearVelocityY = -knockBackStrength;
             yield return new WaitForSeconds(knockBackTime);
+            knockbackinating = false;
         }
-        if (direction == 1)
+        if (playerMovement.lastMoveDir.x == -1)
         {
+            knockbackinating = true;
+            print("doopity dooobity duu");
+
             body.linearVelocityX = -knockBackStrength;
             yield return new WaitForSeconds(knockBackTime);
-
+            knockbackinating = false;
         }
     }
 
