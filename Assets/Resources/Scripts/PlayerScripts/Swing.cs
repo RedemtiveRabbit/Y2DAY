@@ -14,6 +14,7 @@ public class Swing : MonoBehaviour
     public float upOffset;
     public float downOffset;
     public bool attacking;
+    public float hitBoxDelay;
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -52,11 +53,12 @@ public class Swing : MonoBehaviour
     }
     private IEnumerator BoxRoutine()
     {
-        GetComponent<CircleCollider2D>().enabled = true;
         //make collider visible
         if (direction == 1)
         {
             attacking = true;
+            new WaitForSeconds(hitBoxDelay);
+            GetComponent<CircleCollider2D>().enabled = true;
             transform.localPosition = new Vector3(0, upOffset, 0);
             yield return new WaitForSeconds(time);
             transform.localPosition = new Vector3(0, 0, 0);
@@ -65,6 +67,8 @@ public class Swing : MonoBehaviour
         else if (direction == 2)
         {
             attacking = true;
+            new WaitForSeconds(hitBoxDelay);
+            GetComponent<CircleCollider2D>().enabled = true;
             transform.localPosition = new Vector3(rightOffset, 0, 0);
             yield return new WaitForSeconds(time);
             transform.localPosition = new Vector3(0, 0, 0);
@@ -73,6 +77,8 @@ public class Swing : MonoBehaviour
         else if (direction == 3)
         {
             attacking = true;
+            new WaitForSeconds(hitBoxDelay);
+            GetComponent<CircleCollider2D>().enabled = true;
             transform.localPosition = new Vector3(0, -downOffset, 0);
             yield return new WaitForSeconds(time);
             transform.localPosition = new Vector3(0, 0, 0);
@@ -81,6 +87,8 @@ public class Swing : MonoBehaviour
         else if (direction == 4)
         {
             attacking = true;
+            new WaitForSeconds(hitBoxDelay);
+            GetComponent<CircleCollider2D>().enabled = true;
             transform.localPosition = new Vector3(-leftOffset, 0, 0);
             yield return new WaitForSeconds(time);
             transform.localPosition = new Vector3(0, 0, 0);
