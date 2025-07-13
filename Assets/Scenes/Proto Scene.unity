@@ -576,7 +576,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!195 &1680554593
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -887,6 +887,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dash: {fileID: 7903315556669858398}
+  swing: {fileID: 1436045983}
   up: {fileID: 4028448551197906497, guid: b0e2715ace63429479b3fff016285092, type: 3}
   down: {fileID: 3310116166248368309, guid: b1f24b3bc2e2f1d4b858657ad5c115a0, type: 3}
   left: {fileID: 6278807196381560543, guid: 33db99e9995c74a44848d32652872815, type: 3}

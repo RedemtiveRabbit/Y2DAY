@@ -33,7 +33,7 @@ public class Swing : MonoBehaviour
         spriteDirection = playerMovement.spriteDirection;
         // so it's a little more convenient to refer to the sprite's direction later
        
-        if (Input.GetButtonDown("Fire1"))
+        if (Input.GetButtonDown("Fire1") && !attacking)
         {
             StartCoroutine(BoxRoutine());
         }

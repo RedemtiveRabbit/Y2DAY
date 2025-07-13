@@ -4,6 +4,7 @@ public class PlayerMovement : MonoBehaviour
 {
     Rigidbody2D body;
     public Dash dash;
+    public Swing swing;
 
     float horizontal;
     float vertical;
@@ -35,7 +36,6 @@ public class PlayerMovement : MonoBehaviour
     {
         GetDirection(); //uses input to figure out what direction the player should move
         SetSpriteDirection(); //makes it so the sprite faces the direction it's moving
-
     }
 
 
@@ -43,7 +43,7 @@ public class PlayerMovement : MonoBehaviour
     void GetDirection()
     {
         // Gives a value between -1 and 1 depending on direction
-        if(!dash.dashing)
+        if(!dash.dashing && !swing.attacking)
         {
             horizontal = Input.GetAxisRaw("Horizontal"); // -1 is left
             vertical = Input.GetAxisRaw("Vertical"); // -1 is down
@@ -81,7 +81,7 @@ public class PlayerMovement : MonoBehaviour
 
     void ApplyMovement()
     {
-        if (dash.dashing == false)
+        if (!dash.dashing && !swing.attacking)
         {
             body.linearVelocity = new Vector2(horizontal * moveSpeed, vertical * moveSpeed); // sets linear velocity as a Vector2, multiplying direction by the moveSpeed
             if(body.linearVelocityX != 0 ||  body.linearVelocityY != 0)
@@ -92,6 +92,10 @@ public class PlayerMovement : MonoBehaviour
             {
                 walking = false;
             }
+        }
+        if(swing.attacking)
+        {
+            body.linearVelocity = new Vector2(0, 0);
         }
     }
 
