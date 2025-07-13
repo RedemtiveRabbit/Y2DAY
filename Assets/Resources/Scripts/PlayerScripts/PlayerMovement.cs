@@ -47,7 +47,10 @@ public class PlayerMovement : MonoBehaviour
         {
             horizontal = Input.GetAxisRaw("Horizontal"); // -1 is left
             vertical = Input.GetAxisRaw("Vertical"); // -1 is down
-            if (horizontal != 0 || vertical != 0) { lastMoveDir = new Vector2(horizontal, vertical); }
+            if (horizontal != 0 || vertical != 0) 
+            { 
+                lastMoveDir = new Vector2(horizontal, vertical);
+            }
             animator.SetFloat("Horizontal", horizontal);
             animator.SetFloat("Vertical", vertical);
             animator.SetFloat("LastMoveX", lastMoveDir.x);
