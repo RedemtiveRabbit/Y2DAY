@@ -9,6 +9,7 @@ public class PlayerMovement : MonoBehaviour
     float horizontal;
     float vertical;
     float moveLimiter = 0.7f;
+    public PlayerKnockbackTest2 knockback;
     public Sprite up;
     public Sprite down;
     public Sprite left;
@@ -43,7 +44,7 @@ public class PlayerMovement : MonoBehaviour
     void GetDirection()
     {
         // Gives a value between -1 and 1 depending on direction
-        if(!dash.dashing && !swing.attacking)
+        if(!dash.dashing && !swing.attacking && !knockback.knockbackinatingE)
         {
             horizontal = Input.GetAxisRaw("Horizontal"); // -1 is left
             vertical = Input.GetAxisRaw("Vertical"); // -1 is down
@@ -84,7 +85,7 @@ public class PlayerMovement : MonoBehaviour
 
     void ApplyMovement()
     {
-        if (!dash.dashing && !swing.attacking)
+        if (!dash.dashing && !swing.attacking && !knockback.knockbackinatingE)
         {
             body.linearVelocity = new Vector2(horizontal * moveSpeed, vertical * moveSpeed); // sets linear velocity as a Vector2, multiplying direction by the moveSpeed
             if(body.linearVelocityX != 0 ||  body.linearVelocityY != 0)
