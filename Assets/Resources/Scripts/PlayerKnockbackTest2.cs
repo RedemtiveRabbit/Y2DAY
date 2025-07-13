@@ -1,65 +1,71 @@
 using System.Collections;
+using Unity.VisualScripting;
 using UnityEngine;
+using static UnityEditor.Searcher.SearcherWindow.Alignment;
 
 public class PlayerKnockbackTest2 : MonoBehaviour
 {
-    public float knockbackTime = 0.2f;
-    public float hitDirectionForce = 10f;
-    public float constantForce = 5f;
-    public float inputForce = 7.5f;
+    public bool knockbackinatingE = false;
+    public float knockBackStrengthE;
+    public float knockBackTimeE;
+    public Rigidbody2D body;
+      float horizontal;
+    float vertical;
 
-    private Rigidbody2D rb2d;
-
-    private Coroutine knockbackCoroutine;
-
-    public bool isBeingKnockedBack { get; private set; }
-
-    private void Start()
+    public AI_Chase AIChase;
+    public void Start()
     {
-        rb2d = GetComponent<Rigidbody2D>();
+        body = GetComponent<Rigidbody2D>();
     }
-
-    public IEnumerator KnockbackAction(Vector2 hitDirection, Vector2 constantForceDirection, float inputdirection)
+    void Update()
     {
-        isBeingKnockedBack = true;
-
-        Vector2 _hitForce;
-        Vector2 _constantForce;
-        Vector2 _knockbackForce;
-        Vector2 _combinedForce;
-
-        _hitForce = hitDirection * hitDirectionForce;
-        _constantForce = constantForceDirection * constantForce;
-
-        float _elapsedTime = 0f;
-        while (_elapsedTime < knockbackTime)
+      print(knockbackinatingE);
+    }
+    void FixedUpdate()
+    {
+      
+    }
+    IEnumerator KnockBackRoutine()
+    {
+        print("knockbacking");
+        if (AIChase.body.linearVelocityY > 0) 
         {
-            //iterate the timer
-            _elapsedTime += Time.fixedDeltaTime;
-
-            // combine _hitForce and _constantForce
-            _knockbackForce = _hitForce + _constantForce;
-
-            //combine knockbackForce with inputForce
-            if (inputdirection != 0)
-            {
-                _combinedForce = _knockbackForce + new Vector2 (inputdirection, 0f);
-            }
-            else
-            {
-                _combinedForce = _knockbackForce;
-            }
-
-            //Apply knockback
-            rb2d.linearVelocity = _combinedForce;
-
-                yield return new WaitForFixedUpdate();
+            knockbackinatingE = true;
+            print("doopity dooobity doo");
+            body.linearVelocityY = knockBackStrengthE;
+            yield return new WaitForSeconds(knockBackTimeE);
+            knockbackinatingE = false;
         }
+        if (AIChase.body.linearVelocityX > 0)
+        {
+            knockbackinatingE = true;
+            print("doopity dooobity daa");
 
-        isBeingKnockedBack = false;
+            body.linearVelocityX = knockBackStrengthE;
+            yield return new WaitForSeconds(knockBackTimeE);
+            knockbackinatingE = false;
+        }
+        if (AIChase.body.linearVelocityY < 0)
+        {
+            knockbackinatingE = true;
+            print("doopity dooobity dee");
+
+            body.linearVelocityY = -knockBackStrengthE;
+            yield return new WaitForSeconds(knockBackTimeE);
+            knockbackinatingE = false;
+        }
+        if (AIChase.body.linearVelocityX < 0)
+        {
+            knockbackinatingE = true;
+            print("doopity dooobity duu");
+
+            body.linearVelocityX = -knockBackStrengthE;
+            yield return new WaitForSeconds(knockBackTimeE);
+            knockbackinatingE = false;
+        }
     }
-    public void Callknockback(Vector2 hitDirection, Vector2 constantForceDirection, float inputdirection)
+    public void Knockback()
     {
-        knockbackCoroutine = StartCoroutine(KnockbackAction(hitDirection, constantForceDirection, inputdirection));
+        StartCoroutine(KnockBackRoutine());
     }
 }

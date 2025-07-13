@@ -6,7 +6,8 @@ public class AI_Chase : MonoBehaviour
 
 {
     public GameObject player;
-    Rigidbody2D body;
+    public float followSpeed;
+    public Rigidbody2D body;
     public float speed;
     public float distanceBetween;
     private NavMeshAgent agent;
@@ -17,6 +18,7 @@ public class AI_Chase : MonoBehaviour
     public float knockBackStrength;
     public float knockBackTime;
     public bool knockbackinating = false;
+    public Vector2 lastMoveDirEnemy = Vector2.zero;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -24,11 +26,14 @@ public class AI_Chase : MonoBehaviour
         body = GetComponent<Rigidbody2D>();
         agent.enabled = false;
         agent.updateUpAxis = false;
+        agent.updateRotation = false;
     }
 
     // Update is called once per frame
     void FixedUpdate()
     {
+       
+
         if (!(knockbackinating))
         {
             FollowPlayer();
@@ -40,9 +45,9 @@ public class AI_Chase : MonoBehaviour
     void FollowPlayer()
     {
         distance = Vector2.Distance(transform.position, player.transform.position);
-        Vector2 direction = player.transform.position - transform.position;
-        direction.Normalize();
-        float angle = Mathf.Atan2(0, 0) * Mathf.Rad2Deg;
+        //Vector2 direction = player.transform.position - transform.position;
+        //direction.Normalize();
+        // float angle = Mathf.Atan2(0, 0) * Mathf.Rad2Deg;
 
         if (distance >= distanceBetween)
         {
@@ -50,10 +55,29 @@ public class AI_Chase : MonoBehaviour
         }
         if (distance < distanceBetween)
         {
+            if (playerMovement.transform.position.x > gameObject.transform.position.x)
+            {
+                body.linearVelocityX += followSpeed;
+            }
+
+            if (playerMovement.transform.position.x < gameObject.transform.position.x)
+            {
+                body.linearVelocityX -= followSpeed;
+            }
+
+            if (playerMovement.transform.position.y > gameObject.transform.position.y)
+            {
+                body.linearVelocityY += followSpeed;
+            }
+
+            if (playerMovement.transform.position.y < gameObject.transform.position.y)
+            {
+                body.linearVelocityY -= followSpeed;
+            }
             //transform.position = Vector2.MoveTowards(this.transform.position, player.transform.position, speed * Time.deltaTime);
             agent.enabled = true;
-            agent.SetDestination(player.transform.position);
-            transform.rotation = Quaternion.Euler(Vector3.forward * angle);
+            // agent.SetDestination(player.transform.position);
+            //transform.rotation = Quaternion.Euler(Vector3.forward * angle);
         }
     }
 
