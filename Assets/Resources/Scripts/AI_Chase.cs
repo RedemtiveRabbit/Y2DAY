@@ -79,6 +79,7 @@ public class AI_Chase : MonoBehaviour
             // agent.SetDestination(player.transform.position);
             //transform.rotation = Quaternion.Euler(Vector3.forward * angle);
         }
+        //body.velo
     }
 
     IEnumerator KnockBackRoutine()

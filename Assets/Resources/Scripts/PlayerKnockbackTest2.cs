@@ -9,7 +9,7 @@ public class PlayerKnockbackTest2 : MonoBehaviour
     public float knockBackStrengthE;
     public float knockBackTimeE;
     public Rigidbody2D body;
-      float horizontal;
+    float horizontal;
     float vertical;
 
     public AI_Chase AIChase;
@@ -19,16 +19,16 @@ public class PlayerKnockbackTest2 : MonoBehaviour
     }
     void Update()
     {
-      print(knockbackinatingE);
+        print(knockbackinatingE);
     }
     void FixedUpdate()
     {
-      
+
     }
-    IEnumerator KnockBackRoutine()
+    IEnumerator KnockBackRoutine(/*Vector2 dir*/)
     {
         print("knockbacking");
-        if (AIChase.body.linearVelocityY > 0) 
+        if (AIChase.body.linearVelocityY > 0)
         {
             knockbackinatingE = true;
             print("doopity dooobity doo");
@@ -63,6 +63,7 @@ public class PlayerKnockbackTest2 : MonoBehaviour
             yield return new WaitForSeconds(knockBackTimeE);
             knockbackinatingE = false;
         }
+        //body.linearVelocity = dir * knockBackStrengthE;
     }
     public void Knockback()
     {

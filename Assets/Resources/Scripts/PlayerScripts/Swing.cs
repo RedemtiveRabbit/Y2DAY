@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Runtime.CompilerServices;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Swing : MonoBehaviour
 {
@@ -15,6 +16,7 @@ public class Swing : MonoBehaviour
     public float downOffset;
     public bool attacking;
     public float hitBoxDelay;
+    public bool canAttack;
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -32,9 +34,18 @@ public class Swing : MonoBehaviour
         animator.SetFloat("Direction", spriteDirection);
         direction = playerMovement.direction;
         spriteDirection = playerMovement.spriteDirection;
+        string currentSceneName = SceneManager.GetActiveScene().name;
         // so it's a little more convenient to refer to the sprite's direction later
-       
-        if (Input.GetButtonDown("Fire1") && !attacking)
+        if(currentSceneName == "House Floor One")
+        {
+            canAttack = false;
+        }
+        else
+        {
+            canAttack = true;
+        }
+
+        if (Input.GetButtonDown("Fire1") && !attacking && canAttack)
         {
             StartCoroutine(BoxRoutine());
         }
@@ -53,11 +64,13 @@ public class Swing : MonoBehaviour
     }
     private IEnumerator BoxRoutine()
     {
+        attacking = true;
+
+        yield return new WaitForSeconds(hitBoxDelay);
+
         //make collider visible
         if (direction == 1)
         {
-            attacking = true;
-            new WaitForSeconds(hitBoxDelay);
             GetComponent<CircleCollider2D>().enabled = true;
             transform.localPosition = new Vector3(0, upOffset, 0);
             yield return new WaitForSeconds(time);
@@ -66,8 +79,6 @@ public class Swing : MonoBehaviour
         }
         else if (direction == 2)
         {
-            attacking = true;
-            new WaitForSeconds(hitBoxDelay);
             GetComponent<CircleCollider2D>().enabled = true;
             transform.localPosition = new Vector3(rightOffset, 0, 0);
             yield return new WaitForSeconds(time);
@@ -76,8 +87,6 @@ public class Swing : MonoBehaviour
         }
         else if (direction == 3)
         {
-            attacking = true;
-            new WaitForSeconds(hitBoxDelay);
             GetComponent<CircleCollider2D>().enabled = true;
             transform.localPosition = new Vector3(0, -downOffset, 0);
             yield return new WaitForSeconds(time);
@@ -86,8 +95,6 @@ public class Swing : MonoBehaviour
         }
         else if (direction == 4)
         {
-            attacking = true;
-            new WaitForSeconds(hitBoxDelay);
             GetComponent<CircleCollider2D>().enabled = true;
             transform.localPosition = new Vector3(-leftOffset, 0, 0);
             yield return new WaitForSeconds(time);
