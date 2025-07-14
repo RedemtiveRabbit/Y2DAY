@@ -23,8 +23,13 @@ public class PlayerHealth : MonoBehaviour
         knockback.Knockback();
         if(health <= 0)
         {
-            Destroy(gameObject);
+            Die();
         }
 
+    }
+
+    void Die()
+    {
+            Destroy(gameObject);
     }
 }
