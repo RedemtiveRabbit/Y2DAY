@@ -2,7 +2,6 @@ using System;
 using System.Collections;
 using UnityEditor.Experimental.GraphView;
 using UnityEngine;
-
 public class Health : MonoBehaviour
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -10,7 +9,9 @@ public class Health : MonoBehaviour
     public PlayerMovement playerMovement;
     private float direction;
     public int HP;
+    private int MaxHP;
     public AI_Chase AIChase;
+
     void Start()
     {
         body = GetComponent<Rigidbody2D>();

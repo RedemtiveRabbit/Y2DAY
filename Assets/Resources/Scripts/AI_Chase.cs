@@ -1,6 +1,7 @@
 using System.Collections;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.Rendering;
 
 public class AI_Chase : MonoBehaviour
 
@@ -19,6 +20,7 @@ public class AI_Chase : MonoBehaviour
     public float knockBackTime;
     public bool knockbackinating = false;
     public Vector2 lastMoveDirEnemy = Vector2.zero;
+    public float keepDistance = 0.1f;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -53,7 +55,11 @@ public class AI_Chase : MonoBehaviour
         {
             agent.enabled = false;
         }
-        if (distance < distanceBetween)
+        if (Vector2.Distance(transform.position, player.transform.position) < keepDistance)
+        {
+            body.linearVelocity = Vector2.zero;
+        }
+        else if (distance < distanceBetween)
         {
             if (playerMovement.transform.position.x > gameObject.transform.position.x)
             {
@@ -79,6 +85,7 @@ public class AI_Chase : MonoBehaviour
             // agent.SetDestination(player.transform.position);
             //transform.rotation = Quaternion.Euler(Vector3.forward * angle);
         }
+        
         //body.velo
     }
 
