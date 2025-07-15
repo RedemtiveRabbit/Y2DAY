@@ -89,7 +89,7 @@ public class AI_Chase : MonoBehaviour
     IEnumerator KnockBackRoutine()
     {
         print("knockbacking");
-        if (playerMovement.lastMoveDir.y == 1)
+        if (playerMovement.lastMoveDir.y > 0)
         {
             knockbackinating = true;
             print("doopity dooobity doo");
@@ -97,7 +97,7 @@ public class AI_Chase : MonoBehaviour
             yield return new WaitForSeconds(knockBackTime);
             knockbackinating = false;
         }
-        if (playerMovement.lastMoveDir.x == 1)
+        if (playerMovement.lastMoveDir.x > 0)
         {
             knockbackinating = true;
             print("doopity dooobity daa");
@@ -106,7 +106,7 @@ public class AI_Chase : MonoBehaviour
             yield return new WaitForSeconds(knockBackTime);
             knockbackinating = false;
         }
-        if (playerMovement.lastMoveDir.y == -1)
+        if (playerMovement.lastMoveDir.y < 0)
         {
             knockbackinating = true;
             print("doopity dooobity dee");
@@ -115,7 +115,7 @@ public class AI_Chase : MonoBehaviour
             yield return new WaitForSeconds(knockBackTime);
             knockbackinating = false;
         }
-        if (playerMovement.lastMoveDir.x == -1)
+        if (playerMovement.lastMoveDir.x < 0)
         {
             knockbackinating = true;
             print("doopity dooobity duu");
