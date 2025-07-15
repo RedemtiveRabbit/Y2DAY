@@ -1,6 +1,7 @@
 using System.Collections;
 using UnityEngine;
 using UnityEngine.AI;
+using static UnityEditor.Searcher.SearcherWindow.Alignment;
 
 public class AI_Chase : MonoBehaviour
 
@@ -37,6 +38,10 @@ public class AI_Chase : MonoBehaviour
         if (!(knockbackinating))
         {
             FollowPlayer();
+            if (body.linearVelocityX != 0 || body.linearVelocityY != 0)
+            {
+                lastMoveDirEnemy = new Vector2(body.linearVelocityX, body.linearVelocityY);
+            }
 
         }
         playerMovement.spriteDirection = direction;
@@ -79,7 +84,6 @@ public class AI_Chase : MonoBehaviour
             // agent.SetDestination(player.transform.position);
             //transform.rotation = Quaternion.Euler(Vector3.forward * angle);
         }
-        //body.velo
     }
 
     IEnumerator KnockBackRoutine()

@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/Resources/Scenes/InteractableObjects/NavMesh-NavMesh Surface.asset.meta
 guid: bfb412632d2afdf41a30a887f71d55b5
+========
+guid: af11e0338b364824db07da8b7f8553d2
+>>>>>>>> main:Assets/Resources/Scenes/New Protyping/NavMesh-NavMesh Surface.asset.meta
 NativeFormatImporter:
   externalObjects: {}
   mainObjectFileID: 23800000
