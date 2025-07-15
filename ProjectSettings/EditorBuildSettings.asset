@@ -44,6 +44,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Resources/Scenes/Scenes for Final Game/House Floor One.unity
     guid: 2851bf2ed5723ae4ba4d0125372128a4
+  - enabled: 1
+    path: Assets/Resources/Scenes/Scenes for Final Game/Mall Level 2.unity
+    guid: f83f0e1df8e51b44a86a4be599351021
+  - enabled: 1
+    path: Assets/Resources/Scenes/Scenes for Final Game/Mall Level 1.unity
+    guid: 68a124033f1ca164f8e2ac70992ca55a
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

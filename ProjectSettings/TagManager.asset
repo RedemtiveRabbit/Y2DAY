@@ -56,6 +56,9 @@ TagManager:
   - name: Player
     uniqueID: 1043212847
     locked: 0
+  - name: Top of Planter
+    uniqueID: 2474489949
+    locked: 0
   - name: Wall
     uniqueID: 2917958119
     locked: 0
