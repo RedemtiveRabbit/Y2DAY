@@ -19,7 +19,7 @@ public class PlayerKnockbackTest2 : MonoBehaviour
     }
     void Update()
     {
-        print(knockbackinatingE);
+
     }
     void FixedUpdate()
     {
