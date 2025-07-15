@@ -36,10 +36,10 @@ EditorBuildSettings:
     path: Assets/Resources/Scenes/Old Test Scenes/Proto Scene.unity
     guid: 23dda2519df55cc4196a2c6aba6c494c
   - enabled: 1
-    path: Assets/Resources/Scenes/Main Menu.unity
+    path: Assets/Resources/Scenes/Scenes for Final Game/Main Menu.unity
     guid: 188ef06f902d1734aade0d9a08b91e26
   - enabled: 1
-    path: Assets/Resources/Scenes/Credits.unity
+    path: Assets/Resources/Scenes/Scenes for Final Game/Credits.unity
     guid: 51a427f662edb1d4b9caafe6c1fa25a4
   - enabled: 1
     path: Assets/Resources/Scenes/Scenes for Final Game/House Floor One.unity
