@@ -12,17 +12,19 @@ public class LevelSelectMenu : MonoBehaviour, IInteractable
     }
     void Update()
     {
-        if (interactionDetector.interactionIcon == true)
+        if (interactionDetector.interactionIcon.activeSelf)
         {
-            print("kill me");
             if (Input.GetKeyDown(KeyCode.F))
             {
+                print("milk");
                 if (gameIsPaused)
                 {
+                    print("soda");
                     Resume();
                 }
                 else
                 {
+                    print("Juice");
                     Pause();
                 }
             }
@@ -32,6 +34,7 @@ public class LevelSelectMenu : MonoBehaviour, IInteractable
 
     void Resume()
     {
+        print("lemonade");
         levelMenuUI.SetActive(false);
         Time.timeScale = 1f;
         gameIsPaused = false;
@@ -39,6 +42,7 @@ public class LevelSelectMenu : MonoBehaviour, IInteractable
 
     void Pause()
     {
+        print("tea");
         levelMenuUI.SetActive(true);
         Time.timeScale = 0f;
         gameIsPaused = true;
@@ -46,13 +50,14 @@ public class LevelSelectMenu : MonoBehaviour, IInteractable
 
     public void Interact()
     {
-        print("milkpot");
-        if (!CanInteract()) return; 
+        print("water");
+        if (!gameIsPaused) return;
+        print("beer");
     }
 
     public bool CanInteract()
     {
-        print("potmilkpot");
+        print("Coffee");
         return interactionDetector.interactionIcon == true;
     }
 }

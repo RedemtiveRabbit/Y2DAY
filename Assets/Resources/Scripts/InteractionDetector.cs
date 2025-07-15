@@ -1,5 +1,4 @@
 using UnityEngine;
-using UnityEngine.InputSystem;
 
 public class InteractionDetector : MonoBehaviour
 {
@@ -11,16 +10,8 @@ public class InteractionDetector : MonoBehaviour
         interactionIcon.SetActive(false);
     }
 
-    public void OnInteract(InputAction.CallbackContext context)
-    {
-        if (context.performed)
-        {
-            interactableInRange?.Interact();
-        }
-    }
-
     // Update is called once per frame
-    void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
         if(collision.TryGetComponent(out IInteractable interactable) && interactable.CanInteract())
         {
@@ -29,7 +20,7 @@ public class InteractionDetector : MonoBehaviour
             interactionIcon.SetActive(true);
         }
     }
-    void OnTriggerExit2D(Collider2D collision)
+    private void OnTriggerExit2D(Collider2D collision)
     {
         if (collision.TryGetComponent(out IInteractable interactable) && interactable == interactableInRange)
         {
