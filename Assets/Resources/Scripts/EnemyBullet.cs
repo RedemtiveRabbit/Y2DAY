@@ -28,4 +28,15 @@ public class EnemyBullet : MonoBehaviour
             Destroy(gameObject);
         }
     }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        Debug.Log(collision.name);
+        if(collision.tag == "Player")
+        {
+            player.GetComponent<PlayerHealth>().TakeDamage(1);
+            Destroy(gameObject);
+        }
+        
+    }
 }
+
