@@ -38,6 +38,24 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Eternal Void
+    uniqueID: 3196469335
+    locked: 0
+  - name: Back Wall
+    uniqueID: 3572935347
+    locked: 0
+  - name: On Wall
+    uniqueID: 604195201
+    locked: 0
+  - name: Floor
+    uniqueID: 279232025
+    locked: 0
+  - name: On Floor
+    uniqueID: 1653799967
+    locked: 0
+  - name: Wall
+    uniqueID: 2917958119
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
