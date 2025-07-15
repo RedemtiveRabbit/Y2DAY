@@ -41,14 +41,14 @@ TagManager:
   - name: Eternal Void
     uniqueID: 3196469335
     locked: 0
+  - name: Floor
+    uniqueID: 279232025
+    locked: 0
   - name: Back Wall
     uniqueID: 3572935347
     locked: 0
   - name: On Wall
     uniqueID: 604195201
-    locked: 0
-  - name: Floor
-    uniqueID: 279232025
     locked: 0
   - name: On Floor
     uniqueID: 1653799967
