@@ -1,6 +1,5 @@
 using System;
 using System.Collections;
-using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 public class Health : MonoBehaviour
 {
@@ -11,6 +10,7 @@ public class Health : MonoBehaviour
     public int HP;
     private int MaxHP;
     public AI_Chase AIChase;
+    public AudioSource audioSource;
 
     void Start()
     {
@@ -21,10 +21,11 @@ public class Health : MonoBehaviour
     {
         if (transform.localScale.x > 0)
         {
-           transform.localScale -= new Vector3(0.02f, 0.02f, 0.02f);
+           transform.localScale -= new Vector3(0.08f, 0.08f, 0.08f);
         }
         else
         {
+    
             Destroy(gameObject);
         }
         
@@ -41,6 +42,7 @@ public class Health : MonoBehaviour
     }
     public void Defend(int damage)
     {
+        audioSource.Play();
         HP -= damage;
         AIChase.KnockBack();
         

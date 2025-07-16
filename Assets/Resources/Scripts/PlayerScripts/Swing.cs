@@ -17,6 +17,7 @@ public class Swing : MonoBehaviour
     public bool attacking;
     public float hitBoxDelay;
     public bool canAttack;
+    public AudioSource audioSource;
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -65,8 +66,9 @@ public class Swing : MonoBehaviour
     private IEnumerator BoxRoutine()
     {
         attacking = true;
-
+        audioSource.Play();
         yield return new WaitForSeconds(hitBoxDelay);
+
 
         //make collider visible
         if (direction == 1)
