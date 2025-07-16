@@ -21,6 +21,9 @@ public class AI_Chase : MonoBehaviour
     public bool knockbackinating = false;
     public Vector2 lastMoveDirEnemy = Vector2.zero;
     public float keepDistance = 0.1f;
+    Vector2 lastMoveDir;
+    public bool walking;
+    public Animator animator;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -42,6 +45,14 @@ public class AI_Chase : MonoBehaviour
 
         }
         playerMovement.spriteDirection = direction;
+        if (body.linearVelocityX != 0 || body.linearVelocityY != 0)
+        {
+            lastMoveDirEnemy = new Vector2(body.linearVelocityX, body.linearVelocityY);
+            animator.SetFloat("LastMoveDirX", lastMoveDirEnemy.x);
+            animator.SetFloat("LastMoveDirY", lastMoveDirEnemy.y);
+            animator.SetBool("Walking", walking);
+        }
+        
     }
 
     void FollowPlayer()
@@ -54,6 +65,7 @@ public class AI_Chase : MonoBehaviour
         if (distance >= distanceBetween)
         {
             agent.enabled = false;
+            walking = false;
         }
         if (Vector2.Distance(transform.position, player.transform.position) < keepDistance)
         {
@@ -61,6 +73,7 @@ public class AI_Chase : MonoBehaviour
         }
         else if (distance < distanceBetween)
         {
+            walking = true;
             if (playerMovement.transform.position.x > gameObject.transform.position.x)
             {
                 body.linearVelocityX += followSpeed;
@@ -92,7 +105,7 @@ public class AI_Chase : MonoBehaviour
     IEnumerator KnockBackRoutine()
     {
         print("knockbacking");
-        if (playerMovement.lastMoveDir.y == 1)
+        if (playerMovement.lastMoveDir.y > 0)
         {
             knockbackinating = true;
             print("doopity dooobity doo");
@@ -100,7 +113,7 @@ public class AI_Chase : MonoBehaviour
             yield return new WaitForSeconds(knockBackTime);
             knockbackinating = false;
         }
-        if (playerMovement.lastMoveDir.x == 1)
+        if (playerMovement.lastMoveDir.x > 0)
         {
             knockbackinating = true;
             print("doopity dooobity daa");
@@ -109,7 +122,7 @@ public class AI_Chase : MonoBehaviour
             yield return new WaitForSeconds(knockBackTime);
             knockbackinating = false;
         }
-        if (playerMovement.lastMoveDir.y == -1)
+        if (playerMovement.lastMoveDir.y < 0)
         {
             knockbackinating = true;
             print("doopity dooobity dee");
@@ -118,7 +131,7 @@ public class AI_Chase : MonoBehaviour
             yield return new WaitForSeconds(knockBackTime);
             knockbackinating = false;
         }
-        if (playerMovement.lastMoveDir.x == -1)
+        if (playerMovement.lastMoveDir.x < 0)
         {
             knockbackinating = true;
             print("doopity dooobity duu");
@@ -127,6 +140,9 @@ public class AI_Chase : MonoBehaviour
             yield return new WaitForSeconds(knockBackTime);
             knockbackinating = false;
         }
+
+
+
     }
 
     public void KnockBack()

@@ -1,7 +1,6 @@
 using System.Collections;
 using Unity.VisualScripting;
 using UnityEngine;
-using static UnityEditor.Searcher.SearcherWindow.Alignment;
 
 public class PlayerKnockbackTest2 : MonoBehaviour
 {
@@ -27,7 +26,7 @@ public class PlayerKnockbackTest2 : MonoBehaviour
     }
     IEnumerator KnockBackRoutine(/*Vector2 dir*/)
     {
-        print("knockbacking");
+        /*print("knockbacking");
         if (AIChase.body.linearVelocityY > 0)
         {
             knockbackinatingE = true;
@@ -63,7 +62,13 @@ public class PlayerKnockbackTest2 : MonoBehaviour
             yield return new WaitForSeconds(knockBackTimeE);
             knockbackinatingE = false;
         }
-        //body.linearVelocity = dir * knockBackStrengthE;
+        //body.linearVelocity = dir * knockBackStrengthE;*/
+
+        knockbackinatingE = true;
+        body.linearVelocity =  knockBackStrengthE * AIChase.lastMoveDirEnemy;
+        yield return new WaitForSeconds(knockBackTimeE);
+        knockbackinatingE = false;
+
     }
     public void Knockback()
     {

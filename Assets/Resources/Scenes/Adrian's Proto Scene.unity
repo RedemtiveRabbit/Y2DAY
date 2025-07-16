@@ -831,7 +831,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   knockbackinatingE: 0
-  knockBackStrengthE: 2
+  knockBackStrengthE: 4
   knockBackTimeE: 0.1
   body: {fileID: 1273513956}
   AIChase: {fileID: 1273513959}
