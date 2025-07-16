@@ -759,7 +759,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 0
-  maxHealth: 3
+  maxHealth: 200
   knockback: {fileID: 815227072}
 --- !u!114 &815227072
 MonoBehaviour:
@@ -774,7 +774,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   knockbackinatingE: 0
-  knockBackStrengthE: 2
+  knockBackStrengthE: 4
   knockBackTimeE: 0.1
   body: {fileID: 1273513956}
   AIChase: {fileID: 1273513959}
@@ -834,7 +834,7 @@ Transform:
   m_GameObject: {fileID: 815227070}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.558, y: -0.02, z: 0}
+  m_LocalPosition: {x: -1.473, y: -0.02, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children:
@@ -1053,7 +1053,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerMovement: {fileID: 815227073}
-  HP: 3
+  HP: 200
   AIChase: {fileID: 1273513959}
 --- !u!195 &1273513958
 NavMeshAgent:
@@ -1100,6 +1100,7 @@ MonoBehaviour:
   knockBackTime: 0.2
   knockbackinating: 0
   lastMoveDirEnemy: {x: 0, y: 0}
+  keepDistance: 0.1
 --- !u!61 &1273513960
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1789,6 +1790,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3f15d91a75b165448cf26ec6fcaec74, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interactionDetector: {fileID: 0}
   levelMenuUI: {fileID: 299394262}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
