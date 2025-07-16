@@ -11,6 +11,8 @@ public class Health : MonoBehaviour
     public int HP;
     private int MaxHP;
     public AI_Chase AIChase;
+    public GameObject healthPack;
+    private int numb;
 
     void Start()
     {
@@ -19,6 +21,7 @@ public class Health : MonoBehaviour
 
     void Die()
     {
+        numb = UnityEngine.Random.Range(4, 5);
         if (transform.localScale.x > 0)
         {
            transform.localScale -= new Vector3(0.02f, 0.02f, 0.02f);
