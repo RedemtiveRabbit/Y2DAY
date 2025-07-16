@@ -53,6 +53,9 @@ TagManager:
   - name: On Floor
     uniqueID: 1653799967
     locked: 0
+  - name: NightStand
+    uniqueID: 2935644423
+    locked: 0
   - name: Player
     uniqueID: 1043212847
     locked: 0
