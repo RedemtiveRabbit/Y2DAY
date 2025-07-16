@@ -5,6 +5,10 @@ public class EscapeMenu : MonoBehaviour
 {
     public static bool gameIsPaused = false;
     public GameObject pauseMenuUI;
+    void Start()
+    {
+        pauseMenuUI.SetActive(false);
+    }
     void Update()
     {
         if (Input.GetKeyUp(KeyCode.Escape))
