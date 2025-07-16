@@ -759,7 +759,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 0
-  maxHealth: 200
+  maxHealth: 3
   knockback: {fileID: 815227072}
 --- !u!114 &815227072
 MonoBehaviour:
