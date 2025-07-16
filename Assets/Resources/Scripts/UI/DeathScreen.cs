@@ -1,6 +1,7 @@
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class DeathScreen : MonoBehaviour
 {
@@ -10,6 +11,12 @@ public class DeathScreen : MonoBehaviour
     private void Start()
     {
         deathScreenUI.SetActive(false);
+    }
+
+    public void gameOver()
+    {
+        deathScreenUI.SetActive(true);
+        Time.timeScale = 0f;
     }
     
     public void Respawn()

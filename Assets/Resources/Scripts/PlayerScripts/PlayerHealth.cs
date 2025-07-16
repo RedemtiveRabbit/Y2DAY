@@ -1,3 +1,4 @@
+using UnityEditor.Build.Content;
 using UnityEngine;
 
 public class PlayerHealth : MonoBehaviour
@@ -7,6 +8,9 @@ public class PlayerHealth : MonoBehaviour
     public PlayerKnockbackTest2 knockback;
     public AudioSource auidoSource;
     public AudioClip hurt;
+    public DeathScreen deathScreen;
+
+    private bool isDead;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -23,7 +27,7 @@ public class PlayerHealth : MonoBehaviour
         auidoSource.PlayOneShot(hurt);
         health -= amount;
         knockback.Knockback();
-        if(health <= 0)
+        if(health <= 0 && !isDead)
         {
             Die();
         }
@@ -32,6 +36,6 @@ public class PlayerHealth : MonoBehaviour
 
     void Die()
     {
-            Destroy(gameObject);
+        deathScreen.gameOver();
     }
 }
