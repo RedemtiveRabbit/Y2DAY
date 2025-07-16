@@ -5,7 +5,8 @@ public class PlayerHealth : MonoBehaviour
     public int health;
     public int maxHealth = 5;
     public PlayerKnockbackTest2 knockback;
-
+    public AudioSource auidoSource;
+    public AudioClip hurt;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -19,6 +20,7 @@ public class PlayerHealth : MonoBehaviour
     }
     public void TakeDamage(int amount) 
     {
+        auidoSource.PlayOneShot(hurt);
         health -= amount;
         knockback.Knockback();
         if(health <= 0)

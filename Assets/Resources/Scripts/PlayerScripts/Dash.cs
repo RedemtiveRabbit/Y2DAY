@@ -11,6 +11,9 @@ public class Dash : MonoBehaviour
     private int direction;
     private float xVelocity;
     private float yVelocity;
+    public AudioSource audioSource2;
+    public float coolDown;
+    public bool canDash = true;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -21,7 +24,7 @@ public class Dash : MonoBehaviour
     void Update()
     {
         direction = playerMovement.direction;
-        if(Input.GetButtonDown("Jump") && dashing == false)
+        if(Input.GetButtonDown("Jump") && dashing == false && canDash)
         {
             StartCoroutine(DashRoutine());
         }
@@ -30,7 +33,9 @@ public class Dash : MonoBehaviour
     IEnumerator DashRoutine()
     {
         dashing = true;
+        canDash = false;
         print("dashed");
+        audioSource2.Play();
 
         if(direction == 1)
         {
@@ -58,5 +63,8 @@ public class Dash : MonoBehaviour
         }
 
         dashing = false;
+        yield return new WaitForSeconds(coolDown);
+        canDash = true;
+        
     }
 }
