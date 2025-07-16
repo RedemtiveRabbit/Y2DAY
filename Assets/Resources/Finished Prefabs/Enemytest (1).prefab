@@ -111,7 +111,7 @@ MonoBehaviour:
   followSpeed: 0.1
   body: {fileID: 5102939296870321053}
   speed: 1
-  distanceBetween: 2
+  distanceBetween: 1.5
   playerMovement: {fileID: 0}
   HP: 3
   knockBackStrength: 12
