@@ -5,12 +5,16 @@ public class MovePlayerPos
 {
     public GameObject player;
     public Vector2 spawnPosition;
-    
-    public void MovePlayerPosition()
+    void Start()
     {
+        
         if (player != null)
         {
-            player.transform.position = spawnPosition;
+        player.transform.position = spawnPosition;
         }
+    }
+    public void MovePlayerPosition()
+    {
+
     }
 }
