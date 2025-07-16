@@ -21,7 +21,7 @@ public class Health : MonoBehaviour
     {
         if (transform.localScale.x > 0)
         {
-           transform.localScale -= new Vector3(0.04f, 0.04f, 0.04f);
+           transform.localScale -= new Vector3(0.08f, 0.08f, 0.08f);
         }
         else
         {
