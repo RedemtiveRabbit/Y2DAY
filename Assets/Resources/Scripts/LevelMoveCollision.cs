@@ -4,8 +4,6 @@ using UnityEngine.SceneManagement;
 
 public class LevelMoveCollision : MonoBehaviour
 {
-    public GameObject player;
-    public MovePlayerPos movePlayerPos;
     public int destination;
     private void OnTriggerEnter2D(Collider2D other)
     {
@@ -14,7 +12,6 @@ public class LevelMoveCollision : MonoBehaviour
         if(other.tag == "Player")
         {
             SceneManager.LoadScene(destination, LoadSceneMode.Single);
-            player.GetComponent<MovePlayerPos>().MovePlayerPosition();
         }
     }
 }
