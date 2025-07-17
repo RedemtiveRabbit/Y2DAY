@@ -24,6 +24,7 @@ public class PlayerMovement : MonoBehaviour
     private void Awake()
     {
         //DontDestroyOnLoad(this);
+        Time.timeScale = 1f;
     }
     void Start()
     {
