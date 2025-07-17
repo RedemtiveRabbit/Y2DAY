@@ -28,6 +28,7 @@ public class PlayerMovement : MonoBehaviour
     void Start()
     {
         body = GetComponent<Rigidbody2D>();
+        swing.shouldYouAttack = false;
     }
 
     void FixedUpdate()
@@ -95,6 +96,7 @@ public class PlayerMovement : MonoBehaviour
             if(body.linearVelocityX != 0 ||  body.linearVelocityY != 0)
             {
                 walking = true;
+                swing.shouldYouAttack = true;
             }
             else
             {

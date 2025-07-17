@@ -17,6 +17,7 @@ public class Swing : MonoBehaviour
     public bool attacking;
     public float hitBoxDelay;
     public bool canAttack;
+    public bool shouldYouAttack;
     public AudioSource audioSource;
 
 
@@ -37,7 +38,7 @@ public class Swing : MonoBehaviour
         spriteDirection = playerMovement.spriteDirection;
         string currentSceneName = SceneManager.GetActiveScene().name;
         // so it's a little more convenient to refer to the sprite's direction later
-        if(currentSceneName == "House Floor One")
+        if(currentSceneName == "House Floor One" || currentSceneName == "Basement")
         {
             canAttack = false;
         }
@@ -46,7 +47,7 @@ public class Swing : MonoBehaviour
             canAttack = true;
         }
 
-        if (Input.GetButtonDown("Fire1") && !attacking && canAttack)
+        if (Input.GetButtonDown("Fire1") && !attacking && canAttack && shouldYouAttack)
         {
             StartCoroutine(BoxRoutine());
         }
