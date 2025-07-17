@@ -19178,7 +19178,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b6b6faa3cb39f14d8823cfec280ab74, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interactionDetector: {fileID: 0}
+  interactionDetector: {fileID: 1851848611}
   dialoguePanel: {fileID: 0}
   dialogueText: {fileID: 0}
   dialogue: []
