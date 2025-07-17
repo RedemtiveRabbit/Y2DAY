@@ -5,13 +5,31 @@ using UnityEngine.SceneManagement;
 public class LevelMoveCollision : MonoBehaviour
 {
     public int destination;
-    private void OnTriggerEnter2D(Collider2D other)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
         print("Trigger Entered");
 
-        if(other.tag == "Player")
+        if(collision.tag == "Player")
         {
+            if (collision.GetComponent<PlayerMovement>() != null)
+            {
+                if (spawnDestination == null || spawnDestination.Length == 0)
+                {
+                    PlayerMovement.destination = null;
+                }
+                else
+                {
+                    PlayerMovement.destination = spawnDestination;
+                }
+            }
             SceneManager.LoadScene(destination, LoadSceneMode.Single);
         }
     }
+
+    public string spawnDestination = "";
+    private void Start()
+    {
+        
+    }
+    
 }

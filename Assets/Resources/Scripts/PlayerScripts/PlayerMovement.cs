@@ -29,6 +29,15 @@ public class PlayerMovement : MonoBehaviour
     {
         body = GetComponent<Rigidbody2D>();
         swing.shouldYouAttack = false;
+
+        if (destination != null)
+        {
+            if (GameObject.Find(destination) is var target)
+            {
+                transform.position = target.transform.position;
+            }
+            destination = null;
+        }
     }
 
     void FixedUpdate()
@@ -141,4 +150,32 @@ public class PlayerMovement : MonoBehaviour
 
         }
     }
+
+    public static string? destination { get; set; } = null;
+
+    // PlayerMovement.destination = "door3";
 }
+/*
+class Exit : MonoBehaviour
+{
+    public string destination = "";
+    private void Start()
+    {
+        
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.GetComponent<PlayerMovement>() != null)
+        {
+            if (destination == null || destination.Length == 0)
+            {
+                PlayerMovement.destination = null;
+            } else
+            {
+                PlayerMovement.destination = destination;
+            }
+            SceneTransition.Go();
+        }
+    }
+}*/
