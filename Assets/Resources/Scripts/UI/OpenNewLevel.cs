@@ -8,6 +8,7 @@ public class OpenNewLevel : MonoBehaviour
     public void OpenMall()
     {
         SceneManager.LoadScene(12);
+        Time.timeScale = 1f;
     }
 
     public void Locked()
