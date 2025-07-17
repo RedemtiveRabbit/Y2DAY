@@ -50,6 +50,22 @@ EditorBuildSettings:
     path: Assets/Resources/Scenes/Scenes for Final Game/Mall/Mall Level 1 Variants/Mall
       Level 1.unity
     guid: 68a124033f1ca164f8e2ac70992ca55a
+  - enabled: 1
+    path: Assets/Resources/Scenes/Scenes for Final Game/Mall/Mall Level 2 Variants/Mall
+      Level 2.unity
+    guid: f83f0e1df8e51b44a86a4be599351021
+  - enabled: 1
+    path: Assets/Resources/Scenes/Scenes for Final Game/Mall/Mall Level 3 Variants/Mall
+      Level 3.unity
+    guid: 53a48a209d0114b47a3ea0a376600e10
+  - enabled: 1
+    path: Assets/Resources/Scenes/Scenes for Final Game/Mall/Mall Level 4 Variants/Mall
+      Level 4.unity
+    guid: 7f0ecbcf75881fe40a256f10d35f7f78
+  - enabled: 1
+    path: Assets/Resources/Scenes/Scenes for Final Game/Mall/Mall Level 5 Variants/Mall
+      Level 5.unity
+    guid: d6d90ac3db1af914cacc5791aabf9996
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
