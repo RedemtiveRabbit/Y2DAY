@@ -1,5 +1,6 @@
 using UnityEditor.Build.Content;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class PlayerHealth : MonoBehaviour
 {
@@ -9,6 +10,7 @@ public class PlayerHealth : MonoBehaviour
     public AudioSource auidoSource;
     public AudioClip hurt;
     public DeathScreen deathScreen;
+    public GameObject Respawn;
 
     private bool isDead;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -29,6 +31,8 @@ public class PlayerHealth : MonoBehaviour
         knockback.Knockback();
         if(health <= 0 && !isDead)
         {
+            EventSystem.current.SetSelectedGameObject(null);
+            EventSystem.current.SetSelectedGameObject(Respawn);
             Die();
         }
 
