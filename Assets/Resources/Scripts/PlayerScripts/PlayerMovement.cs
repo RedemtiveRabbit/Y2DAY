@@ -153,7 +153,6 @@ public class PlayerMovement : MonoBehaviour
 
     public static string? destination { get; set; } = null;
 
-    // PlayerMovement.destination = "door3";
 }
 /*
 class Exit : MonoBehaviour

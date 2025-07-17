@@ -1,10 +1,15 @@
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class EscapeMenu : MonoBehaviour
 {
     public static bool gameIsPaused = false;
     public GameObject pauseMenuUI;
+    public GameObject pauseFirstButton;
+
+    
+    
     void Start()
     {
         pauseMenuUI.SetActive(false);
@@ -16,7 +21,7 @@ public class EscapeMenu : MonoBehaviour
             if (gameIsPaused)
             {
                 Resume();
-            }
+            } 
             else
             {
                 Pause();
@@ -35,6 +40,9 @@ public class EscapeMenu : MonoBehaviour
     {
         pauseMenuUI.SetActive(true);
         Time.timeScale = 0f;
-        gameIsPaused = true;   
+        gameIsPaused = true;
+
+        EventSystem.current.SetSelectedGameObject(null);
+        EventSystem.current.SetSelectedGameObject(pauseFirstButton);
     }
 }
