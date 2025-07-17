@@ -761,6 +761,9 @@ MonoBehaviour:
   health: 0
   maxHealth: 3
   knockback: {fileID: 815227072}
+  auidoSource: {fileID: 0}
+  hurt: {fileID: 0}
+  deathScreen: {fileID: 0}
 --- !u!114 &815227072
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -858,6 +861,9 @@ MonoBehaviour:
   dashStrength: 7.5
   dashTime: 0.1
   dashing: 0
+  audioSource2: {fileID: 0}
+  coolDown: 0
+  canDash: 1
 --- !u!58 &815227077
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -1055,6 +1061,7 @@ MonoBehaviour:
   playerMovement: {fileID: 815227073}
   HP: 200
   AIChase: {fileID: 1273513959}
+  audioSource: {fileID: 0}
 --- !u!195 &1273513958
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -1101,6 +1108,8 @@ MonoBehaviour:
   knockbackinating: 0
   lastMoveDirEnemy: {x: 0, y: 0}
   keepDistance: 0.1
+  walking: 0
+  animator: {fileID: 0}
 --- !u!61 &1273513960
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1624,6 +1633,7 @@ MonoBehaviour:
   attacking: 0
   hitBoxDelay: 0.25
   canAttack: 0
+  audioSource: {fileID: 0}
 --- !u!58 &2071832547
 CircleCollider2D:
   m_ObjectHideFlags: 0
