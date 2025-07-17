@@ -346,6 +346,9 @@ MonoBehaviour:
   dashStrength: 5
   dashTime: 1
   dashing: 0
+  audioSource2: {fileID: 0}
+  coolDown: 0
+  canDash: 1
 --- !u!114 &216009328
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -361,6 +364,9 @@ MonoBehaviour:
   health: 3
   maxHealth: 5
   knockback: {fileID: 0}
+  auidoSource: {fileID: 0}
+  hurt: {fileID: 0}
+  deathScreen: {fileID: 0}
 --- !u!1 &440376961
 GameObject:
   m_ObjectHideFlags: 0
@@ -635,7 +641,7 @@ Transform:
   m_GameObject: {fileID: 825593250}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -10.64, y: 4.13, z: 10}
+  m_LocalPosition: {x: -6.26, y: 4.13, z: 10}
   m_LocalScale: {x: 100, y: 100, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
