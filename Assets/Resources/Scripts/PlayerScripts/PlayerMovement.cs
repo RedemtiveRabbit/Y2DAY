@@ -21,6 +21,10 @@ public class PlayerMovement : MonoBehaviour
 
     public float moveSpeed;
 
+    private void Awake()
+    {
+        //DontDestroyOnLoad(this);
+    }
     void Start()
     {
         body = GetComponent<Rigidbody2D>();
