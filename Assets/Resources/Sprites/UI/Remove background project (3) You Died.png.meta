@@ -1,10 +1,19 @@
 fileFormatVersion: 2
-guid: 79814570e2834174caae8b9cd22f7e1d
+guid: 639f977fe9a049848a34145e89f6f76b
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2567227191007692400
-    second: Respawn png_0
+      213: 7185344100946400307
+    second: Remove background project (3) You Died_0
+  - first:
+      213: -4468739701737014971
+    second: Remove background project (3) You Died_1
+  - first:
+      213: -2580013880137723313
+    second: Remove background project (3) You Died_2
+  - first:
+      213: 74302492151989963
+    second: Remove background project (3) You Died_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +46,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -126,13 +135,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Respawn png_0
+      name: Remove background project (3) You Died_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 1920
-        height: 1080
+        x: 64
+        y: 742
+        width: 447
+        height: 193
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +150,74 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 076ccb9478f90a320800000000000000
-      internalID: 2567227191007692400
+      spriteID: 334dbd5e36877b360800000000000000
+      internalID: 7185344100946400307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Remove background project (3) You Died_1
+      rect:
+        serializedVersion: 2
+        x: 523
+        y: 742
+        width: 299
+        height: 297
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 549b74ceae8dbf1c0800000000000000
+      internalID: -4468739701737014971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Remove background project (3) You Died_2
+      rect:
+        serializedVersion: 2
+        x: 829
+        y: 742
+        width: 126
+        height: 193
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4250d6ab03f13cd0800000000000000
+      internalID: -2580013880137723313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Remove background project (3) You Died_3
+      rect:
+        serializedVersion: 2
+        x: 961
+        y: 742
+        width: 161
+        height: 193
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc645a219b9f70100800000000000000
+      internalID: 74302492151989963
       vertices: []
       indices: 
       edges: []
@@ -161,7 +236,10 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Respawn png_0: 2567227191007692400
+      Remove background project (3) You Died_0: 7185344100946400307
+      Remove background project (3) You Died_1: -4468739701737014971
+      Remove background project (3) You Died_2: -2580013880137723313
+      Remove background project (3) You Died_3: 74302492151989963
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

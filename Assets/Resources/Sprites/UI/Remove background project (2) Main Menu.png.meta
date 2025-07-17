@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: c4d513dfeae8c984cae515050b043209
+guid: 3eb222214ffe9564ab03f0661e9d6253
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7133230849722980620
-    second: tile001_0
+      213: 2450038385227191811
+    second: Remove background project (2) Main Menu_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -126,13 +126,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: tile001_0
+      name: Remove background project (2) Main Menu_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 1920
-        height: 360
+        x: 74
+        y: 432
+        width: 998
+        height: 244
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4f6676de55ca10d90800000000000000
-      internalID: -7133230849722980620
+      spriteID: 306d9853ee8400220800000000000000
+      internalID: 2450038385227191811
       vertices: []
       indices: 
       edges: []
@@ -161,7 +161,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      tile001_0: -7133230849722980620
+      Remove background project (2) Main Menu_0: 2450038385227191811
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
