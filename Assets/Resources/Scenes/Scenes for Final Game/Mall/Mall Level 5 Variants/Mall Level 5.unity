@@ -253,11 +253,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 651761450977665742, guid: 719cf70990803bd4f9fc6067d754b7e2, type: 3}
       propertyPath: m_LocalScale.x
-      value: 38.40212
+      value: 609.94086
       objectReference: {fileID: 0}
     - target: {fileID: 651761450977665742, guid: 719cf70990803bd4f9fc6067d754b7e2, type: 3}
       propertyPath: m_LocalScale.y
-      value: 23.214855
+      value: 140.06218
       objectReference: {fileID: 0}
     - target: {fileID: 651761450977665742, guid: 719cf70990803bd4f9fc6067d754b7e2, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4602,6 +4602,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pauseMenuUI: {fileID: 1957819868}
+  pauseFirstButton: {fileID: 0}
+  Resumeb: {fileID: 0}
 --- !u!114 &1452769733
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6238,6 +6240,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   destination: 15
+  spawnDestination: Room 5 ent
 --- !u!61 &1969482700
 BoxCollider2D:
   m_ObjectHideFlags: 0
