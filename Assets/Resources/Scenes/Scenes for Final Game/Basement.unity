@@ -1591,7 +1591,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   destination: 10
-  spawnDestination: 
+  spawnDestination: Stairs Exit
 --- !u!61 &357979740
 BoxCollider2D:
   m_ObjectHideFlags: 0
