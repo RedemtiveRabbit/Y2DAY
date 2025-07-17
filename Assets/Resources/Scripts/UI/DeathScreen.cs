@@ -15,6 +15,7 @@ public class DeathScreen : MonoBehaviour
 
     public void gameOver()
     {
+        print("flkb");
         deathScreenUI.SetActive(true);
         Time.timeScale = 0f;
     }
