@@ -7801,7 +7801,7 @@ PrefabInstance:
     - target: {fileID: 5258219023258853504, guid: 5e5a4572086676848a5d7318889911ba, type: 3}
       propertyPath: deathScreen
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1549271934}
     - target: {fileID: 6480935487120964341, guid: 5e5a4572086676848a5d7318889911ba, type: 3}
       propertyPath: npc
       value: 
