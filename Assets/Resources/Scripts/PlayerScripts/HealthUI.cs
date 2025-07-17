@@ -3,6 +3,9 @@ using UnityEngine;
 public class HealthUI : MonoBehaviour
 {
     public PlayerHealth playerHealth;
+    public Sprite sixHealth;
+    public Sprite fiveHealth;
+    public Sprite fourHealth;
     public Sprite threeHealth;
     public Sprite twoHealth;
     public Sprite oneHealth;
@@ -22,14 +25,26 @@ void FixedUpdate()
     void UpdateSprite()
     {
         SpriteRenderer sprite = gameObject.GetComponent<SpriteRenderer>();
-
-        if (playerHealth.health == 3)
+       
+        if (playerHealth.health == 6)
+        {
+            sprite.sprite = sixHealth;
+        }
+        else if (playerHealth.health == 5)
+        {
+            sprite.sprite = fiveHealth;
+        }
+        else if(playerHealth.health == 4)
+        {
+            sprite.sprite= fourHealth;
+        }
+        else if (playerHealth.health == 3)
         {
             sprite.sprite = threeHealth;
         }
-        else if(playerHealth.health == 2)
+        else if (playerHealth.health == 2)
         {
-            sprite.sprite= twoHealth;
+            sprite.sprite = twoHealth;
         }
         else if (playerHealth.health == 1)
         {
