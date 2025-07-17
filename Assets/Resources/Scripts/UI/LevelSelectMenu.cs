@@ -14,7 +14,7 @@ public class LevelSelectMenu : MonoBehaviour, IInteractable
     {
         if (interactionDetector.interactionIcon.activeSelf)
         {
-            if (Input.GetKeyDown(KeyCode.F))
+            if (Input.GetButtonDown("Interact"))
             {
                 if (gameIsPaused)
                 {
