@@ -9028,21 +9028,13 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 46088936}
     m_Modifications:
-    - target: {fileID: 698559338797605549, guid: 1e8471bc904a9854482c05bd70a69e3e, type: 3}
-      propertyPath: m_SortingLayer
-      value: -6
-      objectReference: {fileID: 0}
-    - target: {fileID: 698559338797605549, guid: 1e8471bc904a9854482c05bd70a69e3e, type: 3}
-      propertyPath: m_SortingLayerID
-      value: 604195201
-      objectReference: {fileID: 0}
     - target: {fileID: 4926791939165523121, guid: 1e8471bc904a9854482c05bd70a69e3e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 4.43
+      value: 4.492
       objectReference: {fileID: 0}
     - target: {fileID: 4926791939165523121, guid: 1e8471bc904a9854482c05bd70a69e3e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 4.448
+      value: 4.4153876
       objectReference: {fileID: 0}
     - target: {fileID: 4926791939165523121, guid: 1e8471bc904a9854482c05bd70a69e3e, type: 3}
       propertyPath: m_LocalPosition.z
