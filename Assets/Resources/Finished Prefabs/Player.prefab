@@ -121,7 +121,7 @@ MonoBehaviour:
   spriteDirection: 0
   walking: 0
   animator: {fileID: 6443245576035584201}
-  moveSpeed: 1
+  moveSpeed: 1.25
   lastMoveDir: {x: 0, y: 0}
 --- !u!50 &2404058014496085773
 Rigidbody2D:
@@ -182,7 +182,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 0
-  maxHealth: 3
+  maxHealth: 5
   knockback: {fileID: 4598314663353669128}
   auidoSource: {fileID: 5426160639727166202}
   hurt: {fileID: 8300000, guid: 5250ad612fbb5b0479f0addbadf9fc09, type: 3}
