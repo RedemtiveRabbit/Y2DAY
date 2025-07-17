@@ -34,6 +34,7 @@ public class NPC : MonoBehaviour, IInteractable
                 {
                     dialoguePanel.SetActive(true);
                     StartCoroutine(Typing());
+
                 }
             }
         }
