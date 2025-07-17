@@ -19,6 +19,7 @@ public class Swing : MonoBehaviour
     public bool canAttack;
     public bool shouldYouAttack;
     public AudioSource audioSource;
+    public NPC npc;
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -47,7 +48,7 @@ public class Swing : MonoBehaviour
             canAttack = true;
         }
 
-        if (Input.GetButtonDown("Fire1") && !attacking && canAttack && shouldYouAttack)
+        if (Input.GetButtonDown("Fire1") && !attacking && canAttack && shouldYouAttack && !npc.dialoguePanel.activeInHierarchy)
         {
             StartCoroutine(BoxRoutine());
         }

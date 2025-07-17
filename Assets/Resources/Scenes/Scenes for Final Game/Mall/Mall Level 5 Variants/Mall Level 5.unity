@@ -6333,6 +6333,10 @@ PrefabInstance:
       propertyPath: interactionIcon
       value: 
       objectReference: {fileID: 714605212}
+    - target: {fileID: 6480935487120964341, guid: 5e5a4572086676848a5d7318889911ba, type: 3}
+      propertyPath: npc
+      value: 
+      objectReference: {fileID: 818596430}
     - target: {fileID: 6710229998392539771, guid: 5e5a4572086676848a5d7318889911ba, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
