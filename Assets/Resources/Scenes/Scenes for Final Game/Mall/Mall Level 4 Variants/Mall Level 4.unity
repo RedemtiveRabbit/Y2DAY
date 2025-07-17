@@ -2430,9 +2430,20 @@ PrefabInstance:
       propertyPath: npc
       value: 
       objectReference: {fileID: 814254860}
+    - target: {fileID: 6710229998392539771, guid: 5e5a4572086676848a5d7318889911ba, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6710229998392539771, guid: 5e5a4572086676848a5d7318889911ba, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 137041283021740479, guid: 5e5a4572086676848a5d7318889911ba, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2076431509}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5e5a4572086676848a5d7318889911ba, type: 3}
 --- !u!4 &122422833 stripped
@@ -2820,6 +2831,37 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8e0e144af88c42a49b6d3a3a08c63e2b, type: 3}
+--- !u!1 &154047011
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 154047012}
+  m_Layer: 0
+  m_Name: Room 5 ent
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &154047012
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 154047011}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 9.012, y: 3.141, z: 0.032336626}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &155890574
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6013,7 +6055,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 914357414}
     m_Modifications:
     - target: {fileID: 4724136350786708538, guid: d0edc3ddfb9e43e46a2c79c3c89916ce, type: 3}
       propertyPath: m_ExcludeLayers.m_Bits
@@ -6025,11 +6067,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8701992671476353825, guid: d0edc3ddfb9e43e46a2c79c3c89916ce, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.027
+      value: 0.09044218
       objectReference: {fileID: 0}
     - target: {fileID: 8701992671476353825, guid: d0edc3ddfb9e43e46a2c79c3c89916ce, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2
+      value: 0.013680935
       objectReference: {fileID: 0}
     - target: {fileID: 8701992671476353825, guid: d0edc3ddfb9e43e46a2c79c3c89916ce, type: 3}
       propertyPath: m_LocalPosition.z
@@ -9462,7 +9504,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   destination: 12
-  spawnDestination: 
+  spawnDestination: Escalator Entrance
 --- !u!1001 &709761582
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10527,7 +10569,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0, y: 5.3731995}
+  m_AnchoredPosition: {x: 0, y: 5.373169}
   m_SizeDelta: {x: 206.1366, y: 161.1968}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!4 &781127051 stripped
@@ -12580,6 +12622,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 272b23df33c8d8348beeb14bfc84fcd0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!4 &914357414 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 137041283021740479, guid: 5e5a4572086676848a5d7318889911ba, type: 3}
+  m_PrefabInstance: {fileID: 114216821}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &922532443
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -25313,6 +25360,37 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8e0e144af88c42a49b6d3a3a08c63e2b, type: 3}
+--- !u!1 &1895923582
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1895923583}
+  m_Layer: 0
+  m_Name: Escalator Exit
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1895923583
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1895923582}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -2.25, y: 1.8, z: 0.032336626}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1901233311
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -28389,7 +28467,6 @@ PrefabInstance:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
-  - {fileID: 388949915}
   - {fileID: 46088936}
   - {fileID: 583613114}
   - {fileID: 114216821}
@@ -28417,3 +28494,5 @@ SceneRoots:
   - {fileID: 699350007}
   - {fileID: 1785479445}
   - {fileID: 1274711800}
+  - {fileID: 1895923583}
+  - {fileID: 154047012}

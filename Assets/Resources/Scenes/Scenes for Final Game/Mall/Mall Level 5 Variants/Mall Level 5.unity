@@ -4602,6 +4602,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pauseMenuUI: {fileID: 1957819868}
+  pauseFirstButton: {fileID: 0}
 --- !u!114 &1452769733
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6238,6 +6239,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   destination: 15
+  spawnDestination: Room 5 ent
 --- !u!61 &1969482700
 BoxCollider2D:
   m_ObjectHideFlags: 0
