@@ -8556,7 +8556,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interactionDetector: {fileID: 1861316684}
-  dialoguePanel: {fileID: 0}
+  dialoguePanel: {fileID: 504067045}
   dialogueText: {fileID: 1157229617}
   dialogue:
   - 

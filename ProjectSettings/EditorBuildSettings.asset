@@ -9,33 +9,31 @@ EditorBuildSettings:
     path: Assets/Scenes/SampleScene.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
   - enabled: 1
-    path: Assets/Resources/Scenes/Scenes for Final Game/Old Test Scenes/Menu Test.unity
+    path: Assets/Resources/Scenes/Old Test Scenes/Menu Test.unity
     guid: b83b1fcc6e2ee3542911615cb5b4f1a6
   - enabled: 1
-    path: Assets/Resources/Scenes/Scenes for Final Game/Old Test Scenes/Menu Destination.unity
+    path: Assets/Resources/Scenes/Old Test Scenes/Menu Destination.unity
     guid: 5d20a06a14b602d428bb557197cdd46b
   - enabled: 1
-    path: Assets/Resources/Scenes/Scenes for Final Game/Old Test Scenes/Attack Test.unity
+    path: Assets/Resources/Scenes/Old Test Scenes/Attack Test.unity
     guid: e09fe167f168e354ea0734374c86772a
   - enabled: 1
-    path: Assets/Resources/Scenes/Scenes for Final Game/Old Test Scenes/Combat Test.unity
+    path: Assets/Resources/Scenes/Old Test Scenes/Combat Test.unity
     guid: 9f45fdb6f7d3c41428442f2463703c99
   - enabled: 1
-    path: Assets/Resources/Scenes/Scenes for Final Game/Old Test Scenes/Damge Test.unity
+    path: Assets/Resources/Scenes/Old Test Scenes/Damge Test.unity
     guid: ab3bf3a5a01eea04790c98c2989f0680
   - enabled: 1
-    path: Assets/Resources/Scenes/Scenes for Final Game/Old Test Scenes/Death Test.unity
+    path: Assets/Resources/Scenes/Old Test Scenes/Death Test.unity
     guid: 7d382f9b2adbf00479f335b5a8e07237
   - enabled: 1
-    path: Assets/Resources/Scenes/Scenes for Final Game/Old Test Scenes/Health UI
-      Test.unity
+    path: Assets/Resources/Scenes/Old Test Scenes/Health UI Test.unity
     guid: 5bb55d0376a6251489fe53242a2d386e
   - enabled: 1
-    path: Assets/Resources/Scenes/Scenes for Final Game/Old Test Scenes/Path Finding
-      Test.unity
+    path: Assets/Resources/Scenes/Old Test Scenes/Path Finding Test.unity
     guid: 95c2a6141d86e3f40845b6943025aa95
   - enabled: 1
-    path: Assets/Resources/Scenes/Scenes for Final Game/Old Test Scenes/Proto Scene.unity
+    path: Assets/Resources/Scenes/Old Test Scenes/Proto Scene.unity
     guid: 23dda2519df55cc4196a2c6aba6c494c
   - enabled: 1
     path: Assets/Resources/Scenes/Scenes for Final Game/Main Menu.unity

@@ -15501,7 +15501,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interactionDetector: {fileID: 922210954}
-  dialoguePanel: {fileID: 0}
+  dialoguePanel: {fileID: 524805464}
   dialogueText: {fileID: 1448296398}
   dialogue:
   - 
