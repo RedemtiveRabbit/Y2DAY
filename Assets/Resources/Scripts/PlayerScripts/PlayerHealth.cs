@@ -30,7 +30,7 @@ public class PlayerHealth : MonoBehaviour
         if (invincible == true)
         {
             timer += Time.deltaTime;
-            if (timer > 2)
+            if (timer > .35)
             {
                 invincible = false;
                 timer = 0;
@@ -39,14 +39,14 @@ public class PlayerHealth : MonoBehaviour
     }
     public void TakeDamage(int amount) 
     {
-        //if(invincible == false)
-        //{
+        if(invincible == false)
+        {
             auidoSource.PlayOneShot(hurt);
             health -= amount;
             knockback.Knockback();
             invincible = true;
 
-        //}
+        }
 
         if(health <= 0 && !isDead)
         {
