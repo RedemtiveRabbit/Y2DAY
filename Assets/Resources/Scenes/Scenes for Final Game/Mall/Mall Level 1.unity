@@ -2781,13 +2781,41 @@ PrefabInstance:
       propertyPath: m_Name
       value: Healthpack
       objectReference: {fileID: 0}
+    - target: {fileID: 2471002361775566384, guid: c8e1e2a41b475174a84587a8fb9350be, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -4582097540375121775, guid: 558e6e40e1e49764f8483b21b27bc788, type: 3}
+    - target: {fileID: 2471002361775566384, guid: c8e1e2a41b475174a84587a8fb9350be, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2471002361775566384, guid: c8e1e2a41b475174a84587a8fb9350be, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2471002361775566384, guid: c8e1e2a41b475174a84587a8fb9350be, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6507221942019333279, guid: c8e1e2a41b475174a84587a8fb9350be, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6507221942019333279, guid: c8e1e2a41b475174a84587a8fb9350be, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6507221942019333279, guid: c8e1e2a41b475174a84587a8fb9350be, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.0076104566
+      objectReference: {fileID: 0}
     - target: {fileID: 6507221942019333279, guid: c8e1e2a41b475174a84587a8fb9350be, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 31693.54
+      value: 31693.51
       objectReference: {fileID: 0}
     - target: {fileID: 6507221942019333279, guid: c8e1e2a41b475174a84587a8fb9350be, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1382.357
+      value: 1382.3
       objectReference: {fileID: 0}
     - target: {fileID: 6507221942019333279, guid: c8e1e2a41b475174a84587a8fb9350be, type: 3}
       propertyPath: m_LocalPosition.z
@@ -14156,6 +14184,7 @@ MonoBehaviour:
   dialogueText: {fileID: 1448296398}
   dialogue:
   - 
+  couch: {fileID: 0}
   contButton: {fileID: 404408303}
   wordSpeed: 0
 --- !u!212 &1633525550
