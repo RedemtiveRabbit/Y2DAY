@@ -19,6 +19,7 @@ public class Dash : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        
         body = GetComponent<Rigidbody2D>();
     }
 
@@ -39,8 +40,8 @@ public class Dash : MonoBehaviour
         canDash = false;
         print("dashed");
         audioSource2.Play();
-
-        if(direction == 1)
+        
+        if (direction == 1)
         {
             body.linearVelocityY = dashStrength;
             yield return new WaitForSeconds(dashTime);
@@ -64,8 +65,9 @@ public class Dash : MonoBehaviour
             yield return new WaitForSeconds(dashTime);
             body.linearVelocityX = xVelocity;
         }
-
+        
         dashing = false;
+        
         yield return new WaitForSeconds(coolDown);
         canDash = true;
         

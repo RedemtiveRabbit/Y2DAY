@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEditor.Build.Content;
 using UnityEngine;
 using UnityEngine.EventSystems;
@@ -11,6 +12,8 @@ public class PlayerHealth : MonoBehaviour
     public AudioClip hurt;
     public DeathScreen deathScreen;
     public GameObject Respawn;
+    public bool invincible;
+    private float timer;
 
     private bool isDead;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -23,12 +26,28 @@ public class PlayerHealth : MonoBehaviour
     void Update()
     {
         
+
+        if (invincible == true)
+        {
+            timer += Time.deltaTime;
+            if (timer > 2)
+            {
+                invincible = false;
+                timer = 0;
+            }
+        }
     }
     public void TakeDamage(int amount) 
     {
-        auidoSource.PlayOneShot(hurt);
-        health -= amount;
-        knockback.Knockback();
+        //if(invincible == false)
+        //{
+            auidoSource.PlayOneShot(hurt);
+            health -= amount;
+            knockback.Knockback();
+            invincible = true;
+
+        //}
+
         if(health <= 0 && !isDead)
         {
             EventSystem.current.SetSelectedGameObject(null);
