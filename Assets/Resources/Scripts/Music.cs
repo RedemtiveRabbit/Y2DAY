@@ -56,6 +56,24 @@ public class Music : MonoBehaviour
             playingGwen = false;
             playingMall = false;
             playingHouse = false;
+            if(SceneManager.GetActiveScene().name == "Basement")
+            {
+                audioSource.PlayOneShot(house);
+                audioSource.loop = true;
+                print("played house");
+                playingHouse = true;
+                playingMall = false;
+                playingGwen = false;
+            }
+            if(SceneManager.GetActiveScene().name == "Mall Level 2" || SceneManager.GetActiveScene().name == "Mall Level 3" || SceneManager.GetActiveScene().name == "Mall Level 4")
+            {
+                audioSource.PlayOneShot(mall);
+                audioSource.loop = true;
+                print("played mall");
+                playingMall = true;
+                playingHouse = false;
+                playingGwen = false;
+            }
         }
 
     }
