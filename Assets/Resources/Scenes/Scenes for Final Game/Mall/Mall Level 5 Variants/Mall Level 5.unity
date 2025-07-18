@@ -1042,14 +1042,14 @@ RectTransform:
   m_GameObject: {fileID: 163988794}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.7306061, y: 0.7306061, z: 0.7306061}
+  m_LocalScale: {x: 1.3709208, y: 2.2537131, z: 2.2537131}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 2108780762}
+  m_Father: {fileID: 1121981396}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 102.65018, y: -64.95089}
+  m_AnchoredPosition: {x: 619, y: -177}
   m_SizeDelta: {x: 325.0314, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &163988796
@@ -1099,8 +1099,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 15
-  m_fontSizeBase: 15
+  m_fontSize: 30
+  m_fontSizeBase: 30
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -2109,7 +2109,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Continue
+  m_text: Continue (A)
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2131,7 +2131,7 @@ MonoBehaviour:
   m_spriteAsset: {fileID: 0}
   m_tintAllSprites: 0
   m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: -1183493901
+  m_TextStyleHashCode: 93368250
   m_overrideHtmlColors: 0
   m_faceColor:
     serializedVersion: 2
@@ -2942,15 +2942,15 @@ RectTransform:
   m_GameObject: {fileID: 766569044}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.32417879, y: 0.3241788, z: 0.3241788}
+  m_LocalScale: {x: 1.1710879, y: 1.9252, z: 1.9252}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 543438174}
-  m_Father: {fileID: 2108780762}
+  m_Father: {fileID: 1121981396}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -319.8, y: -135.50674}
+  m_AnchoredPosition: {x: -552, y: -230}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &766569046
@@ -2998,7 +2998,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 818596430}
-        m_TargetAssemblyTypeName: NPC, Assembly-CSharp
+        m_TargetAssemblyTypeName: NPCGwen, Assembly-CSharp
         m_MethodName: NextLine
         m_Mode: 1
         m_Arguments:
@@ -3419,25 +3419,24 @@ MonoBehaviour:
   m_GameObject: {fileID: 818596425}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1b6b6faa3cb39f14d8823cfec280ab74, type: 3}
+  m_Script: {fileID: 11500000, guid: 628310e1340498248b5d81d799692d59, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   interactionDetector: {fileID: 1975765198}
   dialoguePanel: {fileID: 1121981395}
   dialogueText: {fileID: 1156663419}
   dialogue:
-  - "Oh. God. Please tell me you\u2019re actually human. Not one of those\u2026 things."
-  - "\u2026\u2026You aren\u2019t? You heard my distress signal? Oh, hell yeah. I\u2019ve
-    been hiding in this room for nearly the entire day after this swarm of apocalytes
-    took over the mall."
-  - "This was THE PLACE for all my supplies.. but of course I didn\u2019t remember
-    to bring a weapon."
-  - "My friends? Well\u2026 they\u2019re kinda gone. ha. Lost to the apocalytes on
-    the way here. Not really sure what to do anymore.."
-  - "wait. I can come with you? Wait.. you\u2019ve been collecting furniture!? What
-    about food? Water? You know what, I'm into that. "
-  - "If you got some space, I\u2019ll gladly take over a little nook? "
-  - "Oh, and I\u2019m Gwen by the way. Sorry, should\u2019ve said that earlier. Heh. "
+  - "Oh. God. Please tell me you\u2019re actually human."
+  - "Not one of those\u2026 things."
+  - "You aren\u2019t?"
+  - You heard my distress signal?
+  - "I\u2019ve been hiding in this room for nearly the entire day after this swarm
+    of apocalytes took over the mall."
+  - I can come with you?
+  - "You\u2019ve been collecting furniture!? What about food? Water?"
+  - You know what, I'm in no place to judge.
+  - "If you got some space, I\u2019ll gladly take over a little nook."
+  - "Oh, and I\u2019m Gwen by the way. Sorry, should\u2019ve said that earlier."
   contButton: {fileID: 766569044}
   wordSpeed: 0.025
 --- !u!1001 &829341171
@@ -4768,6 +4767,9 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2108780762}
+  - {fileID: 766569045}
+  - {fileID: 163988795}
+  - {fileID: 1156663418}
   m_Father: {fileID: 105016769}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -4897,14 +4899,14 @@ RectTransform:
   m_GameObject: {fileID: 1156663417}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.32417879, y: 0.3241788, z: 0.3241788}
+  m_LocalScale: {x: 0.6082941, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 2108780762}
+  m_Father: {fileID: 1121981396}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -254.5, y: -106.97901}
+  m_AnchoredPosition: {x: -468, y: -74}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1156663419
@@ -4954,8 +4956,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 72
+  m_fontSizeBase: 72
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -4992,7 +4994,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -185.33304, y: -40.835327, z: -777.11615, w: -46.22287}
+  m_margin: {x: -185.33304, y: -238.4354, z: -1118.761, w: -46.22287}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -5813,6 +5815,135 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2112860570738649164, guid: 8aa987a7063e5254fae8cb7126bee30a, type: 3}
   m_PrefabInstance: {fileID: 1759081264}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1442019616
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1442019618}
+  - component: {fileID: 1442019617}
+  m_Layer: 0
+  m_Name: Audio Source
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!82 &1442019617
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1442019616}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: f4b4c660c7b21b14b9a06ea6c6554c9d, type: 3}
+  m_Resource: {fileID: 8300000, guid: f4b4c660c7b21b14b9a06ea6c6554c9d, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!4 &1442019618
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1442019616}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1294.3718, y: 264.02533, z: -7.052921}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1447466339 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 374639031901243357, guid: 4458512fa92139a43be588daa665093d, type: 3}
@@ -7843,7 +7974,7 @@ PrefabInstance:
     - target: {fileID: 6480935487120964341, guid: 5e5a4572086676848a5d7318889911ba, type: 3}
       propertyPath: npc
       value: 
-      objectReference: {fileID: 818596430}
+      objectReference: {fileID: 0}
     - target: {fileID: 6710229998392539771, guid: 5e5a4572086676848a5d7318889911ba, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -8154,17 +8285,14 @@ RectTransform:
   m_GameObject: {fileID: 2108780761}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.8764157, y: 3.0847173, z: 3.0847173}
+  m_LocalScale: {x: 4.1412497, y: 6.807971, z: 6.807971}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 766569045}
-  - {fileID: 163988795}
-  - {fileID: 1156663418}
+  m_Children: []
   m_Father: {fileID: 1121981396}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 294.5, y: 330}
+  m_AnchoredPosition: {x: 450, y: 273}
   m_SizeDelta: {x: 74.1, y: 143.4}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2108780763
@@ -8265,3 +8393,4 @@ SceneRoots:
   - {fileID: 1950323778}
   - {fileID: 1053758803}
   - {fileID: 856692050}
+  - {fileID: 1442019618}

@@ -2,6 +2,7 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.EventSystems;
 
 public class NPC : MonoBehaviour, IInteractable
 {
@@ -10,6 +11,7 @@ public class NPC : MonoBehaviour, IInteractable
     public TextMeshProUGUI dialogueText;
     public string[] dialogue;
     private int index;
+    public Object couch;
 
     public GameObject contButton;
     public float wordSpeed;
@@ -26,6 +28,7 @@ public class NPC : MonoBehaviour, IInteractable
         {
             if (Input.GetButtonDown("Interact"))
             {
+                EventSystem.current.SetSelectedGameObject(contButton);
                 if (dialoguePanel.activeInHierarchy)
                 {
                     zeroText();
@@ -75,6 +78,8 @@ public class NPC : MonoBehaviour, IInteractable
         else
         {
             zeroText();
+            Destroy(couch);
+            
         }
     }
 
