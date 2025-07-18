@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: db020c28596b4ca49b9d6355f36a2b15
+guid: 95a8e65523df31b488f778c2a2eebffa
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5877324083484773921
-    second: qauit_0
+      213: -3545872730474728656
+    second: Remove background project (17) save 1_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -126,13 +126,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: qauit_0
+      name: Remove background project (17) save 1_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 1920
-        height: 1080
+        x: 104
+        y: 765
+        width: 411
+        height: 126
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: fd1ba0ea2ec8f6ea0800000000000000
-      internalID: -5877324083484773921
+      spriteID: 0333f49d9878acec0800000000000000
+      internalID: -3545872730474728656
       vertices: []
       indices: 
       edges: []
@@ -161,7 +161,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      qauit_0: -5877324083484773921
+      Remove background project (17) save 1_0: -3545872730474728656
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

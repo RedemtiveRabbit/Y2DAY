@@ -1,10 +1,52 @@
 fileFormatVersion: 2
-guid: e4f70d1624bce6542a715d194b6ea66e
+guid: 35616a7f632990e47a2cd5314be30d87
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7762350047352875558
-    second: Pause_0
+      213: -6618024666355161675
+    second: Controls png_0
+  - first:
+      213: -4113227625626480491
+    second: Controls png_1
+  - first:
+      213: 7855109247404673836
+    second: Controls png_2
+  - first:
+      213: 6768652020447477484
+    second: Controls png_3
+  - first:
+      213: 6717879352953652713
+    second: Controls png_4
+  - first:
+      213: -6681536023199004755
+    second: Controls png_5
+  - first:
+      213: 1430179460443646538
+    second: Controls png_6
+  - first:
+      213: 5659505140154853544
+    second: Controls png_7
+  - first:
+      213: -7859227279197072019
+    second: Controls png_8
+  - first:
+      213: -2066703296972086911
+    second: Controls png_9
+  - first:
+      213: 715782995861043973
+    second: Controls png_10
+  - first:
+      213: 4688605914038788756
+    second: Controls png_11
+  - first:
+      213: 7932927081574578153
+    second: Controls png_12
+  - first:
+      213: -4105788442301132770
+    second: Controls png_13
+  - first:
+      213: -2075161757440009844
+    second: Controls png_14
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -126,12 +168,12 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Pause_0
+      name: Controls png_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 1920
+        width: 1919
         height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -141,8 +183,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ad59b4532c7964490800000000000000
-      internalID: -7762350047352875558
+      spriteID: 5b5a02731ad0824a0800000000000000
+      internalID: -6618024666355161675
       vertices: []
       indices: 
       edges: []
@@ -151,7 +193,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 217c3e24a8dbf514fa5f0d4fffaf9227
     internalID: 0
     vertices: []
     indices: 
@@ -161,7 +203,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Pause_0: -7762350047352875558
+      Controls png_0: -6618024666355161675
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
