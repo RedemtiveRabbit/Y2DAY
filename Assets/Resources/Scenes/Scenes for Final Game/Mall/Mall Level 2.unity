@@ -313,7 +313,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c4455b3dde5478408cc10fe837501e2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerHealth: {fileID: 0}
+  playerHealth: {fileID: 1907752969}
   sixHealth: {fileID: -1485036493231397709, guid: f898646b24d0f784790592eb82bea1b9, type: 3}
   fiveHealth: {fileID: -7133230849722980620, guid: c4d513dfeae8c984cae515050b043209, type: 3}
   fourHealth: {fileID: -5643823122917221161, guid: c5eda0cb2cd6967449f1e691015b3c53, type: 3}
@@ -8343,6 +8343,7 @@ MonoBehaviour:
   dialogueText: {fileID: 1157229617}
   dialogue:
   - 
+  couch: {fileID: 0}
   contButton: {fileID: 1821068096}
   wordSpeed: 0
 --- !u!212 &1004522331
@@ -10933,6 +10934,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Healthpack
       objectReference: {fileID: 0}
+    - target: {fileID: 3182698390040065481, guid: c8e1e2a41b475174a84587a8fb9350be, type: 3}
+      propertyPath: HP
+      value: 
+      objectReference: {fileID: 1907752969}
+    - target: {fileID: 3182698390040065481, guid: c8e1e2a41b475174a84587a8fb9350be, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1907752964}
     - target: {fileID: 6507221942019333279, guid: c8e1e2a41b475174a84587a8fb9350be, type: 3}
       propertyPath: m_LocalPosition.x
       value: 5.0668073
