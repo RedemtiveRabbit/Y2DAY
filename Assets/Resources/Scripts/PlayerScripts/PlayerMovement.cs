@@ -67,6 +67,23 @@ public class PlayerMovement : MonoBehaviour
             { 
                 lastMoveDir = new Vector2(horizontal, vertical);
                 swing.shouldYouAttack = true;
+
+                if(horizontal != 0 &&  vertical != 0)
+                {
+                    if(horizontal >= vertical)
+                    {
+                        lastMoveDir = new Vector2(horizontal, 0);
+                    }
+                    else if(vertical > horizontal)
+                    {
+                        lastMoveDir = new Vector2(0, vertical);
+                    }
+                   
+                }
+
+
+
+
             }
             animator.SetFloat("Horizontal", horizontal);
             animator.SetFloat("Vertical", vertical);
