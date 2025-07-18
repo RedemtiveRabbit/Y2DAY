@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 632fc27b37d5b3e429bbeded4473428c
+guid: 7c299abe34f96ba40bed31238e32064f
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4244838625033357249
-    second: continu_0
+      213: -5288197461629752420
+    second: Remove background project (16) continuye 1_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -126,13 +126,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: continu_0
+      name: Remove background project (16) continuye 1_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 1920
-        height: 1080
+        x: 719
+        y: 493
+        width: 480
+        height: 146
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f38770ab2cd4715c0800000000000000
-      internalID: -4244838625033357249
+      spriteID: c9baf6d3d6c8c96b0800000000000000
+      internalID: -5288197461629752420
       vertices: []
       indices: 
       edges: []
@@ -161,7 +161,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      continu_0: -4244838625033357249
+      Remove background project (16) continuye 1_0: -5288197461629752420
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
