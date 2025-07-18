@@ -27,9 +27,8 @@ public class DeathScreen : MonoBehaviour
         Time.timeScale = 1f;
     }
 
-    public void Quit()
+    public void MainMenu()
     {
-        Debug.Log("QUIT");
-        Application.Quit();
+        SceneManager.LoadScene(1);
     }
 }
