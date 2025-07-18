@@ -1,10 +1,12 @@
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class LevelSelectMenu : MonoBehaviour, IInteractable
 {
     public InteractionDetector interactionDetector;
     public static bool gameIsPaused = false;
     public GameObject levelMenuUI;
+    public GameObject mall;
     
     void Start()
     {
@@ -16,6 +18,7 @@ public class LevelSelectMenu : MonoBehaviour, IInteractable
         {
             if (Input.GetButtonDown("Interact"))
             {
+                EventSystem.current.SetSelectedGameObject(mall);
                 if (gameIsPaused)
                 {
                     Resume();
