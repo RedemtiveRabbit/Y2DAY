@@ -1,10 +1,19 @@
 fileFormatVersion: 2
-guid: 38a1970ecf470c242a752fa4f026507c
+guid: c2180ed6ebbefb2418460a19fd382c14
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -750372292316029494
-    second: You Died png_0
+      213: 8020515020899145211
+    second: transparent you died_0
+  - first:
+      213: 2236900262514505210
+    second: transparent you died_1
+  - first:
+      213: -3939465722824762103
+    second: transparent you died_2
+  - first:
+      213: 544951941984295529
+    second: transparent you died_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -126,7 +135,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: You Died png_0
+      name: transparent you died_0
       rect:
         serializedVersion: 2
         x: 0
@@ -141,8 +150,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: acd153330642695f0800000000000000
-      internalID: -750372292316029494
+      spriteID: bf5d060cae79e4f60800000000000000
+      internalID: 8020515020899145211
       vertices: []
       indices: 
       edges: []
@@ -151,7 +160,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 105a1ef37ceaf954195bc31b1639686f
     internalID: 0
     vertices: []
     indices: 
@@ -161,7 +170,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      You Died png_0: -750372292316029494
+      transparent you died_0: 8020515020899145211
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
