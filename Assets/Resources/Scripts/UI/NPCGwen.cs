@@ -5,6 +5,8 @@ using TMPro;
 using UnityEditor.SearchService;
 using UnityEngine.SceneManagement;
 using UnityEngine.EventSystems;
+using UnityEditor.Build.Reporting;
+using UnityEngine.InputSystem;
 
 public class NPCGwen : MonoBehaviour, IInteractable
 {
@@ -27,7 +29,7 @@ public class NPCGwen : MonoBehaviour, IInteractable
         if (interactionDetector.interactionIcon.activeSelf)
         {
             EventSystem.current.SetSelectedGameObject(contButton);
-            if (Input.GetButtonDown("Interact"))
+            if (Input.GetButtonDown("Interact") && dialoguePanel.activeInHierarchy == false)
             {
 
                 if (dialoguePanel.activeInHierarchy)
@@ -38,7 +40,6 @@ public class NPCGwen : MonoBehaviour, IInteractable
                 {
                     dialoguePanel.SetActive(true);
                     StartCoroutine(Typing());
-
                 }
             }
         }
