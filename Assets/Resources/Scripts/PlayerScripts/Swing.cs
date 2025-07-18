@@ -19,7 +19,6 @@ public class Swing : MonoBehaviour
     public bool canAttack;
     public bool shouldYouAttack;
     public AudioSource audioSource;
-    public NPC npc;
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
