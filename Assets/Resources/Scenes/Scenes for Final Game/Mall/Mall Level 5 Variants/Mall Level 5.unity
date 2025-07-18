@@ -7840,6 +7840,10 @@ PrefabInstance:
       propertyPath: interactionIcon
       value: 
       objectReference: {fileID: 714605212}
+    - target: {fileID: 5258219023258853504, guid: 5e5a4572086676848a5d7318889911ba, type: 3}
+      propertyPath: maxHealth
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 6480935487120964341, guid: 5e5a4572086676848a5d7318889911ba, type: 3}
       propertyPath: npc
       value: 
