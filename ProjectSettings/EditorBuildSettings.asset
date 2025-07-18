@@ -70,6 +70,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Resources/Scenes/Scenes for Final Game/House Floor One 1.unity
     guid: 04295f8293c783645b51e5db7e5a751e
+  - enabled: 1
+    path: Assets/Resources/Scenes/Scenes for Final Game/Settings.unity
+    guid: 64a209b927df7e0448ad26e0ec3705a6
+  - enabled: 1
+    path: Assets/Resources/Scenes/Scenes for Final Game/Basement 1.unity
+    guid: c3f300370a19a0a4da5182854bd820cd
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
