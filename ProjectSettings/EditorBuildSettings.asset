@@ -9,7 +9,7 @@ EditorBuildSettings:
     path: Assets/Scenes/SampleScene.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
   - enabled: 1
-    path: Assets/Resources/Scenes/Scenes for Final Game/Main Menu.unity
+    path: Assets/Resources/Scenes/Scenes for Final Game/Menus/Main Menu.unity
     guid: 188ef06f902d1734aade0d9a08b91e26
   - enabled: 1
     path: Assets/Resources/Scenes/Old Test Scenes/Menu Test.unity
@@ -39,42 +39,37 @@ EditorBuildSettings:
     path: Assets/Resources/Scenes/Old Test Scenes/Proto Scene.unity
     guid: 23dda2519df55cc4196a2c6aba6c494c
   - enabled: 1
-    path: Assets/Resources/Scenes/Scenes for Final Game/House Floor One.unity
+    path: Assets/Resources/Scenes/Scenes for Final Game/House/House Floor One.unity
     guid: 2851bf2ed5723ae4ba4d0125372128a4
   - enabled: 1
-    path: Assets/Resources/Scenes/Scenes for Final Game/Credits.unity
+    path: Assets/Resources/Scenes/Scenes for Final Game/Menus/Credits.unity
     guid: 51a427f662edb1d4b9caafe6c1fa25a4
   - enabled: 1
-    path: Assets/Resources/Scenes/Scenes for Final Game/Mall/Mall Level 1 Variants/Mall
-      Level 1.unity
+    path: Assets/Resources/Scenes/Scenes for Final Game/Mall/Mall Level 1.unity
     guid: 68a124033f1ca164f8e2ac70992ca55a
   - enabled: 1
-    path: Assets/Resources/Scenes/Scenes for Final Game/Mall/Mall Level 2 Variants/Mall
-      Level 2.unity
+    path: Assets/Resources/Scenes/Scenes for Final Game/Mall/Mall Level 2.unity
     guid: f83f0e1df8e51b44a86a4be599351021
   - enabled: 1
-    path: Assets/Resources/Scenes/Scenes for Final Game/Mall/Mall Level 3 Variants/Mall
-      Level 3.unity
+    path: Assets/Resources/Scenes/Scenes for Final Game/Mall/Mall Level 3.unity
     guid: 53a48a209d0114b47a3ea0a376600e10
   - enabled: 1
-    path: Assets/Resources/Scenes/Scenes for Final Game/Mall/Mall Level 4 Variants/Mall
-      Level 4.unity
+    path: Assets/Resources/Scenes/Scenes for Final Game/Mall/Mall Level 4.unity
     guid: 7f0ecbcf75881fe40a256f10d35f7f78
   - enabled: 1
-    path: Assets/Resources/Scenes/Scenes for Final Game/Mall/Mall Level 5 Variants/Mall
-      Level 5.unity
+    path: Assets/Resources/Scenes/Scenes for Final Game/Mall/Mall Level 5.unity
     guid: d6d90ac3db1af914cacc5791aabf9996
   - enabled: 1
-    path: Assets/Resources/Scenes/Scenes for Final Game/Basement.unity
+    path: Assets/Resources/Scenes/Scenes for Final Game/House/Basement.unity
     guid: afc79c8eb94d4e54083ab606c284029a
   - enabled: 1
-    path: Assets/Resources/Scenes/Scenes for Final Game/House Floor One 1.unity
+    path: Assets/Resources/Scenes/Scenes for Final Game/House/House Floor One 1.unity
     guid: 04295f8293c783645b51e5db7e5a751e
   - enabled: 1
-    path: Assets/Resources/Scenes/Scenes for Final Game/Settings.unity
+    path: Assets/Resources/Scenes/Scenes for Final Game/Menus/Settings.unity
     guid: 64a209b927df7e0448ad26e0ec3705a6
   - enabled: 1
-    path: Assets/Resources/Scenes/Scenes for Final Game/Basement 1.unity
+    path: Assets/Resources/Scenes/Scenes for Final Game/House/Basement 1.unity
     guid: c3f300370a19a0a4da5182854bd820cd
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}

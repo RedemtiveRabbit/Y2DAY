@@ -5803,6 +5803,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 8701992671476353825, guid: d0edc3ddfb9e43e46a2c79c3c89916ce, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1051297862}
+    - targetCorrespondingSourceObject: {fileID: 8701992671476353825, guid: d0edc3ddfb9e43e46a2c79c3c89916ce, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 768613469}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d0edc3ddfb9e43e46a2c79c3c89916ce, type: 3}
 --- !u!1001 &390978731
@@ -6454,6 +6457,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Healthpack (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 3182698390040065481, guid: c8e1e2a41b475174a84587a8fb9350be, type: 3}
+      propertyPath: HP
+      value: 
+      objectReference: {fileID: 914357407}
+    - target: {fileID: 3182698390040065481, guid: c8e1e2a41b475174a84587a8fb9350be, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 914357402}
     - target: {fileID: 6507221942019333279, guid: c8e1e2a41b475174a84587a8fb9350be, type: 3}
       propertyPath: m_LocalPosition.x
       value: 3.9411907
@@ -9737,6 +9748,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Healthpack (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 3182698390040065481, guid: c8e1e2a41b475174a84587a8fb9350be, type: 3}
+      propertyPath: HP
+      value: 
+      objectReference: {fileID: 914357407}
+    - target: {fileID: 3182698390040065481, guid: c8e1e2a41b475174a84587a8fb9350be, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 914357402}
     - target: {fileID: 6507221942019333279, guid: c8e1e2a41b475174a84587a8fb9350be, type: 3}
       propertyPath: m_LocalPosition.x
       value: 12.722509
@@ -10191,7 +10210,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c4455b3dde5478408cc10fe837501e2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerHealth: {fileID: 0}
+  playerHealth: {fileID: 914357407}
   sixHealth: {fileID: -1485036493231397709, guid: f898646b24d0f784790592eb82bea1b9, type: 3}
   fiveHealth: {fileID: -7133230849722980620, guid: c4d513dfeae8c984cae515050b043209, type: 3}
   fourHealth: {fileID: -5643823122917221161, guid: c5eda0cb2cd6967449f1e691015b3c53, type: 3}
@@ -10263,11 +10282,11 @@ Transform:
   m_GameObject: {fileID: 768613466}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.422, y: 3.126, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -5.58, y: 4.5039997, z: 40}
+  m_LocalScale: {x: 4, y: 4, z: 4}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 2076431509}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &770486282
 PrefabInstance:
@@ -10587,6 +10606,7 @@ MonoBehaviour:
   dialogueText: {fileID: 1429589266}
   dialogue:
   - 
+  couch: {fileID: 0}
   contButton: {fileID: 995797387}
   wordSpeed: 0
 --- !u!212 &814254861
@@ -21874,6 +21894,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Healthpack
       objectReference: {fileID: 0}
+    - target: {fileID: 3182698390040065481, guid: c8e1e2a41b475174a84587a8fb9350be, type: 3}
+      propertyPath: HP
+      value: 
+      objectReference: {fileID: 914357407}
+    - target: {fileID: 3182698390040065481, guid: c8e1e2a41b475174a84587a8fb9350be, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 914357402}
     - target: {fileID: 6507221942019333279, guid: c8e1e2a41b475174a84587a8fb9350be, type: 3}
       propertyPath: m_LocalPosition.x
       value: 4.254099
@@ -27916,4 +27944,3 @@ SceneRoots:
   - {fileID: 1692373531}
   - {fileID: 446768347}
   - {fileID: 731613029}
-  - {fileID: 768613469}

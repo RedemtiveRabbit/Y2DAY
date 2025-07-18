@@ -21,7 +21,7 @@ public class Healing : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player" && HP.health < HP.maxHealth)
         {
-            HP.health = HP.maxHealth;
+            HP.health += 1;
             Destroy(gameObject);
         }
     }
