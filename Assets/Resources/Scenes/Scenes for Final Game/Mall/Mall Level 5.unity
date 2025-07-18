@@ -3565,6 +3565,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7496786850974384231, guid: db29d43648178984a845784e34761a38, type: 3}
+      propertyPath: m_SortingLayer
+      value: -6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7496786850974384231, guid: db29d43648178984a845784e34761a38, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 604195201
+      objectReference: {fileID: 0}
     - target: {fileID: 8240469851632840498, guid: db29d43648178984a845784e34761a38, type: 3}
       propertyPath: m_Name
       value: PosterGreen
@@ -4188,6 +4196,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 46088936}
     m_Modifications:
+    - target: {fileID: 3035614756070493289, guid: b4c981539fc164448b222de9fd6acd73, type: 3}
+      propertyPath: m_SortingLayer
+      value: -6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3035614756070493289, guid: b4c981539fc164448b222de9fd6acd73, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 604195201
+      objectReference: {fileID: 0}
     - target: {fileID: 3308802718393476754, guid: b4c981539fc164448b222de9fd6acd73, type: 3}
       propertyPath: m_Name
       value: PosterBlue
@@ -6924,6 +6940,14 @@ PrefabInstance:
     - target: {fileID: 3498413230108567718, guid: 6fdbf3b98cc01aa43b6d36c753172dd8, type: 3}
       propertyPath: m_Name
       value: PosterBrownTorn
+      objectReference: {fileID: 0}
+    - target: {fileID: 4159206627655141165, guid: 6fdbf3b98cc01aa43b6d36c753172dd8, type: 3}
+      propertyPath: m_SortingLayer
+      value: -6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4159206627655141165, guid: 6fdbf3b98cc01aa43b6d36c753172dd8, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 604195201
       objectReference: {fileID: 0}
     - target: {fileID: 8015866228545464164, guid: 6fdbf3b98cc01aa43b6d36c753172dd8, type: 3}
       propertyPath: m_LocalPosition.x
