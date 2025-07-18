@@ -48,9 +48,10 @@ public class Swing : MonoBehaviour
             canAttack = true;
         }
 
-        if (Input.GetButtonDown("Fire1") && !attacking && canAttack && shouldYouAttack && !npc.dialoguePanel.activeInHierarchy)
+        if (Input.GetButtonDown("Attack") && !attacking && canAttack && shouldYouAttack)
         {
             StartCoroutine(BoxRoutine());
+            print("hit hit hit");
         }
         // if attack button pressed then it starts a method where time is being tracked
     }
