@@ -5,7 +5,7 @@ using UnityEngine.EventSystems;
 
 public class PlayerHealth : MonoBehaviour
 {
-    public float health;
+    public int health;
     public int maxHealth = 5;
     public PlayerKnockbackTest2 knockback;
     public AudioSource auidoSource;
