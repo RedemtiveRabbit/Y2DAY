@@ -375,7 +375,9 @@ MonoBehaviour:
   dialoguePanel: {fileID: 13489488}
   dialogueText: {fileID: 43688093}
   dialogue:
-  - HI!
+  - Hi!
+  - Thanks again this place is amazing!
+  - A little empty though.
   contButton: {fileID: 854300326}
   wordSpeed: 0
 --- !u!1001 &22805405
