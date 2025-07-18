@@ -2,10 +2,8 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
-using UnityEditor.SearchService;
 using UnityEngine.SceneManagement;
 using UnityEngine.EventSystems;
-using UnityEditor.Build.Reporting;
 using UnityEngine.InputSystem;
 
 public class NPCGwen : MonoBehaviour, IInteractable
