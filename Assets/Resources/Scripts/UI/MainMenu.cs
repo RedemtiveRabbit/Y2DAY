@@ -5,12 +5,17 @@ public class MainMenu : MonoBehaviour
 {
     public void PlayGame ()
     {
-        SceneManager.LoadScene(11);
+        SceneManager.LoadScene(10);
+    }
+
+    public void OpenSetings()
+    {
+        SceneManager.LoadScene(19);
     }
 
     public void OpenCredits ()
     {
-        SceneManager.LoadScene(10);
+        SceneManager.LoadScene(11);
     }
     
     public void QuitGame ()
