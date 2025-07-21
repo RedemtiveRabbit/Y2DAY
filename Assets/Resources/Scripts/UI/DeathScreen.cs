@@ -15,7 +15,6 @@ public class DeathScreen : MonoBehaviour
 
     public void gameOver()
     {
-        print("flkb");
         deathScreenUI.SetActive(true);
         Time.timeScale = 0f;
     }
@@ -29,6 +28,6 @@ public class DeathScreen : MonoBehaviour
 
     public void MainMenu()
     {
-        SceneManager.LoadScene(2);
+        SceneManager.LoadScene("Start Screen");
     }
 }

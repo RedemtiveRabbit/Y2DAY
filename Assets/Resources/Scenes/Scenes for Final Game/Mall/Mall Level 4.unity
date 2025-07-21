@@ -9241,7 +9241,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0597bafea92af1b4ba4f57485fe5015e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  destination: 12
+  destination: Mall Level 1
   spawnDestination: Escalator Entrance
 --- !u!1001 &709761582
 PrefabInstance:
@@ -22744,7 +22744,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0597bafea92af1b4ba4f57485fe5015e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  destination: 16
+  destination: Mall Level 5
   spawnDestination: 
 --- !u!4 &1787057647 stripped
 Transform:

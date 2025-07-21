@@ -5,7 +5,7 @@ public class MainMenu : MonoBehaviour
 {
     public void PlayGame ()
     {
-        SceneManager.LoadScene(10);
+        SceneManager.LoadScene("House Floor One");
     }
 
     public void OpenSetings()
@@ -15,7 +15,12 @@ public class MainMenu : MonoBehaviour
 
     public void OpenCredits ()
     {
-        SceneManager.LoadScene(11);
+        SceneManager.LoadScene("Credits");
+    }
+
+    public void PlayCinematic ()
+    {
+        SceneManager.LoadScene("Cinematic");
     }
     
     public void QuitGame ()
