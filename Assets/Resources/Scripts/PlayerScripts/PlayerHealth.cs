@@ -10,6 +10,7 @@ public class PlayerHealth : MonoBehaviour
     public AudioSource auidoSource;
     public AudioClip hurt;
     public DeathScreen deathScreen;
+    public OnScreenUI onScreenUI;
     public GameObject Respawn;
     public bool invincible;
     private float timer;
@@ -18,7 +19,7 @@ public class PlayerHealth : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        health = maxHealth;
+       
     }
 
     // Update is called once per frame
@@ -56,8 +57,14 @@ public class PlayerHealth : MonoBehaviour
 
     }
 
+    public void Reset()
+    {
+        health = maxHealth;
+    }
+
     void Die()
     {
         deathScreen.gameOver();
+        onScreenUI.Die();
     }
 }

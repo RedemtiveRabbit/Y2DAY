@@ -18,6 +18,7 @@ GameObject:
   - component: {fileID: 4598314663353669128}
   - component: {fileID: 5426160639727166202}
   - component: {fileID: 6947901009507169234}
+  - component: {fileID: 2882002974895056739}
   m_Layer: 10
   m_Name: Player
   m_TagString: Player
@@ -181,12 +182,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 789d1b5f1a7a14f4494c3d4f2ba386d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 0
-  maxHealth: 5
+  health: 6
+  maxHealth: 6
   knockback: {fileID: 4598314663353669128}
   auidoSource: {fileID: 5426160639727166202}
   hurt: {fileID: 8300000, guid: 5250ad612fbb5b0479f0addbadf9fc09, type: 3}
-  deathScreen: {fileID: 0}
+  deathScreen: {fileID: 1870017641977069781, guid: d556d43d58a2c2544959e6d8feebc0f6, type: 3}
+  onScreenUI: {fileID: 0}
   Respawn: {fileID: 0}
   invincible: 0
 --- !u!95 &6443245576035584201
@@ -362,6 +364,19 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: 0.002067864}
   m_Size: {x: 0.18359375, y: 0.27586424}
   m_Direction: 0
+--- !u!114 &2882002974895056739
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2826942352622999852}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f02524ca94cf75a408c3841ed80c53cf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectIndex: 0
 --- !u!1 &3322961053152872092
 GameObject:
   m_ObjectHideFlags: 0
@@ -713,7 +728,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aaf99420f04d0c045912ab4146fb96ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interactionIcon: {fileID: 0}
+  interactionIcon: {fileID: 2033187888896563651, guid: 4a05c7aa9c303444a9805657c8599c35, type: 3}
 --- !u!50 &2822044359316202929
 Rigidbody2D:
   serializedVersion: 5

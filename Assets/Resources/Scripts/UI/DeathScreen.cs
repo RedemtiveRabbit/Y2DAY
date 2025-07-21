@@ -7,6 +7,7 @@ public class DeathScreen : MonoBehaviour
 {
     public GameObject deathScreenUI;
     public PlayerHealth playerHealth;
+    public OnScreenUI onScreenUI;
 
     private void Start()
     {
@@ -23,6 +24,8 @@ public class DeathScreen : MonoBehaviour
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         deathScreenUI.SetActive(false);
+        onScreenUI.Respawn();
+        playerHealth.Reset();
         Time.timeScale = 1f;
     }
 
