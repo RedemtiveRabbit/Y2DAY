@@ -5039,7 +5039,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0597bafea92af1b4ba4f57485fe5015e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  destination: 15
+  destination: Mall Level 4
   spawnDestination: Escalator Exit
 --- !u!61 &592774542
 BoxCollider2D:
@@ -5528,7 +5528,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0597bafea92af1b4ba4f57485fe5015e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  destination: 13
+  destination: Mall Level 2
   spawnDestination: Oogoo Exit 2
 --- !u!61 &644676929
 BoxCollider2D:
@@ -10118,7 +10118,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0597bafea92af1b4ba4f57485fe5015e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  destination: 12
+  destination: 
   spawnDestination: 
 --- !u!61 &1132208611
 BoxCollider2D:
@@ -10211,7 +10211,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0597bafea92af1b4ba4f57485fe5015e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  destination: 13
+  destination: Mall Level 2
   spawnDestination: Oogoo Exit 1
 --- !u!61 &1143088524
 BoxCollider2D:
@@ -16985,7 +16985,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0597bafea92af1b4ba4f57485fe5015e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  destination: 14
+  destination: Mall Level 3
   spawnDestination: Mall 3 Exit
 --- !u!61 &1962022258
 BoxCollider2D:

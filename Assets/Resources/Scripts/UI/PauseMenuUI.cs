@@ -13,7 +13,7 @@ public class PauseMenuUI : MonoBehaviour
 
     public void MainMenu()
     {
-        SceneManager.LoadScene("Main Menu");
+        SceneManager.LoadScene("Start Screen");
     }
 
     public void DeBug ()

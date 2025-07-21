@@ -78,7 +78,7 @@ public class NPCGwen : MonoBehaviour, IInteractable
         else
         {
             zeroText();
-            SceneManager.LoadScene(18);
+            SceneManager.LoadScene("House Floor One 1");
         }
     }
 

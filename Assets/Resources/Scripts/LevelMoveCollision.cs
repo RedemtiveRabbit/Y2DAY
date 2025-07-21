@@ -4,7 +4,7 @@ using UnityEngine.SceneManagement;
 
 public class LevelMoveCollision : MonoBehaviour
 {
-    public int destination;
+    public string destination;
     private void OnTriggerEnter2D(Collider2D collision)
     {
         print("Trigger Entered");

@@ -6,7 +6,7 @@ public class OpenNewLevel : MonoBehaviour
     public GameObject levelMenuUI;
     public void OpenMall()
     {
-        SceneManager.LoadScene(12);
+        SceneManager.LoadScene("Mall Level 1");
         Time.timeScale = 1f;
     }
 
