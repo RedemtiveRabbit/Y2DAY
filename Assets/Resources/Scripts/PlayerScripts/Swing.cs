@@ -38,7 +38,7 @@ public class Swing : MonoBehaviour
         spriteDirection = playerMovement.spriteDirection;
         string currentSceneName = SceneManager.GetActiveScene().name;
         // so it's a little more convenient to refer to the sprite's direction later
-        if(currentSceneName == "House Floor One" || currentSceneName == "Basement" || currentSceneName == "Mall Level 5")
+        if(currentSceneName == "House Floor One" || currentSceneName == "Basement" || currentSceneName == "Mall Level 5" || currentSceneName == "Mall Floor One 1")
         {
             canAttack = false;
         }

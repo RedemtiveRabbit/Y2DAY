@@ -8,10 +8,11 @@ public class PlayerKnockbackTest2 : MonoBehaviour
     public float knockBackStrengthE;
     public float knockBackTimeE;
     public Rigidbody2D body;
+    Vector2 lastDir = Vector2.zero;
     float horizontal;
     float vertical;
 
-    public AI_Chase AIChase;
+    //public AI_Chase AIChase;
     public void Start()
     {
         body = GetComponent<Rigidbody2D>();
@@ -22,9 +23,10 @@ public class PlayerKnockbackTest2 : MonoBehaviour
     }
     void FixedUpdate()
     {
+        
 
     }
-    IEnumerator KnockBackRoutine(/*Vector2 dir*/)
+    IEnumerator KnockBackRoutine(Vector2 dir)
     {
         /*print("knockbacking");
         if (AIChase.body.linearVelocityY > 0)
@@ -64,14 +66,22 @@ public class PlayerKnockbackTest2 : MonoBehaviour
         }
         //body.linearVelocity = dir * knockBackStrengthE;*/
 
+        //Debug.Log("running");
         knockbackinatingE = true;
-        body.linearVelocity =  knockBackStrengthE * AIChase.lastMoveDirEnemy;
+        //print(knockBackStrengthE * AIChase.lastMoveDirEnemy);
+        //lastDir = AIChase.lastMoveDirEnemy;
+        lastDir = dir.normalized;
+        //lastDir.x = (lastDir.x) / Mathf.Abs(lastDir.x);
+        //lastDir.y = (lastDir.y) / Mathf.Abs(lastDir.y);
+        //print(AIChase.lastMoveDirEnemy);
+        body.AddForceAtPosition(knockBackStrengthE * lastDir, this.transform.position,  ForceMode2D.Impulse);
         yield return new WaitForSeconds(knockBackTimeE);
         knockbackinatingE = false;
 
     }
-    public void Knockback()
+    public void Knockback(Vector2 dir)
     {
-        StartCoroutine(KnockBackRoutine());
+        
+        StartCoroutine(KnockBackRoutine(dir));
     }
 }

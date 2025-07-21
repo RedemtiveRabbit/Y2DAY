@@ -224,10 +224,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   knockbackinatingE: 0
-  knockBackStrengthE: 6
+  knockBackStrengthE: 50
   knockBackTimeE: 0.15
   body: {fileID: 0}
-  AIChase: {fileID: 0}
 --- !u!82 &5426160639727166202
 AudioSource:
   m_ObjectHideFlags: 0
