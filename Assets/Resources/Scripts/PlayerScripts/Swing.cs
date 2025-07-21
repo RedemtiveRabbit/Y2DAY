@@ -50,7 +50,7 @@ public class Swing : MonoBehaviour
         if (Input.GetButtonDown("Attack") && !attacking && canAttack && shouldYouAttack)
         {
             StartCoroutine(BoxRoutine());
-            print("hit hit hit");
+            //print("hit hit hit");
         }
         // if attack button pressed then it starts a method where time is being tracked
     }

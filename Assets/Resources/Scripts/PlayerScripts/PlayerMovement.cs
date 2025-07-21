@@ -170,7 +170,7 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
-    public static string? destination { get; set; } = null;
+    public static string destination { get; set; } = null;
 
 }
 /*
