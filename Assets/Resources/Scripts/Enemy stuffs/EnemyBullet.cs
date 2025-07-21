@@ -7,6 +7,7 @@ public class EnemyBullet : MonoBehaviour
     private Rigidbody2D rb;
     public float force;
     private float timer;
+    public float lifespan;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -23,7 +24,7 @@ public class EnemyBullet : MonoBehaviour
        
         timer += Time.deltaTime;
         
-        if(timer > 10)
+        if(timer > lifespan)
         {
             Destroy(gameObject);
         }
