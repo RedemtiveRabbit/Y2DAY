@@ -6176,7 +6176,7 @@ Transform:
   m_GameObject: {fileID: 746761224}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 31695.82, y: 1381.0488, z: 0}
+  m_LocalPosition: {x: 31695.557, y: 1381.175, z: 0}
   m_LocalScale: {x: 70.37143, y: 25.485893, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -18210,7 +18210,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4598314663353669128, guid: 5e5a4572086676848a5d7318889911ba, type: 3}
       propertyPath: knockBackStrengthE
-      value: 68
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 5258219023258853504, guid: 5e5a4572086676848a5d7318889911ba, type: 3}
       propertyPath: Respawn
