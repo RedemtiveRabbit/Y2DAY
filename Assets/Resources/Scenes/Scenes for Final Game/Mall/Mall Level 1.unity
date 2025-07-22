@@ -4269,7 +4269,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemytest (6)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2476766625067933272, guid: f0f9b93e8a39af146a9cf0adf77ba5f5, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -4632,7 +4633,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemytest (5)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2476766625067933272, guid: f0f9b93e8a39af146a9cf0adf77ba5f5, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -5462,7 +5464,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemytest (3)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2476766625067933272, guid: f0f9b93e8a39af146a9cf0adf77ba5f5, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -6070,7 +6073,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemytest (8)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2476766625067933272, guid: f0f9b93e8a39af146a9cf0adf77ba5f5, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -6293,7 +6297,7 @@ Transform:
   m_GameObject: {fileID: 746761224}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 31695.82, y: 1381.0488, z: 0}
+  m_LocalPosition: {x: 31695.557, y: 1381.175, z: 0}
   m_LocalScale: {x: 70.37143, y: 25.485893, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -7521,7 +7525,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemytest (4)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2476766625067933272, guid: f0f9b93e8a39af146a9cf0adf77ba5f5, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -7724,17 +7729,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6309954066045011993, guid: 8e0e144af88c42a49b6d3a3a08c63e2b, type: 3}
   m_PrefabInstance: {fileID: 856395608}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &858716032 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 5428638291378444149, guid: f0f9b93e8a39af146a9cf0adf77ba5f5, type: 3}
-  m_PrefabInstance: {fileID: 6443805822699625584}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ddbd9458dec95954fa8871c7f6588af7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!50 &858716033 stripped
 Rigidbody2D:
   m_CorrespondingSourceObject: {fileID: 5102939296870321053, guid: f0f9b93e8a39af146a9cf0adf77ba5f5, type: 3}
@@ -9081,7 +9075,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemytest (7)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2476766625067933272, guid: f0f9b93e8a39af146a9cf0adf77ba5f5, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -18330,7 +18325,19 @@ PrefabInstance:
     - target: {fileID: 4598314663353669128, guid: 5e5a4572086676848a5d7318889911ba, type: 3}
       propertyPath: AIChase
       value: 
-      objectReference: {fileID: 858716032}
+      objectReference: {fileID: 0}
+    - target: {fileID: 4598314663353669128, guid: 5e5a4572086676848a5d7318889911ba, type: 3}
+      propertyPath: knockBackTimeE
+      value: 0.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 4598314663353669128, guid: 5e5a4572086676848a5d7318889911ba, type: 3}
+      propertyPath: knockbackinatingE
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4598314663353669128, guid: 5e5a4572086676848a5d7318889911ba, type: 3}
+      propertyPath: knockBackStrengthE
+      value: 50
+      objectReference: {fileID: 0}
     - target: {fileID: 5258219023258853504, guid: 5e5a4572086676848a5d7318889911ba, type: 3}
       propertyPath: health
       value: 6
@@ -18355,6 +18362,14 @@ PrefabInstance:
       propertyPath: npc
       value: 
       objectReference: {fileID: 1633525549}
+    - target: {fileID: 6480935487120964341, guid: 5e5a4572086676848a5d7318889911ba, type: 3}
+      propertyPath: leftOffset
+      value: 0.23
+      objectReference: {fileID: 0}
+    - target: {fileID: 6480935487120964341, guid: 5e5a4572086676848a5d7318889911ba, type: 3}
+      propertyPath: rightOffset
+      value: 0.23
+      objectReference: {fileID: 0}
     - target: {fileID: 6710229998392539771, guid: 5e5a4572086676848a5d7318889911ba, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -18558,7 +18573,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemytest (1)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2476766625067933272, guid: f0f9b93e8a39af146a9cf0adf77ba5f5, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []

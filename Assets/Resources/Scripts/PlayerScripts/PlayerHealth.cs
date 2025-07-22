@@ -37,13 +37,13 @@ public class PlayerHealth : MonoBehaviour
             }
         }
     }
-    public void TakeDamage(int amount) 
+    public void TakeDamage(int amount, Vector2 dir) 
     {
         if(invincible == false)
         {
             auidoSource.PlayOneShot(hurt);
             health -= amount;
-            knockback.Knockback();
+            knockback.Knockback(dir);
             invincible = true;
 
         }
