@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 public class LevelMoveCollision : MonoBehaviour
 {
     public string destination;
+    PlayerHealth playerHealth;
     private void OnTriggerEnter2D(Collider2D collision)
     {
         print("Trigger Entered");

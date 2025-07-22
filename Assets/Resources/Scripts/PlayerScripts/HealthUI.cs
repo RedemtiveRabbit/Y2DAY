@@ -26,31 +26,31 @@ void FixedUpdate()
     {
         SpriteRenderer sprite = gameObject.GetComponent<SpriteRenderer>();
        
-        if (playerHealth.health == 6)
+        if (PlayerHealth.health == 6)
         {
             sprite.sprite = sixHealth;
         }
-        else if (playerHealth.health == 5)
+        else if (PlayerHealth.health == 5)
         {
             sprite.sprite = fiveHealth;
         }
-        else if(playerHealth.health == 4)
+        else if(PlayerHealth.health == 4)
         {
             sprite.sprite= fourHealth;
         }
-        else if (playerHealth.health == 3)
+        else if (PlayerHealth.health == 3)
         {
             sprite.sprite = threeHealth;
         }
-        else if (playerHealth.health == 2)
+        else if (PlayerHealth.health == 2)
         {
             sprite.sprite = twoHealth;
         }
-        else if (playerHealth.health == 1)
+        else if (PlayerHealth.health == 1)
         {
             sprite.sprite = oneHealth;
         }
-        else if (playerHealth.health <= 0)
+        else if (PlayerHealth.health <= 0)
         {
             sprite.sprite = zeroHealth;
         }

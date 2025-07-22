@@ -4,7 +4,7 @@ using UnityEngine.EventSystems;
 
 public class PlayerHealth : MonoBehaviour
 {
-    public int health;
+    public static int health { get; set; } = 6;
     public int maxHealth = 5;
     public PlayerKnockbackTest2 knockback;
     public AudioSource auidoSource;
@@ -19,7 +19,7 @@ public class PlayerHealth : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-       
+
     }
 
     // Update is called once per frame
