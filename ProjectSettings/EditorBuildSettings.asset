@@ -47,7 +47,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Resources/Scenes/Scenes for Final Game/Menus/Settings.unity
     guid: 64a209b927df7e0448ad26e0ec3705a6
-  - enabled: 1
+  - enabled: 0
     path: Assets/Resources/Scenes/Scenes for Final Game/House/Basement 1.unity
     guid: c3f300370a19a0a4da5182854bd820cd
   - enabled: 1
