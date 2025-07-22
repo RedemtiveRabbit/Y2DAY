@@ -13,6 +13,19 @@ public class MainMenu : MonoBehaviour
         SceneManager.LoadScene(19);
     }
 
+    public void LoadGame()
+    {
+        GlobalSaveData data = SaveSystem.LoadGame();
+        if (GlobalSaveData.levelsCompleted == 0)
+        {
+            SceneManager.LoadScene("House Floor One");
+        }
+        else if (GlobalSaveData.levelsCompleted == 1)
+        {
+            SceneManager.LoadScene("House Floor One 1");
+        }
+    }
+
     public void OpenCredits ()
     {
         SceneManager.LoadScene("Credits");

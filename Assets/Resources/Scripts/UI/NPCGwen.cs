@@ -78,6 +78,12 @@ public class NPCGwen : MonoBehaviour, IInteractable
         else
         {
             zeroText();
+            if (MallSaveData.hasCouch == -1)
+            {
+                MallSaveData.hasCouch = 0;
+            }
+            GlobalSaveData.levelsCompleted = 1;
+            SaveSystem.Save();
             SceneManager.LoadScene("House Floor One 1");
         }
     }

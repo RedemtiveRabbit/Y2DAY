@@ -3,6 +3,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 using UnityEngine.EventSystems;
+using System.Diagnostics.CodeAnalysis;
 
 public class NPC : MonoBehaviour, IInteractable
 {
@@ -79,7 +80,7 @@ public class NPC : MonoBehaviour, IInteractable
         {
             zeroText();
             Destroy(couch);
-            
+            MallSaveData.hasCouch = 1;
         }
     }
 
