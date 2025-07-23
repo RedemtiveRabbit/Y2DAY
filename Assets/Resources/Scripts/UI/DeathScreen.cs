@@ -25,7 +25,9 @@ public class DeathScreen : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         deathScreenUI.SetActive(false);
         onScreenUI.Respawn();
+        print("milk");
         playerHealth.Reset();
+        print("pancake");
         Time.timeScale = 1f;
     }
 

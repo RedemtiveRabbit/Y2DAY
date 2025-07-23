@@ -561,6 +561,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   deathScreenUI: {fileID: 6610589562410805396}
   playerHealth: {fileID: 5258219023258853504, guid: 5e5a4572086676848a5d7318889911ba, type: 3}
+  onScreenUI: {fileID: 7688893466022887876, guid: 581fe9aa39bfe2f458f3c7e100a63286, type: 3}
 --- !u!1 &6610589562410805396
 GameObject:
   m_ObjectHideFlags: 0
