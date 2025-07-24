@@ -1,15 +1,13 @@
 using UnityEngine;
 
-[System.Serializable]
+/*[System.Serializable]
 public class GlobalSaveData
 {
     public static int hasCouch;
     public static int levelsCompleted = 0;
-    public GlobalSaveData()
+    public GlobalSaveData(SaveData saveData)
     {
-        if (hasCouch == -1)
-        {
-            hasCouch = MallSaveData.hasCouch;
-        }
+        hasCouch = SaveData.current.hasCouch;
+        levelsCompleted = SaveData.current.levelsCompleted;
     }
-}
+}*/

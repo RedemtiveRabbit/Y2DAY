@@ -3,6 +3,7 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
+    public SaveData saveData;
     public void PlayGame ()
     {
         SceneManager.LoadScene("House Floor One");
@@ -15,13 +16,16 @@ public class MainMenu : MonoBehaviour
 
     public void LoadGame()
     {
-        GlobalSaveData data = SaveSystem.LoadGame();
-        Debug.Log(GlobalSaveData.levelsCompleted);
-        if (GlobalSaveData.levelsCompleted == 0)
+        SaveData.Load();
+        Debug.Log(SaveData.current.levelsCompleted);
+        Debug.Log(SaveData.current.hasCouch);
+
+
+        if (SaveData.current.levelsCompleted == 0)
         {
             SceneManager.LoadScene("House Floor One");
         }
-        else if (GlobalSaveData.levelsCompleted == 1)
+        else if (SaveData.current.levelsCompleted == 1)
         {
             SceneManager.LoadScene("House Floor One 1");
         }
@@ -43,4 +47,7 @@ public class MainMenu : MonoBehaviour
         Application.Quit();
     }
 }
+
+//Alive(health, hunger, thirst)
+//Dog(breed)
 

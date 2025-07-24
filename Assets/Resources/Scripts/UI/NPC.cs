@@ -80,7 +80,7 @@ public class NPC : MonoBehaviour, IInteractable
         {
             zeroText();
             Destroy(couch);
-            MallSaveData.hasCouch = 1;
+            SaveData.current.hasCouch = 1;
         }
     }
 
