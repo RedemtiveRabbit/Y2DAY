@@ -15,7 +15,6 @@ public class InteractionDetector : MonoBehaviour
     {
         if(collision.TryGetComponent(out IInteractable interactable) && interactable.CanInteract())
         {
-
             interactableInRange = interactable;
             interactionIcon.SetActive(true);
         }
