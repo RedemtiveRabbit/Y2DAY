@@ -33,7 +33,7 @@ public class ShootTurret : MonoBehaviour
 
         if (distance < 2.2)
         {
-            transform.rotation = Quaternion.RotateTowards(transform.rotation, targetRotation, rotationSpeed * Time.deltaTime * 100f);
+            //transform.rotation = Quaternion.RotateTowards(transform.rotation, targetRotation, rotationSpeed * Time.deltaTime * 100f);
             timer += Time.deltaTime;
             if (coolingDown == false && shots < maxShots)
             {
