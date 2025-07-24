@@ -2472,7 +2472,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4926791939165523121, guid: 1e8471bc904a9854482c05bd70a69e3e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.1999999
+      value: 1.053
       objectReference: {fileID: 0}
     - target: {fileID: 4926791939165523121, guid: 1e8471bc904a9854482c05bd70a69e3e, type: 3}
       propertyPath: m_LocalPosition.z
@@ -7131,7 +7131,7 @@ GameObject:
   - component: {fileID: 1969482700}
   - component: {fileID: 1969482699}
   m_Layer: 10
-  m_Name: To Level 5
+  m_Name: To Level 4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7149,7 +7149,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0597bafea92af1b4ba4f57485fe5015e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  destination: 15
+  destination: Mall Level 4
   spawnDestination: Room 5 ent
 --- !u!61 &1969482700
 BoxCollider2D:

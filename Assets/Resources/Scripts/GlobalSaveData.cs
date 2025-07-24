@@ -12,5 +12,4 @@ public class GlobalSaveData
             hasCouch = MallSaveData.hasCouch;
         }
     }
-
 }

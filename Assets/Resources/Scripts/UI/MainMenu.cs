@@ -16,6 +16,7 @@ public class MainMenu : MonoBehaviour
     public void LoadGame()
     {
         GlobalSaveData data = SaveSystem.LoadGame();
+        Debug.Log(GlobalSaveData.levelsCompleted);
         if (GlobalSaveData.levelsCompleted == 0)
         {
             SceneManager.LoadScene("House Floor One");

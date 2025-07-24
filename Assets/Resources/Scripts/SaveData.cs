@@ -2,15 +2,14 @@ using UnityEngine;
 
 public class SaveData : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
+    public GlobalSaveData globalSaveData;
 
-    // Update is called once per frame
-    void Update()
+    public static int hasCouch;
+    public static int levelsCompleted = 0;
+
+
+    public static void Save(GlobalSaveData globalSaveData)
     {
-        
+        SaveSystem.Save();
     }
 }

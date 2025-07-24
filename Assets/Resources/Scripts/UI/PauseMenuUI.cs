@@ -4,6 +4,7 @@ using UnityEngine.SceneManagement;
 public class PauseMenuUI : MonoBehaviour
 {
     public GameObject pauseMenu;
+    public Music music;
 
     public void Resume()
     {

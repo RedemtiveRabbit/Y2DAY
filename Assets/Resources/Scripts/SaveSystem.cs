@@ -1,20 +1,22 @@
 using System.IO;
 using System.Runtime.Serialization.Formatters.Binary;
 using Unity.Android.Types;
+using Unity.VisualScripting.FullSerializer;
 using UnityEngine;
 
-public class SaveSystem
+public static class SaveSystem
 {
     public static void Save()
     {
         BinaryFormatter formatter = new BinaryFormatter();
 
         string path = Application.persistentDataPath + "/savedata.milkpot";
+        //Debug.Log(path);
         FileStream stream = new FileStream(path, FileMode.Create);
 
-        GlobalSaveData data = new GlobalSaveData();
+        GlobalSaveData data = new GlobalSaveData(/*saveData*/);
 
-        formatter.Serialize(stream, data);
+        formatter.Serialize(stream, data);//writes to save file
         stream.Close();
     }
 
