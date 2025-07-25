@@ -6,7 +6,7 @@ using UnityEngine;
 
 public static class SaveSystem
 {
-    public static void Save()
+    public static void Save(SaveData saveData)
     {
         BinaryFormatter formatter = new BinaryFormatter();
 
@@ -14,13 +14,11 @@ public static class SaveSystem
         //Debug.Log(path);
         FileStream stream = new FileStream(path, FileMode.Create);
 
-        GlobalSaveData data = new GlobalSaveData(/*saveData*/);
-
-        formatter.Serialize(stream, data);//writes to save file
+        formatter.Serialize(stream, saveData);//writes to save file
         stream.Close();
     }
 
-    public static GlobalSaveData LoadGame()
+    public static SaveData LoadGame()
     {
         string path = Application.persistentDataPath + "/savedata.milkpot";
         if (File.Exists(path))
@@ -28,7 +26,7 @@ public static class SaveSystem
             BinaryFormatter formatter = new BinaryFormatter();
             FileStream stream = new FileStream (path, FileMode.Open);
 
-            GlobalSaveData data = formatter.Deserialize(stream) as GlobalSaveData;
+            SaveData data = formatter.Deserialize(stream) as SaveData;
             stream.Close();
 
             return data;

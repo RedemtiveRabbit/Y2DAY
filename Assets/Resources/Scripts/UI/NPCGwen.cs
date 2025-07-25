@@ -14,6 +14,7 @@ public class NPCGwen : MonoBehaviour, IInteractable
     public string[] dialogue;
     private int index;
     public GameObject contButton;
+    SaveData saveData;
     public float wordSpeed;
 
     private void Start()
@@ -78,12 +79,12 @@ public class NPCGwen : MonoBehaviour, IInteractable
         else
         {
             zeroText();
-            if (MallSaveData.hasCouch == -1)
+            if (SaveData.current.hasCouch == -1)
             {
-                MallSaveData.hasCouch = 0;
+                SaveData.current.hasCouch = 0;
             }
-            GlobalSaveData.levelsCompleted = 1;
-            SaveSystem.Save();
+            SaveData.current.levelsCompleted = 1;
+            SaveData.Save();
             SceneManager.LoadScene("House Floor One 1");
         }
     }

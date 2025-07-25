@@ -1,15 +1,24 @@
+using Unity.Android.Gradle.Manifest;
+using Unity.VisualScripting;
 using UnityEngine;
 
-public class SaveData : MonoBehaviour
+[System.Serializable]
+public class SaveData
 {
-    public GlobalSaveData globalSaveData;
+    public int hasCouch = -1;
+    public int levelsCompleted = 0;
+    public static SaveData current = new();
 
-    public static int hasCouch;
-    public static int levelsCompleted = 0;
-
-
-    public static void Save(GlobalSaveData globalSaveData)
+    public static void Save()
     {
-        SaveSystem.Save();
+        SaveSystem.Save(current);
+    }
+
+    public static void Load()
+    {
+        current = SaveSystem.LoadGame();
     }
 }
+
+
+
