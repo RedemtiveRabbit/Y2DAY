@@ -1513,6 +1513,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bc2d2dc196eee5646a394f8799269efe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  saveData:
+    hasCouch: -1
+    levelsCompleted: 0
 --- !u!1 &1088439622
 GameObject:
   m_ObjectHideFlags: 0
