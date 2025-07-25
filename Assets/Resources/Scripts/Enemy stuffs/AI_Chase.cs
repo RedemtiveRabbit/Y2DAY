@@ -24,6 +24,7 @@ public class AI_Chase : MonoBehaviour
     Vector2 lastMoveDir;
     public bool walking;
     public Animator animator;
+    public int palette;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -32,6 +33,10 @@ public class AI_Chase : MonoBehaviour
         //agent.enabled = false;
         //agent.updateUpAxis = false;
         //agent.updateRotation = false;
+        palette = Random.Range(0, 4);
+
+        animator.SetInteger("Palette", palette);
+
     }
 
     // Update is called once per frame
