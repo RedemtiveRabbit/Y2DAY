@@ -4981,7 +4981,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0597bafea92af1b4ba4f57485fe5015e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  destination: Arcade Level 1
+  destination: Arcade Level 3
   spawnDestination: Restaurant end
 --- !u!4 &1058588970
 Transform:
