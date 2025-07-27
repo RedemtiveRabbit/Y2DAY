@@ -10,6 +10,21 @@ public class OpenNewLevel : MonoBehaviour
         Time.timeScale = 1f;
     }
 
+    public void OpenArcade()
+    {
+        SceneManager.LoadScene("Arcade Level 1");
+        Time.timeScale = 1f;
+    }
+    public void OpenAquarium()
+    {
+        SceneManager.LoadScene("");
+        Time.timeScale = 1f;
+    }
+    public void OpenTheater()
+    {
+        SceneManager.LoadScene("");
+        Time.timeScale = 1f;
+    }
     public void Locked()
     {
 

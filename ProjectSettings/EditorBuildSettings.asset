@@ -56,6 +56,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Resources/Scenes/Scenes for Final Game/Arcade/Arcade Level 3.unity
     guid: 65f0e86c8523eaa48ac62db59fc3ea4f
+  - enabled: 1
+    path: Assets/Resources/Scenes/Scenes for Final Game/House/Basement 2.unity
+    guid: a5f766de5fce96847b4ef2d445fa1f22
+  - enabled: 1
+    path: Assets/Resources/Scenes/Scenes for Final Game/House/House Floor One 2.unity
+    guid: d81caf33c7e7ac848a778e1b25e9067e
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

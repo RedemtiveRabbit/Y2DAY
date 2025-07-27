@@ -6217,7 +6217,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1318407109}
   m_Layer: 0
-  m_Name: Top stairs
+  m_Name: Basement Exit
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10365,6 +10365,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2074705926}
   - component: {fileID: 2074705925}
+  - component: {fileID: 2074705927}
   m_Layer: 0
   m_Name: To basement
   m_TagString: Untagged
@@ -10402,11 +10403,11 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.31746498, y: 0.16976029}
+  m_Offset: {x: -0.31746498, y: -0.20825428}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -10416,7 +10417,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.36517006, y: 1.3395203}
+  m_Size: {x: 0.36517006, y: 0.5834912}
   m_EdgeRadius: 0
 --- !u!4 &2074705926
 Transform:
@@ -10433,6 +10434,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2074705927
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2074705923}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0597bafea92af1b4ba4f57485fe5015e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  destination: Basement 2
+  spawnDestination: Basement Entrance
 --- !u!4 &2076643304 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7642071309610256041, guid: d47d0afa1beb85a4584f66595437bb9e, type: 3}
