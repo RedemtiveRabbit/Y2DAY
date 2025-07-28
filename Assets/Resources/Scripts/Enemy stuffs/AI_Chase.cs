@@ -11,7 +11,7 @@ public class AI_Chase : MonoBehaviour
     public Rigidbody2D body;
     public float speed;
     public float distanceBetween;
-    private NavMeshAgent agent;
+    //private NavMeshAgent agent;
     private float distance;
     public PlayerMovement playerMovement;
     private float direction;
@@ -24,14 +24,19 @@ public class AI_Chase : MonoBehaviour
     Vector2 lastMoveDir;
     public bool walking;
     public Animator animator;
+    public int palette;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        agent = GetComponent<NavMeshAgent>();
+        //agent = GetComponent<NavMeshAgent>();
         body = GetComponent<Rigidbody2D>();
-        agent.enabled = false;
-        agent.updateUpAxis = false;
-        agent.updateRotation = false;
+        //agent.enabled = false;
+        //agent.updateUpAxis = false;
+        //agent.updateRotation = false;
+        palette = Random.Range(0, 4);
+
+        animator.SetInteger("Palette", palette);
+
     }
 
     // Update is called once per frame
@@ -64,7 +69,7 @@ public class AI_Chase : MonoBehaviour
 
         if (distance >= distanceBetween)
         {
-            agent.enabled = false;
+            //agent.enabled = false;
             walking = false;
         }
         if (Vector2.Distance(transform.position, player.transform.position) < keepDistance)
@@ -94,7 +99,7 @@ public class AI_Chase : MonoBehaviour
                 body.linearVelocityY -= followSpeed;
             }
             //transform.position = Vector2.MoveTowards(this.transform.position, player.transform.position, speed * Time.deltaTime);
-            agent.enabled = true;
+            //agent.enabled = true;
             // agent.SetDestination(player.transform.position);
             //transform.rotation = Quaternion.Euler(Vector3.forward * angle);
         }
@@ -104,39 +109,38 @@ public class AI_Chase : MonoBehaviour
 
     IEnumerator KnockBackRoutine()
     {
-        print("knockbacking");
+        //print("knockbacking");
         if (playerMovement.lastMoveDir.y > 0)
         {
             knockbackinating = true;
-            print("doopity dooobity doo");
-            body.linearVelocityY = knockBackStrength;
+            //print("doopity dooobity doo");
+            body.AddForceY(knockBackStrength, ForceMode2D.Impulse);
             yield return new WaitForSeconds(knockBackTime);
             knockbackinating = false;
         }
         if (playerMovement.lastMoveDir.x > 0)
         {
             knockbackinating = true;
-            print("doopity dooobity daa");
+            //print("doopity dooobity daa");
 
-            body.linearVelocityX = knockBackStrength;
+            body.AddForceX(knockBackStrength, ForceMode2D.Impulse);
             yield return new WaitForSeconds(knockBackTime);
             knockbackinating = false;
         }
         if (playerMovement.lastMoveDir.y < 0)
         {
             knockbackinating = true;
-            print("doopity dooobity dee");
+            //print("doopity dooobity dee");
 
-            body.linearVelocityY = -knockBackStrength;
+            body.AddForceY(-knockBackStrength, ForceMode2D.Impulse);
             yield return new WaitForSeconds(knockBackTime);
             knockbackinating = false;
         }
         if (playerMovement.lastMoveDir.x < 0)
         {
             knockbackinating = true;
-            print("doopity dooobity duu");
-
-            body.linearVelocityX = -knockBackStrength;
+            //print("doopity dooobity duu");
+            body.AddForceX(-knockBackStrength, ForceMode2D.Impulse);
             yield return new WaitForSeconds(knockBackTime);
             knockbackinating = false;
         }

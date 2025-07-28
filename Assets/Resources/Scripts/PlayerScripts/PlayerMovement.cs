@@ -66,6 +66,24 @@ public class PlayerMovement : MonoBehaviour
             if (horizontal != 0 || vertical != 0) 
             { 
                 lastMoveDir = new Vector2(horizontal, vertical);
+                swing.shouldYouAttack = true;
+
+                if(horizontal != 0 &&  vertical != 0)
+                {
+                    if(horizontal >= vertical)
+                    {
+                        lastMoveDir = new Vector2(horizontal, 0);
+                    }
+                    else if(vertical > horizontal)
+                    {
+                        lastMoveDir = new Vector2(0, vertical);
+                    }
+                   
+                }
+
+
+
+
             }
             animator.SetFloat("Horizontal", horizontal);
             animator.SetFloat("Vertical", vertical);
@@ -106,7 +124,7 @@ public class PlayerMovement : MonoBehaviour
             if(body.linearVelocityX != 0 ||  body.linearVelocityY != 0)
             {
                 walking = true;
-                swing.shouldYouAttack = true;
+                
             }
             else
             {
@@ -152,7 +170,7 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
-    public static string? destination { get; set; } = null;
+    public static string destination { get; set; } = null;
 
 }
 /*

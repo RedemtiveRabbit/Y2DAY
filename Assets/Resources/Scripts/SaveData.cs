@@ -1,16 +1,24 @@
+using Unity.Android.Gradle.Manifest;
+using Unity.VisualScripting;
 using UnityEngine;
 
-public class SaveData : MonoBehaviour
+[System.Serializable]
+public class SaveData
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    public int hasCouch = -1;
+    public int levelsCompleted = 0;
+    public static SaveData current = new();
+
+    public static void Save()
     {
-        
+        SaveSystem.Save(current);
     }
 
-    // Update is called once per frame
-    void Update()
+    public static void Load()
     {
-        
+        current = SaveSystem.LoadGame();
     }
 }
+
+
+

@@ -19,7 +19,6 @@ public class Swing : MonoBehaviour
     public bool canAttack;
     public bool shouldYouAttack;
     public AudioSource audioSource;
-    public NPC npc;
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -39,7 +38,7 @@ public class Swing : MonoBehaviour
         spriteDirection = playerMovement.spriteDirection;
         string currentSceneName = SceneManager.GetActiveScene().name;
         // so it's a little more convenient to refer to the sprite's direction later
-        if(currentSceneName == "House Floor One" || currentSceneName == "Basement" || currentSceneName == " Mall Level 5")
+        if(currentSceneName == "House Floor One" || currentSceneName == "Basement" || currentSceneName == "Mall Level 5" || currentSceneName == "Mall Floor One 1")
         {
             canAttack = false;
         }
@@ -48,9 +47,10 @@ public class Swing : MonoBehaviour
             canAttack = true;
         }
 
-        if (Input.GetButtonDown("Fire1") && !attacking && canAttack && shouldYouAttack && !npc.dialoguePanel.activeInHierarchy)
+        if (Input.GetButtonDown("Attack") && !attacking && canAttack && shouldYouAttack)
         {
             StartCoroutine(BoxRoutine());
+            //print("hit hit hit");
         }
         // if attack button pressed then it starts a method where time is being tracked
     }

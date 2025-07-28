@@ -3,14 +3,42 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
+    public SaveData saveData;
     public void PlayGame ()
     {
-        SceneManager.LoadScene(11);
+        SceneManager.LoadScene("House Floor One");
+    }
+
+    public void OpenSetings()
+    {
+        SceneManager.LoadScene(19);
+    }
+
+    public void LoadGame()
+    {
+        SaveData.Load();
+        Debug.Log(SaveData.current.levelsCompleted);
+        Debug.Log(SaveData.current.hasCouch);
+
+
+        if (SaveData.current.levelsCompleted == 0)
+        {
+            SceneManager.LoadScene("House Floor One");
+        }
+        else if (SaveData.current.levelsCompleted == 1)
+        {
+            SceneManager.LoadScene("House Floor One 1");
+        }
     }
 
     public void OpenCredits ()
     {
-        SceneManager.LoadScene(10);
+        SceneManager.LoadScene("Credits");
+    }
+
+    public void PlayCinematic ()
+    {
+        SceneManager.LoadScene("Cinematic");
     }
     
     public void QuitGame ()
@@ -19,4 +47,7 @@ public class MainMenu : MonoBehaviour
         Application.Quit();
     }
 }
+
+//Alive(health, hunger, thirst)
+//Dog(breed)
 

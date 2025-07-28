@@ -4,6 +4,7 @@ using UnityEngine.SceneManagement;
 public class PauseMenuUI : MonoBehaviour
 {
     public GameObject pauseMenu;
+    public Music music;
 
     public void Resume()
     {
@@ -13,6 +14,11 @@ public class PauseMenuUI : MonoBehaviour
 
     public void MainMenu()
     {
-        SceneManager.LoadScene("Main Menu");
+        SceneManager.LoadScene("Start Screen");
+    }
+
+    public void DeBug ()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 }

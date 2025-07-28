@@ -34,7 +34,7 @@ public class EnemyBullet : MonoBehaviour
         Debug.Log(collision.name);
         if(collision.tag == "Player" && player.GetComponent<PlayerHealth>().invincible == false)
         {
-            player.GetComponent<PlayerHealth>().TakeDamage(1);
+            player.GetComponent<PlayerHealth>().TakeDamage(1, rb.linearVelocity);
             Destroy(gameObject);
         }
         

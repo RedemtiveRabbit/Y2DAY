@@ -1,5 +1,6 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Dash : MonoBehaviour
 {
@@ -24,8 +25,9 @@ public class Dash : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        string currentSceneName = SceneManager.GetActiveScene().name;
         direction = playerMovement.direction;
-        if(Input.GetButtonDown("Jump") && dashing == false && canDash)
+        if(Input.GetButtonDown("Jump") && dashing == false && canDash && currentSceneName != "House Floor One" && currentSceneName != "Basement" && currentSceneName != "House Floor One 1")
         {
             StartCoroutine(DashRoutine());
         }

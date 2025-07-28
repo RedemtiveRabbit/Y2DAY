@@ -19,9 +19,9 @@ public class Healing : MonoBehaviour
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.tag == "Player" && HP.health < HP.maxHealth)
+        if (collision.gameObject.tag == "Player" && PlayerHealth.health < HP.maxHealth)
         {
-            HP.health = HP.maxHealth;
+            PlayerHealth.health += 1;
             Destroy(gameObject);
         }
     }

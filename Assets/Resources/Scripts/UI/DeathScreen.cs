@@ -7,6 +7,7 @@ public class DeathScreen : MonoBehaviour
 {
     public GameObject deathScreenUI;
     public PlayerHealth playerHealth;
+    public OnScreenUI onScreenUI;
 
     private void Start()
     {
@@ -15,7 +16,6 @@ public class DeathScreen : MonoBehaviour
 
     public void gameOver()
     {
-        print("flkb");
         deathScreenUI.SetActive(true);
         Time.timeScale = 0f;
     }
@@ -24,12 +24,15 @@ public class DeathScreen : MonoBehaviour
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         deathScreenUI.SetActive(false);
+        onScreenUI.Respawn();
+        print("milk");
+        playerHealth.Reset();
+        print("pancake");
         Time.timeScale = 1f;
     }
 
-    public void Quit()
+    public void MainMenu()
     {
-        Debug.Log("QUIT");
-        Application.Quit();
+        SceneManager.LoadScene("Start Screen");
     }
 }

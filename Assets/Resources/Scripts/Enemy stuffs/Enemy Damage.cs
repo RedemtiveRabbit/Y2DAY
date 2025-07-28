@@ -9,7 +9,7 @@ public class EnemyDamage : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player" && playerHealth.invincible == false)
         {
-            playerHealth.TakeDamage(damage);
+            playerHealth.TakeDamage(damage, GetComponent<AI_Chase>().lastMoveDirEnemy);
         }
     }
 }

@@ -1,4 +1,3 @@
-using UnityEditor.Tilemaps;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -7,10 +6,25 @@ public class OpenNewLevel : MonoBehaviour
     public GameObject levelMenuUI;
     public void OpenMall()
     {
-        SceneManager.LoadScene(12);
+        SceneManager.LoadScene("Mall Level 1");
         Time.timeScale = 1f;
     }
 
+    public void OpenArcade()
+    {
+        SceneManager.LoadScene("Arcade Level 1");
+        Time.timeScale = 1f;
+    }
+    public void OpenAquarium()
+    {
+        SceneManager.LoadScene("");
+        Time.timeScale = 1f;
+    }
+    public void OpenTheater()
+    {
+        SceneManager.LoadScene("");
+        Time.timeScale = 1f;
+    }
     public void Locked()
     {
 
