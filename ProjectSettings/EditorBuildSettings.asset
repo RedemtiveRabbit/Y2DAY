@@ -39,6 +39,9 @@ EditorBuildSettings:
     path: Assets/Resources/Scenes/Scenes for Final Game/Mall/Mall Level 5.unity
     guid: d6d90ac3db1af914cacc5791aabf9996
   - enabled: 1
+    path: Assets/Resources/Scenes/Scenes for Final Game/Mall/Mall Level 6.unity
+    guid: d5b594c8676aa6141a6b27c74a3deb96
+  - enabled: 1
     path: Assets/Resources/Scenes/Scenes for Final Game/House/Basement.unity
     guid: afc79c8eb94d4e54083ab606c284029a
   - enabled: 1

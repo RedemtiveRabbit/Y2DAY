@@ -1,10 +1,13 @@
 fileFormatVersion: 2
-guid: b426c13d6e44e9146bd6ef336baea8a4
+guid: 689f371235b8d4e429ae81ac9e571c54
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6385754489221839494
-    second: T Left PNG_0
+      213: 4637944232158376647
+    second: Reese png_0
+  - first:
+      213: -6149852622129983609
+    second: Reese png_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -126,13 +129,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: T Left PNG_0
+      name: Reese png_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 64
-        height: 64
+        x: 13
+        y: 379
+        width: 98
+        height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +144,30 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a75831f002e3167a0800000000000000
-      internalID: -6385754489221839494
+      spriteID: 7c23fddc4b94d5040800000000000000
+      internalID: 4637944232158376647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reese png_1
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 188
+        width: 711
+        height: 1188
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78f00fc9f9557aaa0800000000000000
+      internalID: -6149852622129983609
       vertices: []
       indices: 
       edges: []
@@ -161,7 +186,8 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      T Left PNG_0: -6385754489221839494
+      Reese png_0: 4637944232158376647
+      Reese png_1: -6149852622129983609
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
