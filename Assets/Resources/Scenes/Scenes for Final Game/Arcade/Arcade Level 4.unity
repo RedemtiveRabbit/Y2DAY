@@ -1578,7 +1578,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 275.9763, y: -201.1283, z: -660.1163, w: 105.54014}
+  m_margin: {x: 288.7151, y: -225.80426, z: -660.1163, w: 132.56616}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -1972,7 +1972,22 @@ MonoBehaviour:
   dialoguePanel: {fileID: 26655755}
   dialogueText: {fileID: 729211272}
   dialogue:
-  - admv oadm
+  - "\u2026Oh! Hey there! Didn\u2019t think anyone would actually catch my distress
+    signal."
+  - "Name\u2019s Miguel, thanks for coming. I\u2019ve been hiding out here for some
+    time now; seemed to be the only place where apocalytes didn\u2019t manifest."
+  - But, I was REALLY into a game of Galaxia when the damn machine started coming
+    alive!
+  - I thought the virus stopped spreading to different objects.. guess not.
+  - " It started coming for me while blasting some battle music I hadn\u2019t even
+    heard before."
+  - ' I tried running, and thankfully found this little room to hide.'
+  - "Seems like the machine called other apocalytes, and now they\u2019re all over
+    the place."
+  - So, thanks for saving me. Wait, you mean I can stay with you? Are you sure?
+  - " I mean, I\u2019d love to. Never thought I\u2019d be living in a house again
+    after these past few years."
+  - "I\u2019ll keep an eye out for any apocalytes trying to sneak up on us."
   contButton: {fileID: 1235735044}
   wordSpeed: 0.025
 --- !u!4 &889810326 stripped
