@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: b426c13d6e44e9146bd6ef336baea8a4
+guid: a66f6453d387a6746a6c0a72f501c6e7
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6385754489221839494
-    second: T Left PNG_0
+      213: -2663621238119470790
+    second: Jean png_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -126,13 +126,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: T Left PNG_0
+      name: Jean png_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 64
-        height: 64
+        x: 95
+        y: 188
+        width: 696
+        height: 1286
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a75831f002e3167a0800000000000000
-      internalID: -6385754489221839494
+      spriteID: a39e3bda89ae80bd0800000000000000
+      internalID: -2663621238119470790
       vertices: []
       indices: 
       edges: []
@@ -161,7 +161,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      T Left PNG_0: -6385754489221839494
+      Jean png_0: -2663621238119470790
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
