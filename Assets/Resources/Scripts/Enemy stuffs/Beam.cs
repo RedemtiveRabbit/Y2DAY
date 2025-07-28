@@ -49,7 +49,7 @@ public class Beam : MonoBehaviour
         Debug.Log(collision.name);
         if (collision.tag == "Player" && player.GetComponent<PlayerHealth>().invincible == false && active == true)
         {
-            player.GetComponent<PlayerHealth>().TakeDamage(1);
+            player.GetComponent<PlayerHealth>().TakeDamage(1, new Vector2(0, 0));
 
         }
 

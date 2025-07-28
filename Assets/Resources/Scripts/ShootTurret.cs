@@ -1,4 +1,5 @@
 using System.Collections;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Rendering;
 
@@ -13,9 +14,10 @@ public class ShootTurret : MonoBehaviour
     public int maxShots;
     public int shots;
     public float rotationSpeed = 5f;
-
+    public bool shooting;
     private float timer;
     private float timeUntilRoF;
+    public Animator animator;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -26,6 +28,7 @@ public class ShootTurret : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        animator.SetBool("Shooting", shooting);
         float distance = Vector2.Distance(transform.position, player.transform.position);
         Vector3 direction = player.transform.position - transform.position;
         Quaternion targetRotation = Quaternion.LookRotation(Vector3.forward, direction);
@@ -37,6 +40,7 @@ public class ShootTurret : MonoBehaviour
             timer += Time.deltaTime;
             if (coolingDown == false && shots < maxShots)
             {
+                shooting = true;
                 timeUntilRoF += Time.deltaTime;
 
                 if (timeUntilRoF > RoF)
@@ -49,6 +53,7 @@ public class ShootTurret : MonoBehaviour
             }
             else if (shots >= maxShots) 
             {
+                shooting = false;
                 coolingDown = true;
                 StartCoroutine(CoolingTime());
             }

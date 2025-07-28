@@ -121,7 +121,7 @@ public class OctoEnemy : MonoBehaviour
         if (collision.gameObject.tag == "Player")
         {
             playerDetected = true;
-            playerHealth.TakeDamage(1);
+            playerHealth.TakeDamage(1, body.linearVelocity);
         }
         else
         {
