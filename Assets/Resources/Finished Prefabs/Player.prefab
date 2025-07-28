@@ -187,7 +187,7 @@ MonoBehaviour:
   knockback: {fileID: 4598314663353669128}
   auidoSource: {fileID: 5426160639727166202}
   hurt: {fileID: 8300000, guid: 5250ad612fbb5b0479f0addbadf9fc09, type: 3}
-  deathScreen: {fileID: 1870017641977069781, guid: d556d43d58a2c2544959e6d8feebc0f6, type: 3}
+  deathScreen: {fileID: 0}
   onScreenUI: {fileID: 0}
   Respawn: {fileID: 0}
   invincible: 0
