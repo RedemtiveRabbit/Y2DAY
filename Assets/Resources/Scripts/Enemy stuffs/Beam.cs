@@ -9,6 +9,7 @@ public class Beam : MonoBehaviour
     public float timer;
     public GameObject beam;
     public float rotationSpeed = 5f;
+    public int damage;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -49,7 +50,7 @@ public class Beam : MonoBehaviour
         Debug.Log(collision.name);
         if (collision.tag == "Player" && player.GetComponent<PlayerHealth>().invincible == false && active == true)
         {
-            player.GetComponent<PlayerHealth>().TakeDamage(1, new Vector2(0, 0));
+            player.GetComponent<PlayerHealth>().TakeDamage(damage, new Vector2(0, 0));
 
         }
 
