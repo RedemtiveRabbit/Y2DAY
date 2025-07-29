@@ -18,7 +18,7 @@ public class Timer : MonoBehaviour
 
     private IEnumerator TimeToStart()
     {
-        yield return new WaitForSeconds(33);
+        yield return new WaitForSeconds(53);
         SceneManager.LoadScene("Start Screen");
     }
 }
