@@ -8,10 +8,12 @@ public class Music : MonoBehaviour
     public AudioClip house;
     public AudioClip mall;
     public AudioClip gwen;
+    public AudioClip arcade;
     public AudioSource audioSource;
     public bool playingHouse = false;
     public bool playingMall = false;
     public bool playingGwen = false;
+    public bool playingArcade = false;
     void Start()
     {
 
@@ -30,6 +32,7 @@ public class Music : MonoBehaviour
             playingHouse = true;
             playingMall = false;
             playingGwen = false;
+            playingArcade = false;
         }
         if((SceneManager.GetActiveScene().name == "Mall Level 1") && !playingMall)
         {
@@ -40,6 +43,7 @@ public class Music : MonoBehaviour
             playingMall = true;
             playingHouse = false;
             playingGwen = false;
+            playingArcade = false;
         }
         if(SceneManager.GetActiveScene().name == "Mall Level 5" && !playingGwen)
         {
@@ -50,7 +54,24 @@ public class Music : MonoBehaviour
             playingGwen = true;
             playingMall = false;
             playingHouse = false;
+            playingArcade = false;
         }
+        if(SceneManager.GetActiveScene().name == "Arcade Level 1" && !playingArcade)
+        {
+            audioSource.Stop();
+            audioSource.PlayOneShot(arcade);
+            audioSource.loop = true;
+            print("played arcade");
+            playingArcade = true;
+            playingMall = false;
+            playingHouse = false;
+            playingGwen = false;
+        }
+
+
+
+
+
         if (audioSource.isPlaying == false)
         {
             playingGwen = false;
@@ -64,13 +85,25 @@ public class Music : MonoBehaviour
                 playingHouse = true;
                 playingMall = false;
                 playingGwen = false;
+                playingArcade = false;
             }
-            if(SceneManager.GetActiveScene().name == "Mall Level 2" || SceneManager.GetActiveScene().name == "Mall Level 3" || SceneManager.GetActiveScene().name == "Mall Level 4")
+            if(SceneManager.GetActiveScene().name == "Mall Level 2" || SceneManager.GetActiveScene().name == "Mall Level 3" || SceneManager.GetActiveScene().name == "Mall Level 4" || SceneManager.GetActiveScene().name == "Mall Level 6")
             {
                 audioSource.PlayOneShot(mall);
                 audioSource.loop = true;
                 print("played mall");
                 playingMall = true;
+                playingHouse = false;
+                playingGwen = false;
+                playingArcade = false;
+            }
+            if(SceneManager.GetActiveScene().name == "Arcade Level 2" || SceneManager.GetActiveScene().name == "Arcade Level 3")
+            {
+                audioSource.PlayOneShot(arcade);
+                audioSource.loop = true;
+                print("played arcade");
+                playingArcade = true;
+                playingMall = false;
                 playingHouse = false;
                 playingGwen = false;
             }
