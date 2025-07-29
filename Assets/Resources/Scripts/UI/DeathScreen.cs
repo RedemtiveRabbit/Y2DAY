@@ -9,6 +9,14 @@ public class DeathScreen : MonoBehaviour
     public PlayerHealth playerHealth;
     public OnScreenUI onScreenUI;
 
+    public static DeathScreen instance;
+    public Transform respawnPoint;
+    public GameObject player;
+
+    private void Awake()
+    {
+        instance = this;
+    }
     private void Start()
     {
         deathScreenUI.SetActive(false);
@@ -22,13 +30,12 @@ public class DeathScreen : MonoBehaviour
     
     public void Respawn()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-        deathScreenUI.SetActive(false);
-        onScreenUI.Respawn();
-        print("milk");
-        playerHealth.Reset();
-        print("pancake");
-        Time.timeScale = 1f;
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            player.transform.position = respawnPoint.position;
+            deathScreenUI.SetActive(false);
+            onScreenUI.Respawn();
+            playerHealth.Reset();
+            Time.timeScale = 1f;
     }
 
     public void MainMenu()
