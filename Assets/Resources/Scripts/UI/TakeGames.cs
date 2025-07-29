@@ -27,7 +27,7 @@ public class TakeGames : MonoBehaviour, IInteractable2
     {
         if (interactionDetector2.interactionIcon2.activeSelf)
         {
-            if (Input.GetButtonDown("Interact"))
+            if (Input.GetButtonDown("Interact") && dialoguePanel.activeInHierarchy == false)
             {
                 EventSystem.current.SetSelectedGameObject(contButton);
                 if (dialoguePanel.activeInHierarchy)

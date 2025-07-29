@@ -59,7 +59,6 @@ public class PlayerHealth : MonoBehaviour
 
     public void Reset()
     {
-        print("oasjdnvo");
         health = maxHealth;
     }
 

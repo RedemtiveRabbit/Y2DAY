@@ -26,7 +26,7 @@ public class GwenHouse : MonoBehaviour, IInteractable
     {
         if (interactionDetector.interactionIcon.activeSelf)
         {
-            if (Input.GetButtonDown("Interact"))
+            if (Input.GetButtonDown("Interact") && dialoguePanel.activeInHierarchy == false)
             {
                 EventSystem.current.SetSelectedGameObject(contButton);
                 if (dialoguePanel.activeInHierarchy)

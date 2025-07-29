@@ -9,9 +9,47 @@ public class DeathScreen : MonoBehaviour
     public PlayerHealth playerHealth;
     public OnScreenUI onScreenUI;
 
+    public static DeathScreen instance;
+    public Transform respawnPoint;
+    public GameObject player;
+
+    private void Awake()
+    {
+        instance = this;
+
+        if (PlayerPrefs.GetInt("HasCheckpoint", 0) == 1)
+        {
+            float x = PlayerPrefs.GetFloat("CheckpointX");
+            float y = PlayerPrefs.GetFloat("CheckpointY");
+            Vector2 savedPosition = new Vector2(x, y);
+
+            GameObject checkpointObj = new GameObject("LoadedCheckpoint");
+            checkpointObj.transform.position = savedPosition;
+            respawnPoint = checkpointObj.transform;
+        }
+        else
+        {
+            respawnPoint = player.transform; 
+        }
+    }
+
     private void Start()
     {
         deathScreenUI.SetActive(false);
+
+
+        if (PlayerPrefs.GetInt("ShouldRespawn", 0) == 1)
+        {
+            if (respawnPoint != null)
+            {
+                player.transform.position = respawnPoint.position;
+            }
+
+            PlayerPrefs.SetInt("ShouldRespawn", 0);
+            onScreenUI.Respawn();
+            playerHealth.Reset();
+            Time.timeScale = 1f;
+        }
     }
 
     public void gameOver()
@@ -19,16 +57,12 @@ public class DeathScreen : MonoBehaviour
         deathScreenUI.SetActive(true);
         Time.timeScale = 0f;
     }
-    
+
     public void Respawn()
     {
+        PlayerPrefs.SetInt("ShouldRespawn", 1);
+        PlayerPrefs.Save();
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-        deathScreenUI.SetActive(false);
-        onScreenUI.Respawn();
-        print("milk");
-        playerHealth.Reset();
-        print("pancake");
-        Time.timeScale = 1f;
     }
 
     public void MainMenu()
