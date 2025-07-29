@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class Checkpoint : MonoBehaviour
 {
-    public BoxCollider2D trigger;
+    public Collider2D trigger;
 
     private void OnTriggerEnter2D(Collider2D other)
     {
