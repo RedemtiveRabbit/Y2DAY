@@ -4639,7 +4639,7 @@ MonoBehaviour:
     them all the time.
   - Trying to figure out how to survive without them was hard.
   contButton: {fileID: 1925944026}
-  wordSpeed: 0.025
+  wordSpeed: 0
 --- !u!1001 &746847330
 PrefabInstance:
   m_ObjectHideFlags: 0

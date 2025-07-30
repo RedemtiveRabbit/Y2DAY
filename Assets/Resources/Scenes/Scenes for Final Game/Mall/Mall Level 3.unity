@@ -15058,11 +15058,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8830234742556567604, guid: 58ec19e9f6ed8064a9ef79e876c59e2d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.674
+      value: 0.119
       objectReference: {fileID: 0}
     - target: {fileID: 8830234742556567604, guid: 58ec19e9f6ed8064a9ef79e876c59e2d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.08799982
+      value: 0.12
       objectReference: {fileID: 0}
     - target: {fileID: 8830234742556567604, guid: 58ec19e9f6ed8064a9ef79e876c59e2d, type: 3}
       propertyPath: m_LocalPosition.z
@@ -18992,7 +18992,7 @@ MonoBehaviour:
     into them for hours. '
   couch: {fileID: 5556601663358877607}
   contButton: {fileID: 2118993319}
-  wordSpeed: 0.025
+  wordSpeed: 0
 --- !u!61 &5556601663358877609
 BoxCollider2D:
   m_ObjectHideFlags: 0

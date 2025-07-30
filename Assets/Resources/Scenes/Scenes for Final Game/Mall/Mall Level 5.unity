@@ -3752,7 +3752,7 @@ MonoBehaviour:
   - "If you got some space, I\u2019ll gladly take over a little nook."
   - "Oh, and I\u2019m Gwen by the way. Sorry, should\u2019ve said that earlier."
   contButton: {fileID: 766569044}
-  wordSpeed: 0.0025
+  wordSpeed: 0
 --- !u!4 &826634033 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2274249985772047866, guid: 9f391996d87211e469ebd638f9b114a0, type: 3}

@@ -1692,7 +1692,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 288.7151, y: -225.80426, z: -660.1163, w: 132.56616}
+  m_margin: {x: 288.7151, y: -225.80426, z: -664.4977, w: 132.56616}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -2160,7 +2160,7 @@ MonoBehaviour:
     after these past few years."
   - "I\u2019ll keep an eye out for any apocalytes trying to sneak up on us."
   contButton: {fileID: 1235735044}
-  wordSpeed: 0.025
+  wordSpeed: 0
 --- !u!4 &889810326 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2425500490534749947, guid: dedbc46b9d0d5c44a9a83461b02e841c, type: 3}
