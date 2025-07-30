@@ -263,8 +263,8 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.0018115342, y: -0.0004528612}
-  m_Size: {x: 0.13913113, y: 0.31090572}
+  m_Offset: {x: -0.0018115342, y: 0.039386645}
+  m_Size: {x: 0.13913113, y: 0.23122671}
   m_Direction: 0
 --- !u!95 &18927991
 Animator:
@@ -375,9 +375,14 @@ MonoBehaviour:
   dialoguePanel: {fileID: 1228794627}
   dialogueText: {fileID: 43688093}
   dialogue:
-  - Hi!
-  - Thanks again this place is amazing!
-  - A little empty though.
+  - "Your place isn\u2019t half bad. A little empty though. "
+  - Still, I never thought a day would come again where I would have my own room.
+  - "Being real honest, I didn\u2019t know how much longer I was gonna make it out
+    there."
+  - My friends and I went to search the mall for food.
+  - I led us around to make sure no one got hurt, but I stopped paying attention
+    for ONE SECOND.
+  - When I went to find my friends again, they were all gone.
   contButton: {fileID: 854300326}
   wordSpeed: 0
 --- !u!1001 &22805405
@@ -946,11 +951,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d47d0afa1beb85a4584f66595437bb9e, type: 3}
---- !u!4 &123113325 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 651761450977665742, guid: 719cf70990803bd4f9fc6067d754b7e2, type: 3}
-  m_PrefabInstance: {fileID: 1201070126}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &127285993 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7642071309610256041, guid: d47d0afa1beb85a4584f66595437bb9e, type: 3}
@@ -5522,7 +5522,6 @@ Transform:
   - {fileID: 2031886650}
   - {fileID: 1522524379}
   - {fileID: 631901660}
-  - {fileID: 123113325}
   - {fileID: 701502899}
   - {fileID: 856490179}
   m_Father: {fileID: 0}
@@ -5668,79 +5667,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4642133078015710634, guid: 987e4c4ebf6040c47a364bc7a51aa857, type: 3}
   m_PrefabInstance: {fileID: 1803838468}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &1201070126
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 1186409384}
-    m_Modifications:
-    - target: {fileID: 651761450977665742, guid: 719cf70990803bd4f9fc6067d754b7e2, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 43.558456
-      objectReference: {fileID: 0}
-    - target: {fileID: 651761450977665742, guid: 719cf70990803bd4f9fc6067d754b7e2, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 25.050917
-      objectReference: {fileID: 0}
-    - target: {fileID: 651761450977665742, guid: 719cf70990803bd4f9fc6067d754b7e2, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.6659
-      objectReference: {fileID: 0}
-    - target: {fileID: 651761450977665742, guid: 719cf70990803bd4f9fc6067d754b7e2, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.4914
-      objectReference: {fileID: 0}
-    - target: {fileID: 651761450977665742, guid: 719cf70990803bd4f9fc6067d754b7e2, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0.0037202563
-      objectReference: {fileID: 0}
-    - target: {fileID: 651761450977665742, guid: 719cf70990803bd4f9fc6067d754b7e2, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 651761450977665742, guid: 719cf70990803bd4f9fc6067d754b7e2, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 651761450977665742, guid: 719cf70990803bd4f9fc6067d754b7e2, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 651761450977665742, guid: 719cf70990803bd4f9fc6067d754b7e2, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 651761450977665742, guid: 719cf70990803bd4f9fc6067d754b7e2, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 651761450977665742, guid: 719cf70990803bd4f9fc6067d754b7e2, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 651761450977665742, guid: 719cf70990803bd4f9fc6067d754b7e2, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4915103990098840354, guid: 719cf70990803bd4f9fc6067d754b7e2, type: 3}
-      propertyPath: m_SortingLayer
-      value: -9
-      objectReference: {fileID: 0}
-    - target: {fileID: 4915103990098840354, guid: 719cf70990803bd4f9fc6067d754b7e2, type: 3}
-      propertyPath: m_SortingLayerID
-      value: -1098497961
-      objectReference: {fileID: 0}
-    - target: {fileID: 5063234473463729723, guid: 719cf70990803bd4f9fc6067d754b7e2, type: 3}
-      propertyPath: m_Name
-      value: BlackSquare
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 719cf70990803bd4f9fc6067d754b7e2, type: 3}
 --- !u!1001 &1228239028
 PrefabInstance:
   m_ObjectHideFlags: 0

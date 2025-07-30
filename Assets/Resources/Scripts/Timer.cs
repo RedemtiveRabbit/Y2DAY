@@ -4,13 +4,14 @@ using UnityEngine.SceneManagement;
 
 public class Timer : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    public string destination;
+    public int time;
+    
     void Start()
     {
         StartCoroutine("TimeToStart");
     }
 
-    // Update is called once per frame
     void Update()
     {
         
@@ -18,7 +19,7 @@ public class Timer : MonoBehaviour
 
     private IEnumerator TimeToStart()
     {
-        yield return new WaitForSeconds(33);
-        SceneManager.LoadScene("Start Screen");
+        yield return new WaitForSeconds(time);
+        SceneManager.LoadScene(destination);
     }
 }
