@@ -25,7 +25,7 @@ public class Music : MonoBehaviour
     void Update()
     {
         DontDestroyOnLoad(this);
-        if((SceneManager.GetActiveScene().name == "House Floor One" || SceneManager.GetActiveScene().name == "House Floor One 1" || SceneManager.GetActiveScene().name == "Basement") && !playingHouse)
+        if((SceneManager.GetActiveScene().name == "House Floor One" || SceneManager.GetActiveScene().name == "House Floor One 1" || SceneManager.GetActiveScene().name == "Basement" || SceneManager.GetActiveScene().name == "House Floor One 2" || SceneManager.GetActiveScene().name == "Basement 2") && !playingHouse)
         {
             audioSource.Stop();
             audioSource.PlayOneShot(house);
