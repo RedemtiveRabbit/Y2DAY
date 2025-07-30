@@ -12765,6 +12765,10 @@ PrefabInstance:
       propertyPath: trigger
       value: 
       objectReference: {fileID: 1313271673}
+    - target: {fileID: 5398709992131667779, guid: 58ec19e9f6ed8064a9ef79e876c59e2d, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8830234742556567604, guid: 58ec19e9f6ed8064a9ef79e876c59e2d, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.60599995
@@ -18855,6 +18859,10 @@ PrefabInstance:
       propertyPath: trigger
       value: 
       objectReference: {fileID: 1947745741}
+    - target: {fileID: 5398709992131667779, guid: 58ec19e9f6ed8064a9ef79e876c59e2d, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8830234742556567604, guid: 58ec19e9f6ed8064a9ef79e876c59e2d, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.66700006

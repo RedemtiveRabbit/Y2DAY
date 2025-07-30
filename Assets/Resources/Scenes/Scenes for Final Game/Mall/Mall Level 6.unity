@@ -2871,6 +2871,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!20 &584084820 stripped
+Camera:
+  m_CorrespondingSourceObject: {fileID: 3747896087598255592, guid: b5fc7ab5be0717e49af3eb7a462a4cb1, type: 3}
+  m_PrefabInstance: {fileID: 203032217}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &588149021
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5519,9 +5524,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: Start
       objectReference: {fileID: 0}
+    - target: {fileID: 5398709992131667779, guid: 58ec19e9f6ed8064a9ef79e876c59e2d, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8830234742556567604, guid: 58ec19e9f6ed8064a9ef79e876c59e2d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.66015625
+      value: -0.361
       objectReference: {fileID: 0}
     - target: {fileID: 8830234742556567604, guid: 58ec19e9f6ed8064a9ef79e876c59e2d, type: 3}
       propertyPath: m_LocalPosition.y
@@ -7840,6 +7849,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8771996156727537273, guid: 581fe9aa39bfe2f458f3c7e100a63286, type: 3}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 584084820}
     - target: {fileID: 9078747200867893843, guid: 581fe9aa39bfe2f458f3c7e100a63286, type: 3}
       propertyPath: m_Name
       value: OnScreenUI
@@ -8272,8 +8285,8 @@ MonoBehaviour:
   dialoguePanel: {fileID: 757229411}
   dialogueText: {fileID: 1914558888}
   dialogue:
-  - "Okay, have to admit\u2026 these skellies lowkey have TASTE!!! Sure, they\u2019re
-    trying to kill me and stuff... but I NEED that top. "
+  - Wow, these apocalytes really didn't wanna miss their 75% off sale... they're
+    not getting this hat though. No Way
   contButton: {fileID: 1514074869}
   wordSpeed: 0
 --- !u!4 &1687360885 stripped

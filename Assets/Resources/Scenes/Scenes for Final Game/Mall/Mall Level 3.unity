@@ -18987,7 +18987,9 @@ MonoBehaviour:
   dialoguePanel: {fileID: 1899980481}
   dialogueText: {fileID: 1781249987}
   dialogue:
-  - Finally a place to sit!
+  - NEW FURNITURE FOUND!
+  - 'A comfy purple couch. The cushions are saggy and worn-in, but I can still sink
+    into them for hours. '
   couch: {fileID: 5556601663358877607}
   contButton: {fileID: 2118993319}
   wordSpeed: 0.025
