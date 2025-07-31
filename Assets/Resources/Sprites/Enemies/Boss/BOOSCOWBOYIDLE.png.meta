@@ -1,0 +1,559 @@
+fileFormatVersion: 2
+guid: 703787d2d99567644a664c7d7239000c
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -93287492338140567
+    second: BOOSCOWBOYIDLE_0
+  - first:
+      213: 5340165127527046399
+    second: BOOSCOWBOYIDLE_1
+  - first:
+      213: -7944845022369597021
+    second: BOOSCOWBOYIDLE_2
+  - first:
+      213: 2995827690159629240
+    second: BOOSCOWBOYIDLE_3
+  - first:
+      213: 5321759404548070856
+    second: BOOSCOWBOYIDLE_4
+  - first:
+      213: -8010347290777697768
+    second: BOOSCOWBOYIDLE_5
+  - first:
+      213: 1999515248122425285
+    second: BOOSCOWBOYIDLE_6
+  - first:
+      213: 3650076747415344371
+    second: BOOSCOWBOYIDLE_7
+  - first:
+      213: -386242654832083642
+    second: BOOSCOWBOYIDLE_8
+  - first:
+      213: 3311547781384197987
+    second: BOOSCOWBOYIDLE_9
+  - first:
+      213: 8427032323394154212
+    second: BOOSCOWBOYIDLE_10
+  - first:
+      213: 2334462717458153719
+    second: BOOSCOWBOYIDLE_11
+  - first:
+      213: -4317210973762505597
+    second: BOOSCOWBOYIDLE_12
+  - first:
+      213: -4977420427452077327
+    second: BOOSCOWBOYIDLE_13
+  - first:
+      213: -5862718826559411504
+    second: BOOSCOWBOYIDLE_14
+  - first:
+      213: -2456303198984169824
+    second: BOOSCOWBOYIDLE_15
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: BOOSCOWBOYIDLE_0
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 28
+        width: 88
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96ab23d158394bef0800000000000000
+      internalID: -93287492338140567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOOSCOWBOYIDLE_1
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 28
+        width: 88
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ffc9d2cd3e31c1a40800000000000000
+      internalID: 5340165127527046399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOOSCOWBOYIDLE_2
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 28
+        width: 88
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a93126bb8d3eb190800000000000000
+      internalID: -7944845022369597021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOOSCOWBOYIDLE_3
+      rect:
+        serializedVersion: 2
+        x: 401
+        y: 28
+        width: 88
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b36e306961539920800000000000000
+      internalID: 2995827690159629240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOOSCOWBOYIDLE_4
+      rect:
+        serializedVersion: 2
+        x: 529
+        y: 27
+        width: 88
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8cd9e288bffaad940800000000000000
+      internalID: 5321759404548070856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOOSCOWBOYIDLE_5
+      rect:
+        serializedVersion: 2
+        x: 657
+        y: 27
+        width: 88
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 812cea5649785d090800000000000000
+      internalID: -8010347290777697768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOOSCOWBOYIDLE_6
+      rect:
+        serializedVersion: 2
+        x: 785
+        y: 28
+        width: 88
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5cf60573684bfbb10800000000000000
+      internalID: 1999515248122425285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOOSCOWBOYIDLE_7
+      rect:
+        serializedVersion: 2
+        x: 913
+        y: 28
+        width: 88
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f4da9c767da7a230800000000000000
+      internalID: 3650076747415344371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOOSCOWBOYIDLE_8
+      rect:
+        serializedVersion: 2
+        x: 1041
+        y: 28
+        width: 88
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64d31a11a5ac3aaf0800000000000000
+      internalID: -386242654832083642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOOSCOWBOYIDLE_9
+      rect:
+        serializedVersion: 2
+        x: 1169
+        y: 28
+        width: 88
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 367532e692bf4fd20800000000000000
+      internalID: 3311547781384197987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOOSCOWBOYIDLE_10
+      rect:
+        serializedVersion: 2
+        x: 1297
+        y: 28
+        width: 88
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4eea4a2ff35d2f470800000000000000
+      internalID: 8427032323394154212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOOSCOWBOYIDLE_11
+      rect:
+        serializedVersion: 2
+        x: 1425
+        y: 27
+        width: 88
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f08c77197da56020800000000000000
+      internalID: 2334462717458153719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOOSCOWBOYIDLE_12
+      rect:
+        serializedVersion: 2
+        x: 1553
+        y: 27
+        width: 88
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 384b7703e7f2614c0800000000000000
+      internalID: -4317210973762505597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOOSCOWBOYIDLE_13
+      rect:
+        serializedVersion: 2
+        x: 1681
+        y: 28
+        width: 88
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1fa22f32e76aceab0800000000000000
+      internalID: -4977420427452077327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOOSCOWBOYIDLE_14
+      rect:
+        serializedVersion: 2
+        x: 1809
+        y: 28
+        width: 88
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0da6eec0a4073aea0800000000000000
+      internalID: -5862718826559411504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOOSCOWBOYIDLE_15
+      rect:
+        serializedVersion: 2
+        x: 1937
+        y: 28
+        width: 88
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a694eb214579edd0800000000000000
+      internalID: -2456303198984169824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      BOOSCOWBOYIDLE_0: -93287492338140567
+      BOOSCOWBOYIDLE_1: 5340165127527046399
+      BOOSCOWBOYIDLE_10: 8427032323394154212
+      BOOSCOWBOYIDLE_11: 2334462717458153719
+      BOOSCOWBOYIDLE_12: -4317210973762505597
+      BOOSCOWBOYIDLE_13: -4977420427452077327
+      BOOSCOWBOYIDLE_14: -5862718826559411504
+      BOOSCOWBOYIDLE_15: -2456303198984169824
+      BOOSCOWBOYIDLE_2: -7944845022369597021
+      BOOSCOWBOYIDLE_3: 2995827690159629240
+      BOOSCOWBOYIDLE_4: 5321759404548070856
+      BOOSCOWBOYIDLE_5: -8010347290777697768
+      BOOSCOWBOYIDLE_6: 1999515248122425285
+      BOOSCOWBOYIDLE_7: 3650076747415344371
+      BOOSCOWBOYIDLE_8: -386242654832083642
+      BOOSCOWBOYIDLE_9: 3311547781384197987
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

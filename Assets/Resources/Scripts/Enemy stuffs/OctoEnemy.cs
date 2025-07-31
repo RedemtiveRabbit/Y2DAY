@@ -27,6 +27,7 @@ public class OctoEnemy : MonoBehaviour
     public float followSpeed;
     public Rigidbody2D body;
     public float stunDuration;
+    public Animator animator;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -37,7 +38,7 @@ public class OctoEnemy : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        animator.SetBool("stunned", stunned);
         float distance = Vector2.Distance(transform.position, player.transform.position);
 
         if (distance <= aggroRange && stunned == false)
