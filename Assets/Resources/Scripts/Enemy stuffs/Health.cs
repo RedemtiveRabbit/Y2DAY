@@ -44,7 +44,7 @@ public class Health : MonoBehaviour
     }
     public void Defend(int damage)
     {
-        print("Damage blocked");
+        print("Damage Attempted");
         if (invincible == false)
         {
             print("Damage Taken");
