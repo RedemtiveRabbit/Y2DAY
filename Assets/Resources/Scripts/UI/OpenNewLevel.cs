@@ -17,12 +17,12 @@ public class OpenNewLevel : MonoBehaviour
     }
     public void OpenAquarium()
     {
-        SceneManager.LoadScene("");
+        SceneManager.LoadScene("Aquarium 1");
         Time.timeScale = 1f;
     }
     public void OpenTheater()
     {
-        SceneManager.LoadScene("");
+        SceneManager.LoadScene("Theater Level 1");
         Time.timeScale = 1f;
     }
     public void Locked()
