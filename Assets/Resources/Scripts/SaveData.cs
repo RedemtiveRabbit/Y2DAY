@@ -6,6 +6,7 @@ public class SaveData
 {
     public int hasCouch = -1;
     public int hasArcadeMachine = -1;
+    public int hasShelf = -1;
     public int levelsCompleted = 0;
     public static SaveData current = new();
 

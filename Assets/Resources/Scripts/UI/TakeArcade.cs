@@ -80,7 +80,7 @@ public class TakeArcade : MonoBehaviour, IInteractable
         {
             zeroText();
             Destroy(couch);
-            SaveData.current.hasCouch = 1;
+            SaveData.current.hasArcadeMachine = 1;
         }
     }
 
