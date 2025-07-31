@@ -3744,10 +3744,6 @@ MonoBehaviour:
   dialogue:
   - Hi How are you
   - KYS ASSHOLE
-  - Why so mean?
-  - Fuck you
-  - Bye
-  - Jump off a cliff
   contButton: {fileID: 766569044}
   wordSpeed: 0
   portraitOne: {fileID: 2108780761}
