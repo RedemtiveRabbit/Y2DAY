@@ -432,9 +432,14 @@ MonoBehaviour:
   dialoguePanel: {fileID: 1228794627}
   dialogueText: {fileID: 43688093}
   dialogue:
-  - Hi!
-  - Thanks again this place is amazing!
-  - A little empty though.
+  - "Your place isn\u2019t half bad. A little empty though. "
+  - Still, I never thought a day would come again where I would have my own room.
+  - "Being real honest, I didn\u2019t know how much longer I was gonna make it out
+    there."
+  - My friends and I went to search the mall for food.
+  - I led us around to make sure no one got hurt, but I stopped paying attention
+    for ONE SECOND.
+  - When I went to find my friends again, they were all gone.
   contButton: {fileID: 854300326}
   wordSpeed: 0
 --- !u!1001 &31620367
@@ -7080,6 +7085,7 @@ Transform:
   - {fileID: 631901660}
   - {fileID: 701502899}
   - {fileID: 856490179}
+  - {fileID: 2019319315}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1189375433
@@ -12133,11 +12139,11 @@ Transform:
   m_GameObject: {fileID: 2019319313}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.52, y: 1.28, z: 0}
+  m_LocalPosition: {x: -2.9809318, y: 1.5486096, z: 0.0037202563}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1186409384}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!60 &2019319316
 PolygonCollider2D:
@@ -12706,7 +12712,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0597bafea92af1b4ba4f57485fe5015e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  destination: Basement 2
+  destination: Basement 3
   spawnDestination: Basement Entrance
 --- !u!4 &2076643304 stripped
 Transform:
@@ -13176,6 +13182,5 @@ SceneRoots:
   - {fileID: 1682456463}
   - {fileID: 1439757962}
   - {fileID: 666410556}
-  - {fileID: 2019319315}
   - {fileID: 1211149925}
   - {fileID: 1144272257}

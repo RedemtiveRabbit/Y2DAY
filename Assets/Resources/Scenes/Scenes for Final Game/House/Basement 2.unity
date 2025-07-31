@@ -3872,6 +3872,10 @@ PrefabInstance:
       propertyPath: m_Colors.m_SelectedColor.r
       value: 0.26100624
       objectReference: {fileID: 0}
+    - target: {fileID: 179770875787972549, guid: a3736a18cd6e8684b9ec1ec2df218074, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 747729661245657160, guid: a3736a18cd6e8684b9ec1ec2df218074, type: 3}
       propertyPath: m_Colors.m_SelectedColor.b
       value: 1

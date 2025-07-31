@@ -85,7 +85,7 @@ public class NPCMiguel : MonoBehaviour, IInteractable
             }
             SaveData.current.levelsCompleted = 1;
             SaveData.Save();
-            SceneManager.LoadScene("House Floor One 2");
+            SceneManager.LoadScene("Arcade Walk Scene");
         }
     }
 
