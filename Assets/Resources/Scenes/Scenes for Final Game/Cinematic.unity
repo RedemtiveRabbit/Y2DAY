@@ -394,6 +394,10 @@ PrefabInstance:
       propertyPath: arcade
       value: 
       objectReference: {fileID: 8300000, guid: 7e947b40f6448514c9e2954731c7100d, type: 3}
+    - target: {fileID: 7950889315155303543, guid: 7281dd038534be047af75bef95ef3373, type: 3}
+      propertyPath: miguel
+      value: 
+      objectReference: {fileID: 8300000, guid: 2dd0d2772f47b69479d6382c4e809960, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
