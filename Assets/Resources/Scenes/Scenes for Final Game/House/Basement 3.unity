@@ -3872,6 +3872,10 @@ PrefabInstance:
       propertyPath: m_Colors.m_SelectedColor.r
       value: 0.26100624
       objectReference: {fileID: 0}
+    - target: {fileID: 179770875787972549, guid: a3736a18cd6e8684b9ec1ec2df218074, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 747729661245657160, guid: a3736a18cd6e8684b9ec1ec2df218074, type: 3}
       propertyPath: m_Colors.m_SelectedColor.b
       value: 1
@@ -3926,7 +3930,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1738757143075294235, guid: a3736a18cd6e8684b9ec1ec2df218074, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: OpenAquarium
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 1738757143075294235, guid: a3736a18cd6e8684b9ec1ec2df218074, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
@@ -3936,13 +3940,17 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 2149750037613656048, guid: a3736a18cd6e8684b9ec1ec2df218074, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -2905595406702476992, guid: 9baabc34fb3aff746ab6c2441b68c57a, type: 3}
     - target: {fileID: 2473953236775887294, guid: a3736a18cd6e8684b9ec1ec2df218074, type: 3}
       propertyPath: m_UiScaleMode
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2693599790039683538, guid: a3736a18cd6e8684b9ec1ec2df218074, type: 3}
       propertyPath: m_text
-      value: ARCADE
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 2693599790039683538, guid: a3736a18cd6e8684b9ec1ec2df218074, type: 3}
       propertyPath: m_fontSize
@@ -3988,9 +3996,13 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -4.9
       objectReference: {fileID: 0}
+    - target: {fileID: 4804169499884697193, guid: a3736a18cd6e8684b9ec1ec2df218074, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 542844141438718324, guid: 88e5c9f0285339249b4e136d9b739005, type: 3}
     - target: {fileID: 4960629506924158210, guid: a3736a18cd6e8684b9ec1ec2df218074, type: 3}
       propertyPath: m_text
-      value: AQUARIUM
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 4960629506924158210, guid: a3736a18cd6e8684b9ec1ec2df218074, type: 3}
       propertyPath: m_fontSize
@@ -4034,7 +4046,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6699996103517334970, guid: a3736a18cd6e8684b9ec1ec2df218074, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: 
+      value: OpenAquarium
       objectReference: {fileID: 0}
     - target: {fileID: 6699996103517334970, guid: a3736a18cd6e8684b9ec1ec2df218074, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
