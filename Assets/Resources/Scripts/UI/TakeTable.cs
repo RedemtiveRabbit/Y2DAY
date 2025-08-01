@@ -80,7 +80,7 @@ public class TakeTable : MonoBehaviour, IInteractable2
         {
             zeroText();
             Destroy(couch);
-            SaveData.current.hasTable = 1;
+            SaveData.current.hasDiningTable = 1;
         }
     }
 
