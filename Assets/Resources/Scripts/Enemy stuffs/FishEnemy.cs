@@ -12,7 +12,7 @@ public class FishEnemy : MonoBehaviour
     public GameObject player;
     public Rigidbody2D body;
     public float dashTime;
-    public AI_Chase aiChase;
+    public AI_Chase1 aiChase;
     public int dashStrength;
     public float coolDown;
     public float aggroRange;

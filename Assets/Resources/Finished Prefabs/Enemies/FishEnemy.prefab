@@ -10,14 +10,14 @@ GameObject:
   m_Component:
   - component: {fileID: 7044798580164177750}
   - component: {fileID: 2027951321795483620}
-  - component: {fileID: 5608190234299984830}
-  - component: {fileID: 4974619069767926429}
   - component: {fileID: 2127794416230492074}
   - component: {fileID: 8093058517279573866}
   - component: {fileID: 1318027197505658900}
   - component: {fileID: 5588053300761412434}
   - component: {fileID: 1103122673998226823}
   - component: {fileID: 2086953898645014172}
+  - component: {fileID: 5250980330377591510}
+  - component: {fileID: 4742003234858121343}
   m_Layer: 9
   m_Name: FishEnemy
   m_TagString: Untagged
@@ -95,50 +95,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &5608190234299984830
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3390356789600130103}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ddbd9458dec95954fa8871c7f6588af7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 0}
-  followSpeed: 0.1
-  body: {fileID: 2127794416230492074}
-  speed: 1
-  distanceBetween: 1.5
-  playerMovement: {fileID: 0}
-  HP: 3
-  knockBackStrength: 12
-  knockBackTime: 0.2
-  knockbackinating: 0
-  lastMoveDirEnemy: {x: 0, y: 0}
-  keepDistance: 0.1
-  walking: 0
-  animator: {fileID: 1318027197505658900}
-  palette: 0
---- !u!114 &4974619069767926429
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3390356789600130103}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a7de5dba183562e4a9d1e4323ab07af3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  playerMovement: {fileID: 0}
-  HP: 3
-  AIChase: {fileID: 5608190234299984830}
-  audioSource: {fileID: 1103122673998226823}
-  invincible: 0
 --- !u!50 &2127794416230492074
 Rigidbody2D:
   serializedVersion: 5
@@ -354,8 +310,54 @@ MonoBehaviour:
   player: {fileID: 0}
   body: {fileID: 2127794416230492074}
   dashTime: 2
-  aiChase: {fileID: 5608190234299984830}
+  aiChase: {fileID: 0}
   dashStrength: 10
   coolDown: 2
   aggroRange: 2
+  noWalk: 0
   animator: {fileID: 1318027197505658900}
+--- !u!114 &5250980330377591510
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3390356789600130103}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d80a6fcf0b199e6478a4d4ea8e8f35a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 0}
+  followSpeed: 0.1
+  body: {fileID: 0}
+  speed: 1
+  distanceBetween: 1.5
+  playerMovement: {fileID: 0}
+  HP: 3
+  knockBackStrength: 12
+  knockBackTime: 0.2
+  knockbackinating: 0
+  lastMoveDirEnemy: {x: 0, y: 0}
+  keepDistance: 0.1
+  walking: 0
+  animator: {fileID: 0}
+  palette: 0
+  fishEnemy: {fileID: 0}
+--- !u!114 &4742003234858121343
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3390356789600130103}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a860b57d57cdbf441b1b553a7e83167f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerMovement: {fileID: 0}
+  HP: 0
+  AIChase: {fileID: 0}
+  audioSource: {fileID: 0}
+  invincible: 0
