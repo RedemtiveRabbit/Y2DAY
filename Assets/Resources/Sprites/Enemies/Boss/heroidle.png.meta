@@ -1,10 +1,22 @@
 fileFormatVersion: 2
-guid: 0fa364242fc6baf40ad9f29503d91371
+guid: 16f189fedfa232540a24e98241fd5744
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8974503659662823260
-    second: tile099_0
+      213: -8642932543346045797
+    second: heroidle_0
+  - first:
+      213: -3766705748088392565
+    second: heroidle_1
+  - first:
+      213: 8557041668402691347
+    second: heroidle_2
+  - first:
+      213: 8257799781135855518
+    second: heroidle_3
+  - first:
+      213: -8353817132204863054
+    second: heroidle_4
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -126,13 +138,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: tile099_0
+      name: heroidle_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 64
-        height: 64
+        x: 17
+        y: 28
+        width: 88
+        height: 91
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +153,96 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4a0ba527878247380800000000000000
-      internalID: -8974503659662823260
+      spriteID: b9c0230e4a22e0880800000000000000
+      internalID: -8642932543346045797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heroidle_1
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 28
+        width: 88
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b84f4c73419f9bbc0800000000000000
+      internalID: -3766705748088392565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heroidle_2
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 28
+        width: 88
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31dbb5d6f08b0c670800000000000000
+      internalID: 8557041668402691347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heroidle_3
+      rect:
+        serializedVersion: 2
+        x: 401
+        y: 28
+        width: 88
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9fa6e43629999270800000000000000
+      internalID: 8257799781135855518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heroidle_4
+      rect:
+        serializedVersion: 2
+        x: 529
+        y: 28
+        width: 88
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b15b542497411c80800000000000000
+      internalID: -8353817132204863054
       vertices: []
       indices: 
       edges: []
@@ -161,7 +261,11 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      tile099_0: -8974503659662823260
+      heroidle_0: -8642932543346045797
+      heroidle_1: -3766705748088392565
+      heroidle_2: 8557041668402691347
+      heroidle_3: 8257799781135855518
+      heroidle_4: -8353817132204863054
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
