@@ -27,7 +27,7 @@ public class FishEnemy : MonoBehaviour
     {
         float distance = Vector2.Distance(transform.position, player.transform.position);
 
-        if (distance > aggroRange && isDashing == false && canDash == true)
+        if (distance < aggroRange && isDashing == false && canDash == true)
         {
             StartCoroutine(EnemyDash());
         }
