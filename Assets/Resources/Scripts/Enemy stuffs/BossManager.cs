@@ -1,3 +1,4 @@
+using System.Collections;
 using Unity.Collections;
 using UnityEditor.Experimental.GraphView;
 using UnityEngine;
@@ -16,6 +17,9 @@ public class BossManager : MonoBehaviour
     public Animator animator;
     public AI_Chase aiChase;
     public ShootTurret shootTurret;
+    public Transform BossLocation;
+    public Transform TVLocation;
+    public GameObject TV;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -40,6 +44,7 @@ public class BossManager : MonoBehaviour
         else if(health.HP == 1)
         {
             phase = 4;
+            StartCoroutine("TimeToDie");
         }
         
         if((aiChase.body.linearVelocityX != 0 || aiChase.body.linearVelocityY != 0) && !attacking)
@@ -130,5 +135,13 @@ public class BossManager : MonoBehaviour
 
          
 
+    }
+
+    private IEnumerator TimeToDie()
+    {
+        yield return new WaitForSeconds(2.4f);
+        TVLocation.position = BossLocation.position;
+        TV.SetActive(true);
+        Destroy(gameObject);
     }
 }
