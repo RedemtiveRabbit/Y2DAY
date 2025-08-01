@@ -190,7 +190,7 @@ Animator:
   m_GameObject: {fileID: 3390356789600130103}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 88239d96c4da4dd4696ecc89eb77ebfc, type: 2}
+  m_Controller: {fileID: 9100000, guid: 44f20efa5d5d6bf45b2bd10df0cd56e7, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -358,3 +358,4 @@ MonoBehaviour:
   dashStrength: 10
   coolDown: 2
   aggroRange: 2
+  animator: {fileID: 1318027197505658900}
