@@ -83,7 +83,7 @@ public class NPCMiguel : MonoBehaviour, IInteractable
             {
                 SaveData.current.hasCouch = 0;
             }
-            SaveData.current.levelsCompleted = 1;
+            SaveData.current.levelsCompleted = 2;
             SaveData.Save();
             SceneManager.LoadScene("Arcade Walk Scene");
         }
