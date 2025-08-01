@@ -101,7 +101,7 @@ public class NPCShark : MonoBehaviour, IInteractable
             {
                 SaveData.current.hasCouch = 0;
             }
-            SaveData.current.levelsCompleted = 1;
+            SaveData.current.levelsCompleted = 3;
             SaveData.Save();
             SceneManager.LoadScene("Aquarium Walk Scene");
         }
