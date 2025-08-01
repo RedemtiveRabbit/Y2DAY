@@ -1,0 +1,715 @@
+fileFormatVersion: 2
+guid: c4e43f334a7a48d4d9e39fade74e2e9a
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4237667474851089307
+    second: bosstransgender2-Sheet2_0
+  - first:
+      213: 906346111055463311
+    second: bosstransgender2-Sheet2_1
+  - first:
+      213: -5124241457251814841
+    second: bosstransgender2-Sheet2_2
+  - first:
+      213: -5691810747068137493
+    second: bosstransgender2-Sheet2_3
+  - first:
+      213: 3832463383392673801
+    second: bosstransgender2-Sheet2_4
+  - first:
+      213: -6525360156017917195
+    second: bosstransgender2-Sheet2_5
+  - first:
+      213: 2541498675599890370
+    second: bosstransgender2-Sheet2_6
+  - first:
+      213: -44468681502726795
+    second: bosstransgender2-Sheet2_7
+  - first:
+      213: 7388720715442145114
+    second: bosstransgender2-Sheet2_8
+  - first:
+      213: 6955251558708619241
+    second: bosstransgender2-Sheet2_9
+  - first:
+      213: 3563820608530742638
+    second: bosstransgender2-Sheet2_10
+  - first:
+      213: -8745546626307353167
+    second: bosstransgender2-Sheet2_11
+  - first:
+      213: 424405221596075570
+    second: bosstransgender2-Sheet2_12
+  - first:
+      213: -3673540469206170274
+    second: bosstransgender2-Sheet2_13
+  - first:
+      213: -4602433836167092095
+    second: bosstransgender2-Sheet2_14
+  - first:
+      213: -8459235713464305238
+    second: bosstransgender2-Sheet2_15
+  - first:
+      213: -3494508553647269512
+    second: bosstransgender2-Sheet2_16
+  - first:
+      213: -6893686567496095111
+    second: bosstransgender2-Sheet2_17
+  - first:
+      213: 9023620969751538989
+    second: bosstransgender2-Sheet2_18
+  - first:
+      213: 8715689340051654548
+    second: bosstransgender2-Sheet2_19
+  - first:
+      213: -6014877882800293609
+    second: bosstransgender2-Sheet2_20
+  - first:
+      213: 9048999384482224201
+    second: bosstransgender2-Sheet2_21
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: bosstransgender2-Sheet2_0
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 28
+        width: 91
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9bc9b2cd183fca30800000000000000
+      internalID: 4237667474851089307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bosstransgender2-Sheet2_1
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 28
+        width: 86
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8384096cfcf39c00800000000000000
+      internalID: 906346111055463311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bosstransgender2-Sheet2_2
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 28
+        width: 86
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 742fc254b8903e8b0800000000000000
+      internalID: -5124241457251814841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bosstransgender2-Sheet2_3
+      rect:
+        serializedVersion: 2
+        x: 401
+        y: 28
+        width: 88
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: befb0443840a201b0800000000000000
+      internalID: -5691810747068137493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bosstransgender2-Sheet2_4
+      rect:
+        serializedVersion: 2
+        x: 529
+        y: 28
+        width: 90
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 900efc55425af2530800000000000000
+      internalID: 3832463383392673801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bosstransgender2-Sheet2_5
+      rect:
+        serializedVersion: 2
+        x: 657
+        y: 28
+        width: 89
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f2801dc2834175a0800000000000000
+      internalID: -6525360156017917195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bosstransgender2-Sheet2_6
+      rect:
+        serializedVersion: 2
+        x: 785
+        y: 28
+        width: 88
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c7d14c7497354320800000000000000
+      internalID: 2541498675599890370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bosstransgender2-Sheet2_7
+      rect:
+        serializedVersion: 2
+        x: 913
+        y: 28
+        width: 88
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 575666348f3026ff0800000000000000
+      internalID: -44468681502726795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bosstransgender2-Sheet2_8
+      rect:
+        serializedVersion: 2
+        x: 1041
+        y: 28
+        width: 88
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a57cf74f7520a8660800000000000000
+      internalID: 7388720715442145114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bosstransgender2-Sheet2_9
+      rect:
+        serializedVersion: 2
+        x: 1169
+        y: 28
+        width: 88
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e72f403174068060800000000000000
+      internalID: 6955251558708619241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bosstransgender2-Sheet2_10
+      rect:
+        serializedVersion: 2
+        x: 1297
+        y: 28
+        width: 88
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6df0b626fb357130800000000000000
+      internalID: 3563820608530742638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bosstransgender2-Sheet2_11
+      rect:
+        serializedVersion: 2
+        x: 1425
+        y: 28
+        width: 88
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b59554eda391a680800000000000000
+      internalID: -8745546626307353167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bosstransgender2-Sheet2_12
+      rect:
+        serializedVersion: 2
+        x: 1553
+        y: 28
+        width: 88
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2361e0aec4ac3e500800000000000000
+      internalID: 424405221596075570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bosstransgender2-Sheet2_13
+      rect:
+        serializedVersion: 2
+        x: 1681
+        y: 28
+        width: 88
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e55c1f01866f40dc0800000000000000
+      internalID: -3673540469206170274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bosstransgender2-Sheet2_14
+      rect:
+        serializedVersion: 2
+        x: 1809
+        y: 28
+        width: 88
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 188a50d8fced020c0800000000000000
+      internalID: -4602433836167092095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bosstransgender2-Sheet2_15
+      rect:
+        serializedVersion: 2
+        x: 1937
+        y: 28
+        width: 88
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa979a300f1ca9a80800000000000000
+      internalID: -8459235713464305238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bosstransgender2-Sheet2_16
+      rect:
+        serializedVersion: 2
+        x: 2065
+        y: 28
+        width: 88
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8795a433cf2018fc0800000000000000
+      internalID: -3494508553647269512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bosstransgender2-Sheet2_17
+      rect:
+        serializedVersion: 2
+        x: 2193
+        y: 28
+        width: 88
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97a63875794b450a0800000000000000
+      internalID: -6893686567496095111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bosstransgender2-Sheet2_18
+      rect:
+        serializedVersion: 2
+        x: 2321
+        y: 28
+        width: 88
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2d6ec976775a3d70800000000000000
+      internalID: 9023620969751538989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bosstransgender2-Sheet2_19
+      rect:
+        serializedVersion: 2
+        x: 2449
+        y: 28
+        width: 88
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 497007ee64954f870800000000000000
+      internalID: 8715689340051654548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bosstransgender2-Sheet2_20
+      rect:
+        serializedVersion: 2
+        x: 2577
+        y: 28
+        width: 88
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 719b55c0f6cd68ca0800000000000000
+      internalID: -6014877882800293609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bosstransgender2-Sheet2_21
+      rect:
+        serializedVersion: 2
+        x: 2705
+        y: 28
+        width: 88
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9489acc1ff0849d70800000000000000
+      internalID: 9048999384482224201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      bosstransgender2-Sheet2_0: 4237667474851089307
+      bosstransgender2-Sheet2_1: 906346111055463311
+      bosstransgender2-Sheet2_10: 3563820608530742638
+      bosstransgender2-Sheet2_11: -8745546626307353167
+      bosstransgender2-Sheet2_12: 424405221596075570
+      bosstransgender2-Sheet2_13: -3673540469206170274
+      bosstransgender2-Sheet2_14: -4602433836167092095
+      bosstransgender2-Sheet2_15: -8459235713464305238
+      bosstransgender2-Sheet2_16: -3494508553647269512
+      bosstransgender2-Sheet2_17: -6893686567496095111
+      bosstransgender2-Sheet2_18: 9023620969751538989
+      bosstransgender2-Sheet2_19: 8715689340051654548
+      bosstransgender2-Sheet2_2: -5124241457251814841
+      bosstransgender2-Sheet2_20: -6014877882800293609
+      bosstransgender2-Sheet2_21: 9048999384482224201
+      bosstransgender2-Sheet2_3: -5691810747068137493
+      bosstransgender2-Sheet2_4: 3832463383392673801
+      bosstransgender2-Sheet2_5: -6525360156017917195
+      bosstransgender2-Sheet2_6: 2541498675599890370
+      bosstransgender2-Sheet2_7: -44468681502726795
+      bosstransgender2-Sheet2_8: 7388720715442145114
+      bosstransgender2-Sheet2_9: 6955251558708619241
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
