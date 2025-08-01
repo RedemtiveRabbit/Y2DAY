@@ -454,6 +454,10 @@ PrefabInstance:
       propertyPath: playerMovement
       value: 
       objectReference: {fileID: 25045994}
+    - target: {fileID: 6285607643783553418, guid: 947aa2e4e234d2d408b6e41f3fb1c94f, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 2124596701524849695, guid: efea44549a5d76841970fd44ee5088fc, type: 3}
     - target: {fileID: 6389205154571628419, guid: 947aa2e4e234d2d408b6e41f3fb1c94f, type: 3}
       propertyPath: m_Name
       value: EVILboss
@@ -466,6 +470,22 @@ PrefabInstance:
       propertyPath: playerMovement
       value: 
       objectReference: {fileID: 25045994}
+    - target: {fileID: 6725314411304524762, guid: 947aa2e4e234d2d408b6e41f3fb1c94f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.035
+      objectReference: {fileID: 0}
+    - target: {fileID: 6725314411304524762, guid: 947aa2e4e234d2d408b6e41f3fb1c94f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.264
+      objectReference: {fileID: 0}
+    - target: {fileID: 8372731235376245377, guid: 947aa2e4e234d2d408b6e41f3fb1c94f, type: 3}
+      propertyPath: phase
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8372731235376245377, guid: 947aa2e4e234d2d408b6e41f3fb1c94f, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 25045986}
     - target: {fileID: 8378363848450182196, guid: 947aa2e4e234d2d408b6e41f3fb1c94f, type: 3}
       propertyPath: player
       value: 

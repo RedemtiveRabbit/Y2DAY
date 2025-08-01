@@ -1,6 +1,8 @@
+using System.Collections;
 using Unity.Collections;
 using UnityEditor.Experimental.GraphView;
 using UnityEngine;
+using UnityEngine.Diagnostics;
 
 public class BossManager : MonoBehaviour
 {
@@ -15,6 +17,9 @@ public class BossManager : MonoBehaviour
     public Animator animator;
     public AI_Chase aiChase;
     public ShootTurret shootTurret;
+    public Transform BossLocation;
+    public Transform TVLocation;
+    public GameObject TV;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -25,7 +30,7 @@ public class BossManager : MonoBehaviour
     void Update()
     {
         float distance = Vector2.Distance(transform.position, player.transform.position);
-        Vector3 direction = (player.transform.position - transform.position).normalized;
+        Vector3 direction = Vector3Int.RoundToInt((player.transform.position - transform.position).normalized);
         Quaternion targetRotation = Quaternion.LookRotation(Vector3.forward, direction);
 
         if (health.HP <= 11 && health.HP > 6)
@@ -39,6 +44,7 @@ public class BossManager : MonoBehaviour
         else if(health.HP == 1)
         {
             phase = 4;
+            StartCoroutine("TimeToDie");
         }
         
         if((aiChase.body.linearVelocityX != 0 || aiChase.body.linearVelocityY != 0) && !attacking)
@@ -58,8 +64,68 @@ public class BossManager : MonoBehaviour
         {
             attacking = false;
         }
+        Debug.Log(direction);
+        if (direction.x > 0 && direction.y == 0)
+        {
+            if (phase == 1)
+            {
+                bulletPos.position = new Vector2(transform.position.x + 0.5f, transform.position.y);
+            }
+            if (phase == 2)
+            {
+                bulletPos.position = new Vector2(transform.position.x + 0.5f, transform.position.y);
+            }
+            if (phase == 3)
+            {
+                bulletPos.position = new Vector2(transform.position.x, transform.position.y + 0.2f);
+            }
+        }
+        else if (direction.x < 0 && direction.y == 0)
+        {
+            if (phase == 1)
+            {
+                bulletPos.position = new Vector2(transform.position.x - 0.5f, transform.position.y);
+            }
+            if (phase == 2)
+            {
+                bulletPos.position = new Vector2(transform.position.x - 0.1f, transform.position.y);
+            }
+            if (phase == 3)
+            {
+                bulletPos.position = new Vector2(transform.position.x, transform.position.y + 0.2f);
+            }
+        }
+        else if (direction.x == 0 && direction.y > 0)
+        {
+            if (phase == 1)
+            {
+                bulletPos.position = new Vector2(transform.position.x, transform.position.y + 0.5f);
+            }
+            if (phase == 2)
+            {
+                bulletPos.position = new Vector2(transform.position.x + 0.3f, transform.position.y + 0.2f);
+            }
+            if (phase == 3)
+            {
+                bulletPos.position = new Vector2(transform.position.x, transform.position.y + 0.2f);
+            }
+        }
+        else if (direction.x == 0 && direction.y < 0)
+        {
+            if (phase == 1)
+            {
+                bulletPos.position = new Vector2(transform.position.x, transform.position.y - 0.5f);
+            }
+            if (phase == 2)
+            {
+                bulletPos.position = new Vector2(transform.position.x + 0.3f, transform.position.y - 0.3f);
+            }
+            if (phase == 3)
+            {
+                bulletPos.position = new Vector2(transform.position.x, transform.position.y + 0.2f);
+            }
 
-
+        }
 
         animator.SetFloat("DirectionX", direction.x);
         animator.SetFloat("DirectionY", direction.y);
@@ -69,5 +135,13 @@ public class BossManager : MonoBehaviour
 
          
 
+    }
+
+    private IEnumerator TimeToDie()
+    {
+        yield return new WaitForSeconds(2.4f);
+        TVLocation.position = BossLocation.position;
+        TV.SetActive(true);
+        Destroy(gameObject);
     }
 }
