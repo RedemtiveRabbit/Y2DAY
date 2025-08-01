@@ -10,6 +10,9 @@ public class SaveData
     public int hasPlant = -1;
     public int hasDiningTable = -1;
     public int hasChairs = -1;
+    public int hasClock = -1;
+    public int hasDresser = -1;
+    public int hasTable = -1;
     public int levelsCompleted = 0;
     public static SaveData current = new();
 
