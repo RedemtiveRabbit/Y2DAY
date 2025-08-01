@@ -14,7 +14,11 @@ public class Timer : MonoBehaviour
 
     void Update()
     {
-        
+        if (Input.GetButtonDown("StartGame"))
+        {
+            SceneManager.LoadScene("Start Screen");
+            StopAllCoroutines();
+        }
     }
 
     private IEnumerator TimeToStart()
