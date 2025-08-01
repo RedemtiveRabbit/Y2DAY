@@ -1,6 +1,7 @@
 using Unity.Collections;
 using UnityEditor.Experimental.GraphView;
 using UnityEngine;
+using UnityEngine.Diagnostics;
 
 public class BossManager : MonoBehaviour
 {
@@ -25,7 +26,7 @@ public class BossManager : MonoBehaviour
     void Update()
     {
         float distance = Vector2.Distance(transform.position, player.transform.position);
-        Vector3 direction = (player.transform.position - transform.position).normalized;
+        Vector3 direction = Vector3Int.RoundToInt((player.transform.position - transform.position).normalized);
         Quaternion targetRotation = Quaternion.LookRotation(Vector3.forward, direction);
 
         if (health.HP <= 11 && health.HP > 6)
@@ -58,8 +59,68 @@ public class BossManager : MonoBehaviour
         {
             attacking = false;
         }
+        Debug.Log(direction);
+        if (direction.x > 0 && direction.y == 0)
+        {
+            if (phase == 1)
+            {
+                bulletPos.position = new Vector2(transform.position.x + 0.5f, transform.position.y);
+            }
+            if (phase == 2)
+            {
+                bulletPos.position = new Vector2(transform.position.x + 0.5f, transform.position.y);
+            }
+            if (phase == 3)
+            {
+                bulletPos.position = new Vector2(transform.position.x, transform.position.y + 0.2f);
+            }
+        }
+        else if (direction.x < 0 && direction.y == 0)
+        {
+            if (phase == 1)
+            {
+                bulletPos.position = new Vector2(transform.position.x - 0.5f, transform.position.y);
+            }
+            if (phase == 2)
+            {
+                bulletPos.position = new Vector2(transform.position.x - 0.1f, transform.position.y);
+            }
+            if (phase == 3)
+            {
+                bulletPos.position = new Vector2(transform.position.x, transform.position.y + 0.2f);
+            }
+        }
+        else if (direction.x == 0 && direction.y > 0)
+        {
+            if (phase == 1)
+            {
+                bulletPos.position = new Vector2(transform.position.x, transform.position.y + 0.5f);
+            }
+            if (phase == 2)
+            {
+                bulletPos.position = new Vector2(transform.position.x + 0.3f, transform.position.y + 0.2f);
+            }
+            if (phase == 3)
+            {
+                bulletPos.position = new Vector2(transform.position.x, transform.position.y + 0.2f);
+            }
+        }
+        else if (direction.x == 0 && direction.y < 0)
+        {
+            if (phase == 1)
+            {
+                bulletPos.position = new Vector2(transform.position.x, transform.position.y - 0.5f);
+            }
+            if (phase == 2)
+            {
+                bulletPos.position = new Vector2(transform.position.x + 0.3f, transform.position.y - 0.3f);
+            }
+            if (phase == 3)
+            {
+                bulletPos.position = new Vector2(transform.position.x, transform.position.y + 0.2f);
+            }
 
-
+        }
 
         animator.SetFloat("DirectionX", direction.x);
         animator.SetFloat("DirectionY", direction.y);
