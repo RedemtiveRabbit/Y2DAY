@@ -128,6 +128,17 @@ public class Music : MonoBehaviour
             playingAquarium = false;
         }
 
+        if(audioSource.isPlaying == false)
+        {
+            playingMiguel = false;
+            playingMall = false;
+            playingHouse = false;
+            playingGwen = false;
+            playingArcade = false;
+            playingShark = false;
+            playingAquarium = false;
+        }
+
 
 
     }
