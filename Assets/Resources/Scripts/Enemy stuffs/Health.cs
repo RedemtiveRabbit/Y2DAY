@@ -11,9 +11,11 @@ public class Health : MonoBehaviour
     private int MaxHP;
     public AI_Chase AIChase;
     public AudioSource audioSource;
+    public bool invincible;
 
     void Start()
     {
+        invincible = false;
         body = GetComponent<Rigidbody2D>();
     }
 
@@ -42,10 +44,14 @@ public class Health : MonoBehaviour
     }
     public void Defend(int damage)
     {
-        audioSource.Play();
-        HP -= damage;
-        AIChase.KnockBack();
-        
+        print("Damage Attempted");
+        if (invincible == false)
+        {
+            print("Damage Taken");
+            audioSource.Play();
+            HP -= damage;
+            AIChase.KnockBack();
+        } 
     }
 
     

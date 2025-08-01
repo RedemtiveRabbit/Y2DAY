@@ -16,7 +16,7 @@ public class ShootTurret : MonoBehaviour
     public float rotationSpeed = 5f;
     public bool shooting;
     private float timer;
-    private float timeUntilRoF;
+    public float timeUntilRoF;
     public Animator animator;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -28,7 +28,7 @@ public class ShootTurret : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        animator.SetBool("Shooting", shooting);
+        //animator.SetBool("Shooting", shooting);
         float distance = Vector2.Distance(transform.position, player.transform.position);
         Vector3 direction = player.transform.position - transform.position;
         Quaternion targetRotation = Quaternion.LookRotation(Vector3.forward, direction);
@@ -38,7 +38,7 @@ public class ShootTurret : MonoBehaviour
         {
             //transform.rotation = Quaternion.RotateTowards(transform.rotation, targetRotation, rotationSpeed * Time.deltaTime * 100f);
             timer += Time.deltaTime;
-            if (coolingDown == false && shots < maxShots)
+            if (coolingDown != true && shots < maxShots)
             {
                 shooting = true;
                 timeUntilRoF += Time.deltaTime;
