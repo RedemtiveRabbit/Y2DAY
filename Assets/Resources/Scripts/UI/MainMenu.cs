@@ -29,6 +29,14 @@ public class MainMenu : MonoBehaviour
         {
             SceneManager.LoadScene("House Floor One 1");
         }
+        else if (SaveData.current.levelsCompleted == 2)
+        {
+            SceneManager.LoadScene("House Floor One 2");
+        }
+        else if (SaveData.current.levelsCompleted == 3)
+        {
+            SceneManager.LoadScene("House Floor One 3");
+        }
     }
 
     public void OpenCredits ()

@@ -8,10 +8,18 @@ public class Music : MonoBehaviour
     public AudioClip house;
     public AudioClip mall;
     public AudioClip gwen;
+    public AudioClip arcade;
+    public AudioClip miguel;
+    public AudioClip aquarium;
+    public AudioClip shark;
     public AudioSource audioSource;
     public bool playingHouse = false;
     public bool playingMall = false;
     public bool playingGwen = false;
+    public bool playingArcade = false;
+    public bool playingMiguel = false;
+    public bool playingAquarium = false;
+    public bool playingShark = false;
     void Start()
     {
 
@@ -21,7 +29,7 @@ public class Music : MonoBehaviour
     void Update()
     {
         DontDestroyOnLoad(this);
-        if((SceneManager.GetActiveScene().name == "House Floor One" || SceneManager.GetActiveScene().name == "House Floor One 1") && !playingHouse)
+        if((SceneManager.GetActiveScene().name == "House Floor One" || SceneManager.GetActiveScene().name == "House Floor One 1" || SceneManager.GetActiveScene().name == "Basement" || SceneManager.GetActiveScene().name == "House Floor One 2" || SceneManager.GetActiveScene().name == "Basement 2") && !playingHouse)
         {
             audioSource.Stop();
             audioSource.PlayOneShot(house);
@@ -30,8 +38,12 @@ public class Music : MonoBehaviour
             playingHouse = true;
             playingMall = false;
             playingGwen = false;
+            playingArcade = false;
+            playingMiguel = false;
+            playingShark = false;
+            playingAquarium = false;
         }
-        if((SceneManager.GetActiveScene().name == "Mall Level 1") && !playingMall)
+        else if((SceneManager.GetActiveScene().name == "Mall Level 1" || SceneManager.GetActiveScene().name == "Mall Level 2" || SceneManager.GetActiveScene().name == "Mall Level 3" || SceneManager.GetActiveScene().name == "Mall Level 4" || SceneManager.GetActiveScene().name == "Mall Level 6") && !playingMall)
         {
             audioSource.Stop();
             audioSource.PlayOneShot(mall);
@@ -40,8 +52,12 @@ public class Music : MonoBehaviour
             playingMall = true;
             playingHouse = false;
             playingGwen = false;
+            playingArcade = false;
+            playingMiguel = false;
+            playingShark = false;
+            playingAquarium = false;
         }
-        if(SceneManager.GetActiveScene().name == "Mall Level 5" && !playingGwen)
+        else if(SceneManager.GetActiveScene().name == "Mall Level 5" && !playingGwen)
         {
             audioSource.Stop();
             audioSource.PlayOneShot(gwen);
@@ -50,31 +66,80 @@ public class Music : MonoBehaviour
             playingGwen = true;
             playingMall = false;
             playingHouse = false;
+            playingArcade = false;
+            playingMiguel = false;
+            playingShark = false;
+            playingAquarium = false;
         }
-        if (audioSource.isPlaying == false)
+        else if((SceneManager.GetActiveScene().name == "Arcade Level 1" || SceneManager.GetActiveScene().name == "Arcade Level 2" || SceneManager.GetActiveScene().name == "Arcade Level 3") && !playingArcade)
         {
-            playingGwen = false;
+            audioSource.Stop();
+            audioSource.PlayOneShot(arcade);
+            audioSource.loop = true;
+            print("played arcade");
+            playingArcade = true;
             playingMall = false;
             playingHouse = false;
-            if(SceneManager.GetActiveScene().name == "Basement")
-            {
-                audioSource.PlayOneShot(house);
-                audioSource.loop = true;
-                print("played house");
-                playingHouse = true;
-                playingMall = false;
-                playingGwen = false;
-            }
-            if(SceneManager.GetActiveScene().name == "Mall Level 2" || SceneManager.GetActiveScene().name == "Mall Level 3" || SceneManager.GetActiveScene().name == "Mall Level 4")
-            {
-                audioSource.PlayOneShot(mall);
-                audioSource.loop = true;
-                print("played mall");
-                playingMall = true;
-                playingHouse = false;
-                playingGwen = false;
-            }
+            playingGwen = false;
+            playingMiguel = false;
+            playingShark = false;
+            playingAquarium = false;
         }
+        else if(SceneManager.GetActiveScene().name == "Arcade Level 4" && !playingMiguel)
+        {
+            audioSource.Stop();
+            audioSource.PlayOneShot(arcade);
+            audioSource.loop = true;
+            print("played arcade");
+            playingMiguel = true;
+            playingMall = false;
+            playingHouse = false;
+            playingGwen = false;
+            playingArcade = false;
+            playingShark = false;
+            playingAquarium = false;
+        }
+        else if ((SceneManager.GetActiveScene().name == "Aquarium 1" || SceneManager.GetActiveScene().name == "Aquarium 2") && !playingAquarium)
+        {
+            audioSource.Stop();
+            audioSource.PlayOneShot(arcade);
+            audioSource.loop = true;
+            print("played arcade");
+            playingAquarium = true;
+            playingMall = false;
+            playingHouse = false;
+            playingGwen = false;
+            playingArcade = false;
+            playingShark = false;
+            playingMiguel = false;
+        }
+        else if (SceneManager.GetActiveScene().name == "Aquarium 3" && !playingShark)
+        {
+            audioSource.Stop();
+            audioSource.PlayOneShot(arcade);
+            audioSource.loop = true;
+            print("played arcade");
+            playingMiguel = false;
+            playingMall = false;
+            playingHouse = false;
+            playingGwen = false;
+            playingArcade = false;
+            playingShark = true;
+            playingAquarium = false;
+        }
+
+        if(audioSource.isPlaying == false)
+        {
+            playingMiguel = false;
+            playingMall = false;
+            playingHouse = false;
+            playingGwen = false;
+            playingArcade = false;
+            playingShark = false;
+            playingAquarium = false;
+        }
+
+
 
     }
 }

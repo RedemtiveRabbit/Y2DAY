@@ -1,0 +1,793 @@
+fileFormatVersion: 2
+guid: 26bff67f9fcecb74096be16222d4b224
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5320682111100130018
+    second: bossdie-Sheet_0
+  - first:
+      213: -1921954950419237647
+    second: bossdie-Sheet_1
+  - first:
+      213: 6157836618847690264
+    second: bossdie-Sheet_2
+  - first:
+      213: -1347712159125960556
+    second: bossdie-Sheet_3
+  - first:
+      213: -2070515918883341808
+    second: bossdie-Sheet_4
+  - first:
+      213: 4414456635910701608
+    second: bossdie-Sheet_5
+  - first:
+      213: -98720685257976461
+    second: bossdie-Sheet_6
+  - first:
+      213: 2290802636561582218
+    second: bossdie-Sheet_7
+  - first:
+      213: 8961068693752527870
+    second: bossdie-Sheet_8
+  - first:
+      213: 5879330856781892168
+    second: bossdie-Sheet_9
+  - first:
+      213: -8614059138603939119
+    second: bossdie-Sheet_10
+  - first:
+      213: 5307718552750883751
+    second: bossdie-Sheet_11
+  - first:
+      213: 5581898471234985491
+    second: bossdie-Sheet_12
+  - first:
+      213: -2554647165827995087
+    second: bossdie-Sheet_13
+  - first:
+      213: 4385625436370256181
+    second: bossdie-Sheet_14
+  - first:
+      213: -5661585221451953042
+    second: bossdie-Sheet_15
+  - first:
+      213: -6747479313301417356
+    second: bossdie-Sheet_16
+  - first:
+      213: 9192620660017535222
+    second: bossdie-Sheet_17
+  - first:
+      213: -2899445671949668630
+    second: bossdie-Sheet_18
+  - first:
+      213: 7676076955259481208
+    second: bossdie-Sheet_19
+  - first:
+      213: -7537168379995667301
+    second: bossdie-Sheet_20
+  - first:
+      213: -6635358940294226757
+    second: bossdie-Sheet_21
+  - first:
+      213: -4545221433936052632
+    second: bossdie-Sheet_22
+  - first:
+      213: 104129537879223322
+    second: bossdie-Sheet_23
+  - first:
+      213: 7468098423606897168
+    second: bossdie-Sheet_24
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: bossdie-Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 28
+        width: 88
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e216ea903cd6d940800000000000000
+      internalID: 5320682111100130018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bossdie-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 28
+        width: 88
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f435f1d728d355e0800000000000000
+      internalID: -1921954950419237647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bossdie-Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 28
+        width: 88
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81e1f4b77c7057550800000000000000
+      internalID: 6157836618847690264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bossdie-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 401
+        y: 28
+        width: 88
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49882d78ee6fb4de0800000000000000
+      internalID: -1347712159125960556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bossdie-Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 529
+        y: 38
+        width: 87
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01aba29edbc0443e0800000000000000
+      internalID: -2070515918883341808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bossdie-Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 659
+        y: 47
+        width: 85
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 822c2dbebec434d30800000000000000
+      internalID: 4414456635910701608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bossdie-Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 785
+        y: 62
+        width: 87
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 375173f4f0641aef0800000000000000
+      internalID: -98720685257976461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bossdie-Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 914
+        y: 71
+        width: 86
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8808ca5cd09acf10800000000000000
+      internalID: 2290802636561582218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bossdie-Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 1058
+        y: 79
+        width: 60
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: efb3efacf7c1c5c70800000000000000
+      internalID: 8961068693752527870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bossdie-Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 1186
+        y: 78
+        width: 60
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84a4a73a344979150800000000000000
+      internalID: 5879330856781892168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bossdie-Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 1314
+        y: 76
+        width: 60
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1da0e494ad6b47880800000000000000
+      internalID: -8614059138603939119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bossdie-Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 1442
+        y: 73
+        width: 60
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a38778f6edc8a940800000000000000
+      internalID: 5307718552750883751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bossdie-Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 1570
+        y: 69
+        width: 60
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31ed14ed513e67d40800000000000000
+      internalID: 5581898471234985491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bossdie-Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 1698
+        y: 64
+        width: 60
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13a2d5210f11c8cd0800000000000000
+      internalID: -2554647165827995087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bossdie-Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 1826
+        y: 58
+        width: 60
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53144cc291fdcdc30800000000000000
+      internalID: 4385625436370256181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bossdie-Sheet_15
+      rect:
+        serializedVersion: 2
+        x: 1954
+        y: 51
+        width: 60
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6c41c9cc320e61b0800000000000000
+      internalID: -5661585221451953042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bossdie-Sheet_16
+      rect:
+        serializedVersion: 2
+        x: 2082
+        y: 43
+        width: 60
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4725f5170532c52a0800000000000000
+      internalID: -6747479313301417356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bossdie-Sheet_17
+      rect:
+        serializedVersion: 2
+        x: 657
+        y: 47
+        width: 15
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f8134329cfb29f70800000000000000
+      internalID: 9192620660017535222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bossdie-Sheet_18
+      rect:
+        serializedVersion: 2
+        x: 2210
+        y: 34
+        width: 60
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aee65e5f58913c7d0800000000000000
+      internalID: -2899445671949668630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bossdie-Sheet_19
+      rect:
+        serializedVersion: 2
+        x: 2338
+        y: 36
+        width: 60
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87cadca3257e68a60800000000000000
+      internalID: 7676076955259481208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bossdie-Sheet_20
+      rect:
+        serializedVersion: 2
+        x: 2466
+        y: 33
+        width: 60
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b944d02ca49966790800000000000000
+      internalID: -7537168379995667301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bossdie-Sheet_21
+      rect:
+        serializedVersion: 2
+        x: 2594
+        y: 33
+        width: 60
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bbcdc8e03387ae3a0800000000000000
+      internalID: -6635358940294226757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bossdie-Sheet_22
+      rect:
+        serializedVersion: 2
+        x: 2722
+        y: 33
+        width: 60
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86effbcff212ce0c0800000000000000
+      internalID: -4545221433936052632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bossdie-Sheet_23
+      rect:
+        serializedVersion: 2
+        x: 2850
+        y: 33
+        width: 60
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a1caae35341f17100800000000000000
+      internalID: 104129537879223322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bossdie-Sheet_24
+      rect:
+        serializedVersion: 2
+        x: 2978
+        y: 33
+        width: 60
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01a6eb6d2f304a760800000000000000
+      internalID: 7468098423606897168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      bossdie-Sheet_0: 5320682111100130018
+      bossdie-Sheet_1: -1921954950419237647
+      bossdie-Sheet_10: -8614059138603939119
+      bossdie-Sheet_11: 5307718552750883751
+      bossdie-Sheet_12: 5581898471234985491
+      bossdie-Sheet_13: -2554647165827995087
+      bossdie-Sheet_14: 4385625436370256181
+      bossdie-Sheet_15: -5661585221451953042
+      bossdie-Sheet_16: -6747479313301417356
+      bossdie-Sheet_17: 9192620660017535222
+      bossdie-Sheet_18: -2899445671949668630
+      bossdie-Sheet_19: 7676076955259481208
+      bossdie-Sheet_2: 6157836618847690264
+      bossdie-Sheet_20: -7537168379995667301
+      bossdie-Sheet_21: -6635358940294226757
+      bossdie-Sheet_22: -4545221433936052632
+      bossdie-Sheet_23: 104129537879223322
+      bossdie-Sheet_24: 7468098423606897168
+      bossdie-Sheet_3: -1347712159125960556
+      bossdie-Sheet_4: -2070515918883341808
+      bossdie-Sheet_5: 4414456635910701608
+      bossdie-Sheet_6: -98720685257976461
+      bossdie-Sheet_7: 2290802636561582218
+      bossdie-Sheet_8: 8961068693752527870
+      bossdie-Sheet_9: 5879330856781892168
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

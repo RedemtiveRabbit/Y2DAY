@@ -27,7 +27,7 @@ public class TakeArcade : MonoBehaviour, IInteractable
     {
         if (interactionDetector.interactionIcon.activeSelf)
         {
-            if (Input.GetButtonDown("Interact"))
+            if (Input.GetButtonDown("Interact") && dialoguePanel.activeInHierarchy == false)
             {
                 EventSystem.current.SetSelectedGameObject(contButton);
                 if (dialoguePanel.activeInHierarchy)
@@ -80,7 +80,7 @@ public class TakeArcade : MonoBehaviour, IInteractable
         {
             zeroText();
             Destroy(couch);
-            SaveData.current.hasCouch = 1;
+            SaveData.current.hasArcadeMachine = 1;
         }
     }
 
