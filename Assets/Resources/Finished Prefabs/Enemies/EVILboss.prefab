@@ -117,7 +117,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
+  m_Sprite: {fileID: -93287492338140567, guid: 703787d2d99567644a664c7d7239000c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -168,7 +168,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerMovement: {fileID: 0}
-  HP: 10
+  HP: 16
   AIChase: {fileID: 6441305910182710248}
   audioSource: {fileID: 4414824706166064377}
   invincible: 0
@@ -407,8 +407,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   phase: 0
   stun: 0
-  player: {fileID: 0}
-  bullet: {fileID: 0}
-  bulletPos: {fileID: 0}
-  health: {fileID: 0}
-  animator: {fileID: 0}
+  walking: 0
+  attacking: 0
+  player: {fileID: 6389205154571628419}
+  bullet: {fileID: 6389205154571628419}
+  bulletPos: {fileID: 6725314411304524762}
+  health: {fileID: 728519144848270901}
+  animator: {fileID: 8143456394619755850}
+  aiChase: {fileID: 6441305910182710248}
+  shootTurret: {fileID: 8378363848450182196}
