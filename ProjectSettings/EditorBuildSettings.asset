@@ -87,6 +87,9 @@ EditorBuildSettings:
     path: Assets/Resources/Scenes/Scenes for Final Game/Aquarium/Aquarium 2.unity
     guid: e9410968652161e4695e0bd2a85d9829
   - enabled: 1
+    path: Assets/Resources/Scenes/Scenes for Final Game/Aquarium/Aquarium 3.unity
+    guid: 2369a71ddd1f67f46b67071a28f7d2d0
+  - enabled: 1
     path: Assets/Resources/Scenes/Scenes for Final Game/Aquarium/Aquarium Walk Scene.unity
     guid: 6e805cc680c307343af285060ffe53cd
   - enabled: 1

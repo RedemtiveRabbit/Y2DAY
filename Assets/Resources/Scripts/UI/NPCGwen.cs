@@ -85,7 +85,7 @@ public class NPCGwen : MonoBehaviour, IInteractable
             }
             SaveData.current.levelsCompleted = 1;
             SaveData.Save();
-            SceneManager.LoadScene("House Floor One 1");
+            SceneManager.LoadScene("Mall Walk Scene");
         }
     }
 

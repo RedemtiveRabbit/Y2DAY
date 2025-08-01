@@ -1338,11 +1338,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7686868684120911145, guid: 4a05c7aa9c303444a9805657c8599c35, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.014252788
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7686868684120911145, guid: 4a05c7aa9c303444a9805657c8599c35, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.014252788
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7686868684120911145, guid: 4a05c7aa9c303444a9805657c8599c35, type: 3}
       propertyPath: m_LocalScale.z
@@ -8169,6 +8169,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1480460973555456613, guid: 4841a8ce7977d1a44b157e206180f3cb, type: 3}
+      propertyPath: m_SortingLayer
+      value: -5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1480460973555456613, guid: 4841a8ce7977d1a44b157e206180f3cb, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 1653799967
+      objectReference: {fileID: 0}
     - target: {fileID: 2278505059340969285, guid: 4841a8ce7977d1a44b157e206180f3cb, type: 3}
       propertyPath: m_Name
       value: Jean
