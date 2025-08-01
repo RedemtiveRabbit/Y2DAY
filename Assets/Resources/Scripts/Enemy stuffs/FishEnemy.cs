@@ -16,6 +16,8 @@ public class FishEnemy : MonoBehaviour
     public int dashStrength;
     public float coolDown;
     public float aggroRange;
+    public bool noWalk;
+    public Animator animator;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -30,6 +32,17 @@ public class FishEnemy : MonoBehaviour
         if (distance < aggroRange && isDashing == false && canDash == true)
         {
             StartCoroutine(EnemyDash());
+        }
+        animator.SetBool("Dashing", isDashing);
+
+        if(isDashing == true)
+        {
+            aiChase.walking = false;
+            noWalk = true;
+        }
+        else
+        {
+            noWalk = false;
         }
     }
     IEnumerator EnemyDash()
@@ -65,5 +78,9 @@ public class FishEnemy : MonoBehaviour
 
         yield return new WaitForSeconds(coolDown);
         canDash = true;
+
+
     }
+
+    
 }

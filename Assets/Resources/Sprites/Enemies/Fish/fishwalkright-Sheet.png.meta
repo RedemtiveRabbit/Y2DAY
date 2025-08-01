@@ -153,10 +153,10 @@ TextureImporter:
       name: fishwalkright-Sheet_0
       rect:
         serializedVersion: 2
-        x: 26
-        y: 19
-        width: 12
-        height: 31
+        x: 0
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -175,10 +175,10 @@ TextureImporter:
       name: fishwalkright-Sheet_1
       rect:
         serializedVersion: 2
-        x: 85
-        y: 19
-        width: 21
-        height: 30
+        x: 64
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -197,10 +197,10 @@ TextureImporter:
       name: fishwalkright-Sheet_2
       rect:
         serializedVersion: 2
-        x: 153
-        y: 19
-        width: 15
-        height: 30
+        x: 128
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -219,10 +219,10 @@ TextureImporter:
       name: fishwalkright-Sheet_3
       rect:
         serializedVersion: 2
-        x: 218
-        y: 19
-        width: 12
-        height: 31
+        x: 192
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -241,10 +241,10 @@ TextureImporter:
       name: fishwalkright-Sheet_4
       rect:
         serializedVersion: 2
-        x: 281
-        y: 19
-        width: 14
-        height: 31
+        x: 256
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -263,10 +263,10 @@ TextureImporter:
       name: fishwalkright-Sheet_5
       rect:
         serializedVersion: 2
-        x: 342
-        y: 19
-        width: 11
-        height: 8
+        x: 320
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -285,10 +285,10 @@ TextureImporter:
       name: fishwalkright-Sheet_6
       rect:
         serializedVersion: 2
-        x: 343
-        y: 20
-        width: 19
-        height: 29
+        x: 384
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -307,10 +307,10 @@ TextureImporter:
       name: fishwalkright-Sheet_7
       rect:
         serializedVersion: 2
-        x: 409
-        y: 19
-        width: 15
-        height: 30
+        x: 448
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -325,33 +325,11 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: fishwalkright-Sheet_8
-      rect:
-        serializedVersion: 2
-        x: 474
-        y: 18
-        width: 12
-        height: 31
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: fbdc77fb171d7c020800000000000000
-      internalID: 2362086816052923839
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: eda252d6519172b4a864e0865ccb6e51
     internalID: 0
     vertices: []
     indices: 
@@ -369,7 +347,6 @@ TextureImporter:
       fishwalkright-Sheet_5: 8920665565668857545
       fishwalkright-Sheet_6: 8325711554896556427
       fishwalkright-Sheet_7: -753037127127418886
-      fishwalkright-Sheet_8: 2362086816052923839
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
