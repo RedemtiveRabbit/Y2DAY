@@ -6,9 +6,9 @@ using UnityEngine.SceneManagement;
 using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
 
-public class ConversationSwap : MonoBehaviour, IInteractable
+public class ConversationSwap : MonoBehaviour, IInteractable2
 {
-    public InteractionDetector interactionDetector;
+    public InteractionDetector2 interactionDetector2;
     public GameObject dialoguePanel;
     public TextMeshProUGUI dialogueText;
     public string[] dialogue;
@@ -30,7 +30,7 @@ public class ConversationSwap : MonoBehaviour, IInteractable
 
     void Update()
     {
-        if (interactionDetector.interactionIcon.activeSelf)
+        if (interactionDetector2.interactionIcon2.activeSelf)
         {
             EventSystem.current.SetSelectedGameObject(contButton);
             if (Input.GetButtonDown("Interact") && dialoguePanel.activeInHierarchy == false)
@@ -107,6 +107,6 @@ public class ConversationSwap : MonoBehaviour, IInteractable
 
     public bool CanInteract()
     {
-        return interactionDetector.interactionIcon == true;
+        return interactionDetector2.interactionIcon2 == true;
     }
 }
