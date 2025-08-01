@@ -71,7 +71,7 @@ public class Music : MonoBehaviour
             playingShark = false;
             playingAquarium = false;
         }
-        else if(SceneManager.GetActiveScene().name == "Arcade Level 1" && !playingArcade || SceneManager.GetActiveScene().name == "Arcade Level 2" || SceneManager.GetActiveScene().name == "Arcade Level 3")
+        else if((SceneManager.GetActiveScene().name == "Arcade Level 1" || SceneManager.GetActiveScene().name == "Arcade Level 2" || SceneManager.GetActiveScene().name == "Arcade Level 3") && !playingArcade)
         {
             audioSource.Stop();
             audioSource.PlayOneShot(arcade);
