@@ -79,12 +79,6 @@ public class NPCTVBoss : MonoBehaviour, IInteractable
         else
         {
             zeroText();
-            if (SaveData.current.hasCouch == -1)
-            {
-                SaveData.current.hasCouch = 0;
-            }
-            SaveData.current.levelsCompleted = 2;
-            SaveData.Save();
             SceneManager.LoadScene("House Floor One 4");
         }
     }
