@@ -16,7 +16,7 @@ public class Timer : MonoBehaviour
     {
         if (Input.GetButtonDown("StartGame"))
         {
-            SceneManager.LoadScene("Start Screen");
+            SceneManager.LoadScene(destination);
             StopAllCoroutines();
         }
     }

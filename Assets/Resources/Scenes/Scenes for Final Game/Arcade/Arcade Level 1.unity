@@ -23146,11 +23146,10 @@ Transform:
   m_GameObject: {fileID: 1806754713}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 31695.059, y: 1381.1775, z: 0.13545342}
+  m_LocalPosition: {x: 31695.049, y: 1381.21, z: 0.13545342}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 2023283464}
+  m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1809479588
@@ -27205,7 +27204,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 1806754714}
+    m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1054035767953862711, guid: 58ec19e9f6ed8064a9ef79e876c59e2d, type: 3}
       propertyPath: m_Name
@@ -27213,15 +27212,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8830234742556567604, guid: 58ec19e9f6ed8064a9ef79e876c59e2d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.076
+      value: 31695.117
       objectReference: {fileID: 0}
     - target: {fileID: 8830234742556567604, guid: 58ec19e9f6ed8064a9ef79e876c59e2d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.108
+      value: 1381.336
       objectReference: {fileID: 0}
     - target: {fileID: 8830234742556567604, guid: 58ec19e9f6ed8064a9ef79e876c59e2d, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.23369661
+      value: -0.09824319
       objectReference: {fileID: 0}
     - target: {fileID: 8830234742556567604, guid: 58ec19e9f6ed8064a9ef79e876c59e2d, type: 3}
       propertyPath: m_LocalRotation.w
@@ -27256,11 +27255,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 58ec19e9f6ed8064a9ef79e876c59e2d, type: 3}
---- !u!4 &2023283464 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 8830234742556567604, guid: 58ec19e9f6ed8064a9ef79e876c59e2d, type: 3}
-  m_PrefabInstance: {fileID: 2023283463}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &2023601296 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 754767723318813188, guid: d6b32f0c37de0c549aa770b393f917de, type: 3}
@@ -28893,6 +28887,7 @@ SceneRoots:
   - {fileID: 1146264132}
   - {fileID: 2138685101}
   - {fileID: 570035364}
+  - {fileID: 2023283463}
   - {fileID: 1806754714}
   - {fileID: 884385877}
   - {fileID: 1318036454}

@@ -64,6 +64,15 @@ public class Swing : MonoBehaviour
                 target.Defend(1); 
             }
         }
+
+        if (other?.GetComponent<Health1>() is Health1 target1)
+        {
+            //this isnt happening
+            if (target1.enabled)
+            {
+                target1.Defend(1);
+            }
+        }
     }
     private IEnumerator BoxRoutine()
     {
