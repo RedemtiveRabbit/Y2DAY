@@ -27,7 +27,7 @@ public class Dash : MonoBehaviour
     {
         string currentSceneName = SceneManager.GetActiveScene().name;
         direction = playerMovement.direction;
-        if(Input.GetButtonDown("Jump") && dashing == false && canDash && currentSceneName != "House Floor One" && currentSceneName != "Basement" && currentSceneName != "House Floor One 1")
+        if(Input.GetButtonDown("Jump") && dashing == false && canDash && currentSceneName != "House Floor One" && currentSceneName != "Basement" && currentSceneName != "Basement 2" && currentSceneName != "Basement 3" && currentSceneName != "Basement 4" && currentSceneName != "House Floor One 1" && currentSceneName != "House Floor One 2" && currentSceneName != "House Floor One 3" && currentSceneName != "House Floor One 4")
         {
             StartCoroutine(DashRoutine());
         }
