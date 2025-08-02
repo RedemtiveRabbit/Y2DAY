@@ -33,7 +33,7 @@ public class FishEnemy : MonoBehaviour
         {
             StartCoroutine(EnemyDash());
         }
-        animator.SetBool("Dashing", isDashing);
+        
 
         if(isDashing == true)
         {

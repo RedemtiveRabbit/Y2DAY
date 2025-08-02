@@ -84,7 +84,7 @@ SpriteRenderer:
   m_SortingLayerID: 1043212847
   m_SortingLayer: -3
   m_SortingOrder: 1
-  m_Sprite: {fileID: 3311373334934150478, guid: 8a9af5ca386ee604c8037072bb210ce2, type: 3}
+  m_Sprite: {fileID: 4578293527081917191, guid: 9fdebb2dbb8584e418a86e505c7c15a4, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -357,7 +357,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerMovement: {fileID: 0}
-  HP: 0
+  HP: 3
   AIChase: {fileID: 0}
   audioSource: {fileID: 0}
   invincible: 0

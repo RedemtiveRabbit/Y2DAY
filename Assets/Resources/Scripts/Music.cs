@@ -31,7 +31,7 @@ public class Music : MonoBehaviour
     void Update()
     {
         DontDestroyOnLoad(this);
-        if((SceneManager.GetActiveScene().name == "House Floor One" || SceneManager.GetActiveScene().name == "House Floor One 1" || SceneManager.GetActiveScene().name == "Basement" || SceneManager.GetActiveScene().name == "House Floor One 2" || SceneManager.GetActiveScene().name == "Basement 2" || SceneManager.GetActiveScene().name == "House Floor One 3") || SceneManager.GetActiveScene().name == "House Floor One 4" || SceneManager.GetActiveScene().name == "Basement 3" || SceneManager.GetActiveScene().name == "Basement 4" && !playingHouse)
+        if((SceneManager.GetActiveScene().name == "House Floor One" || SceneManager.GetActiveScene().name == "House Floor One 1" || SceneManager.GetActiveScene().name == "Basement" || SceneManager.GetActiveScene().name == "House Floor One 2" || SceneManager.GetActiveScene().name == "Basement 2" || SceneManager.GetActiveScene().name == "House Floor One 3" || SceneManager.GetActiveScene().name == "House Floor One 4" || SceneManager.GetActiveScene().name == "Basement 3" || SceneManager.GetActiveScene().name == "Basement 4") && !playingHouse)
         {
             audioSource.Stop();
             audioSource.PlayOneShot(house);
@@ -166,6 +166,10 @@ public class Music : MonoBehaviour
             playingShark = false;
             playingAquarium = false;
             playingBossIntro = false;
+        }
+        if(SceneManager.GetActiveScene().name == "Main Menu")
+        {
+            audioSource.Stop();
         }
 
 

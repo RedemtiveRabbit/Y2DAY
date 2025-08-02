@@ -43,16 +43,14 @@ public class AI_Chase1 : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-       
 
+        animator.SetBool("Dashing", fishEnemy.isDashing);
         if (!(knockbackinating))
         {
             if(fishEnemy.isDashing == false)
             {
                 FollowPlayer();
             }
-            
-
         }
         playerMovement.spriteDirection = direction;
         if (body.linearVelocityX != 0 || body.linearVelocityY != 0)
