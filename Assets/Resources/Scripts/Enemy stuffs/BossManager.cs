@@ -41,7 +41,7 @@ public class BossManager : MonoBehaviour
         {
             phase = 3;
         }
-        else if(health.HP == 1)
+        else if(health.HP < 2)
         {
             phase = 4;
             StartCoroutine("TimeToDie");
@@ -140,6 +140,7 @@ public class BossManager : MonoBehaviour
     private IEnumerator TimeToDie()
     {
         yield return new WaitForSeconds(2.4f);
+        print("iunvn");
         TVLocation.position = BossLocation.position;
         TV.SetActive(true);
         Destroy(gameObject);

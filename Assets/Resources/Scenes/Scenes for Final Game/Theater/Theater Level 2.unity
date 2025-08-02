@@ -11216,10 +11216,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4636666353824150504, guid: 947aa2e4e234d2d408b6e41f3fb1c94f, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6389205154571628419, guid: 947aa2e4e234d2d408b6e41f3fb1c94f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1801283412}
   m_SourcePrefab: {fileID: 100100000, guid: 947aa2e4e234d2d408b6e41f3fb1c94f, type: 3}
 --- !u!1001 &706025343
 PrefabInstance:
@@ -12273,6 +12277,11 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 6227298319407548374, guid: 538909f7eb9da0442822ddbf54c2405f, type: 3}
   m_PrefabInstance: {fileID: 755172325}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &757881571 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6389205154571628419, guid: 947aa2e4e234d2d408b6e41f3fb1c94f, type: 3}
+  m_PrefabInstance: {fileID: 697268445}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &760079932
 PrefabInstance:
@@ -20875,7 +20884,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!61 &1308967926
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -21006,7 +21015,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interactionDetector: {fileID: 1489171966}
-  dialoguePanel: {fileID: 1013271590}
+  dialoguePanel: {fileID: 997933909}
   dialogueText: {fileID: 168468838}
   dialogue:
   - There's no more trace of life in the TV's eyes.
@@ -23342,6 +23351,10 @@ PrefabInstance:
       propertyPath: Respawn
       value: 
       objectReference: {fileID: 1035807253}
+    - target: {fileID: 5258219023258853504, guid: 5e5a4572086676848a5d7318889911ba, type: 3}
+      propertyPath: maxHealth
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 5258219023258853504, guid: 5e5a4572086676848a5d7318889911ba, type: 3}
       propertyPath: onScreenUI
       value: 
@@ -26624,7 +26637,7 @@ MonoBehaviour:
   SciFiBoss: {fileID: 8300000, guid: 9b9718f00f00b4b4e9718054c0fbae49, type: 3}
   westernBoss: {fileID: 8300000, guid: 5ed7ccf0ad1649d4c820de27347adf56, type: 3}
   heroBoss: {fileID: 8300000, guid: cf17aeee4b1078442acd18acc4854f99, type: 3}
-  deadBoss: {fileID: 0}
+  deadBoss: {fileID: 8300000, guid: bea74fc80b9af8844a19c502877abeb1, type: 3}
   audioSource: {fileID: 1762345287}
   playingSciFi: 0
   playingWestern: 0
@@ -27083,12 +27096,105 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8372731235376245377, guid: 947aa2e4e234d2d408b6e41f3fb1c94f, type: 3}
   m_PrefabInstance: {fileID: 697268445}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 757881571}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 80225e44c0e3ae1489c741fddd2291f6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!60 &1801283412
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 757881571}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.88, y: 0.95}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.24284431, y: -0.47048515}
+      - {x: 0.25176963, y: -0.47516692}
+      - {x: 0.27086237, y: -0.47663397}
+      - {x: 0.29, y: -0.475}
+      - {x: 0.44, y: -0.475}
+      - {x: 0.44, y: -0.42499998}
+      - {x: 0.41, y: -0.39499998}
+      - {x: 0.44, y: -0.325}
+      - {x: 0.44, y: -0.205}
+      - {x: 0.32999998, y: -0.065}
+      - {x: 0.35999998, y: 0.36499998}
+      - {x: 0.22, y: 0.415}
+      - {x: 0.11, y: 0.465}
+      - {x: 0.040804423, y: 0.46856555}
+      - {x: -0.11874342, y: 0.43318272}
+      - {x: -0.16454604, y: 0.40986118}
+      - {x: -0.20972094, y: 0.38982463}
+      - {x: -0.26118883, y: 0.34786695}
+      - {x: -0.29, y: 0.305}
+      - {x: -0.28, y: 0.074999996}
+      - {x: -0.32, y: -0.13499999}
+      - {x: -0.39, y: -0.13499999}
+      - {x: -0.44, y: -0.235}
+      - {x: -0.44, y: -0.475}
+      - {x: -0.33771548, y: -0.48642215}
+      - {x: -0.24913763, y: -0.47726208}
+      - {x: -0.23687601, y: -0.47351}
+      - {x: -0.2240322, y: -0.47313958}
+      - {x: -0.20286676, y: -0.470531}
+      - {x: -0.18995462, y: -0.46740705}
+      - {x: -0.1871103, y: -0.4726252}
+      - {x: -0.17999999, y: -0.475}
+      - {x: -0.01, y: -0.475}
+      - {x: 0.006572971, y: -0.4789868}
+      - {x: 0.00829771, y: -0.48031822}
+      - {x: -0.0031693429, y: -0.47906396}
+      - {x: 0.021097127, y: -0.479858}
+      - {x: 0.03428892, y: -0.4802504}
+      - {x: 0.044917002, y: -0.47206587}
+      - {x: 0.053427026, y: -0.4792445}
+      - {x: 0.049999997, y: -0.465}
+      - {x: 0.06, y: -0.475}
+      - {x: 0.21, y: -0.475}
+      - {x: 0.22, y: -0.465}
+      - {x: 0.22428891, y: -0.46919864}
+      - {x: 0.22650562, y: -0.473655}
+  m_UseDelaunayMesh: 0
 --- !u!1 &1808170493
 GameObject:
   m_ObjectHideFlags: 0
