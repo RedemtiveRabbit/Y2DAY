@@ -1,6 +1,7 @@
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.SceneManagement;
 
 public class PlayerHealth : MonoBehaviour
 {
@@ -25,8 +26,10 @@ public class PlayerHealth : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        health = 100;
-
+        if (SceneManager.GetActiveScene().name == "House Floor One 1" || SceneManager.GetActiveScene().name == "House Floor One 2" || SceneManager.GetActiveScene().name == "House Floor One 3")
+        {
+            health = 6;
+        }
         if (invincible == true)
         {
             timer += Time.deltaTime;
